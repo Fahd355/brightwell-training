@@ -9,37 +9,16 @@
 
 window.BW_MODULES = [
   { title: 'Introduction', sections: [
-    { id: 'm1-scribe-role', title: 'Intro to Medical Scribe Role', minutes: 12,
-      summary: 'What a CCM medical scribe does each month, where the role starts and where it stops.',
-      task: 'In 3–4 sentences, describe what a CCM medical scribe does during a monthly review, and name one thing that is outside the scribe’s scope.',
+    { id: 'm1-scribe-role', title: 'Introduction to Brightwell', minutes: 12,
+      summary: 'The role of a Medical Scribe, What BrightWell is, overview of SNF and CCM',
+      task: '',
       quiz: [
-        { q: 'Which task is within a CCM medical scribe’s scope?', options: ['Documenting clinical data from the chart into the care plan', 'Changing a resident’s medication orders', 'Diagnosing a new condition', 'Collecting payment from the resident'] },
-        { q: 'Where does the scribe source clinical information?', options: ['The resident’s facility chart', 'Last month’s note, copied forward unchanged', 'A family member over the phone', 'Memory of similar residents'] },
-        { q: 'A value you need is missing from the chart. What do you do?', options: ['Flag it following the escalation process', 'Enter a typical value', 'Leave it out without telling anyone', 'Copy the value from another resident'] }
+        { q: 'What is the primary benefit of a medical scribe navigating the Electronic Health Record (EHR) in real time?', options: ['It allows the healthcare provider to focus entirely on direct patient care rather than data entry.', 'It automatically submits the superbill to the insurance company.', 'It allows the scribe to diagnose the patient's condition.', 'It eliminates the need for the provider to review the patient's history.'] },
+        { q: 'Which of the following is a core responsibility of a medical scribe?', options: ['Retrieving and tracking data such as active medications, labs, and imaging from the chart.', 'Performing physical therapy routines with long-term residents.', 'Independently creating and signing clinical orders.', 'Administering medications to patients in the SNF.'] },
+        { q: 'What type of care does a Skilled Nursing Facility (SNF) provide?', options: ['24-hour medical, nursing, and rehabilitative care for geriatric patients needing intensive monitoring.', 'Outpatient pediatric care and vaccinations.', 'Independent living apartments with no medical oversight.', 'Emergency surgical interventions.'] },
+        { q: 'What are the two primary goals of the Chronic Care Management (CCM) program?', options: ['Patient stabilization and readmission prevention.', 'Rapid discharge and reducing medication costs.', 'Diagnosing new illnesses and emergency triage..', 'Surgical recovery and physical therapy.'] },
+        { q: 'In the Brightwell workflow, what is the scope of focus for each patient's monthly follow-up?', options: ['1 chronic condition per patient.', 'All conditions listed in the patient's medical history.', 'All conditions listed in the patient's medical history.', 'Up to 3 chronic conditions per patient.'] }
       ] },
-    { id: 'm1-brightwell', title: 'Intro to BrightWell', minutes: 10,
-      summary: 'Who BrightWell serves, how the CCM team is organised, and the three systems you will work in.',
-      task: 'List the three systems you will use in this role and write one sentence on what each one is used for.',
-      quiz: [
-        { q: 'Which system holds the SNF resident’s clinical chart?', options: ['PointClickCare (PCC)', 'ThoroughCare (TC)', 'Practice Fusion (PF)', 'The task portal'] },
-        { q: 'Where are CCM care plans and logged time kept?', options: ['ThoroughCare (TC)', 'PointClickCare (PCC)', 'Practice Fusion (PF)', 'Email'] },
-        { q: 'Where is the monthly encounter documented?', options: ['Practice Fusion (PF)', 'PointClickCare (PCC)', 'ThoroughCare (TC)', 'A shared spreadsheet'] }
-      ] },
-    { id: 'm1-snf', title: 'Intro to SNF', minutes: 10,
-      summary: 'How a skilled nursing facility works, who lives there, and how its records are organised.',
-      quiz: [
-        { q: 'What does SNF stand for?', options: ['Skilled Nursing Facility', 'Senior Nursing Foundation', 'Specialist Neurology Facility', 'Standard Nursing Form'] },
-        { q: 'What is the MDS?', options: ['A standardised resident assessment completed by the facility', 'A medication dispensing system', 'A billing code set', 'A physician’s discharge summary'] },
-        { q: 'SNF residents are typically…', options: ['Receiving short-term rehab or long-term care with 24-hour nursing', 'Outpatients seen once a year', 'Only post-surgical day cases', 'Living independently at home'] }
-      ] },
-    { id: 'm1-ccm-concept', title: 'CCM as a Concept', minutes: 12,
-      summary: 'Why Chronic Care Management exists, what it pays for, and what every enrolled resident must have.',
-      task: 'Explain CCM to a new colleague in plain language (4–5 sentences): who qualifies, what is delivered each month, and why it matters to the resident.',
-      quiz: [
-        { q: 'CCM eligibility requires at least…', options: ['Two chronic conditions expected to last 12 months or more', 'One acute condition', 'A hospital admission in the last 30 days', 'A referral from the resident’s family'] },
-        { q: 'What must be in place before CCM services begin?', options: ['Documented resident consent', 'A specialist referral', 'A completed MDS', 'A signed billing invoice'] },
-        { q: 'The core CCM document is the…', options: ['Comprehensive care plan', 'Admission face sheet', 'Discharge summary', 'Medication administration record'] }
-      ] }
   ]},
   { title: 'CCM in detail', sections: [
     { id: 'm2-eligibility', title: 'Eligibility Criteria', minutes: 12,
