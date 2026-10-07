@@ -8,17 +8,16 @@
 // Content below is a starting draft — have an SME review every question before launch.
 
 window.BW_MODULES = [
-  { title: 'Introduction', sections: [
+    { title: 'Introduction', sections: [
     { id: 'm1-scribe-role', title: 'Introduction to Brightwell', minutes: 12,
       summary: 'The role of a Medical Scribe, What BrightWell is, overview of SNF and CCM',
-      task: '',
       quiz: [
-        { q: 'What is the primary benefit of a medical scribe navigating the Electronic Health Record (EHR) in real time?', options: ['It allows the healthcare provider to focus entirely on direct patient care rather than data entry.', 'It automatically submits the superbill to the insurance company.', 'It allows the scribe to diagnose the patient's condition.', 'It eliminates the need for the provider to review the patient's history.'] },
+        { q: 'What is the primary benefit of a medical scribe navigating the Electronic Health Record (EHR) in real time?', options: ['It allows the healthcare provider to focus entirely on direct patient care rather than data entry.', 'It automatically submits the superbill to the insurance company.', 'It allows the scribe to diagnose the patient’s condition.', 'It eliminates the need for the provider to review the patient’s history.'] },
         { q: 'Which of the following is a core responsibility of a medical scribe?', options: ['Retrieving and tracking data such as active medications, labs, and imaging from the chart.', 'Performing physical therapy routines with long-term residents.', 'Independently creating and signing clinical orders.', 'Administering medications to patients in the SNF.'] },
         { q: 'What type of care does a Skilled Nursing Facility (SNF) provide?', options: ['24-hour medical, nursing, and rehabilitative care for geriatric patients needing intensive monitoring.', 'Outpatient pediatric care and vaccinations.', 'Independent living apartments with no medical oversight.', 'Emergency surgical interventions.'] },
-        { q: 'What are the two primary goals of the Chronic Care Management (CCM) program?', options: ['Patient stabilization and readmission prevention.', 'Rapid discharge and reducing medication costs.', 'Diagnosing new illnesses and emergency triage..', 'Surgical recovery and physical therapy.'] },
-        { q: 'In the Brightwell workflow, what is the scope of focus for each patient's monthly follow-up?', options: ['1 chronic condition per patient.', 'All conditions listed in the patient's medical history.', 'All conditions listed in the patient's medical history.', 'Up to 3 chronic conditions per patient.'] }
-      ] },
+        { q: 'What are the two primary goals of the Chronic Care Management (CCM) program?', options: ['Patient stabilization and readmission prevention.', 'Rapid discharge and reducing medication costs.', 'Diagnosing new illnesses and emergency triage.', 'Surgical recovery and physical therapy.'] },
+        { q: 'In the Brightwell workflow, what is the scope of focus for each patient’s monthly follow-up?', options: ['1 chronic condition per patient.', 'All conditions listed in the patient’s medical history.', 'Only the condition with the most recent hospital visit.', 'Up to 3 chronic conditions per patient.'] }
+      ] }
   ]},
   { title: 'CCM in detail', sections: [
     { id: 'm2-eligibility', title: 'Eligibility Criteria', minutes: 12,
