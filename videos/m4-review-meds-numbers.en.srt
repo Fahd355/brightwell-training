@@ -1,0 +1,479 @@
+1
+00:00:00,900 --> 00:00:06,068
+Welcome to Lesson 4.4, Documenting the Monthly Clinical Review.
+
+2
+00:00:06,333 --> 00:00:11,122
+This is Part 1 of 2: Allergies, Medications, and Numbers to Track.
+
+3
+00:00:12,700 --> 00:00:15,237
+Each month, you review the patient's records,
+
+4
+00:00:15,287 --> 00:00:19,589
+and post updates in the Clinical Review sub-tab of Care Management.
+
+5
+00:00:19,867 --> 00:00:22,596
+Those updates appear in the patient report.
+
+6
+00:00:22,867 --> 00:00:25,883
+In this part, you'll post the first three sections.
+
+7
+00:00:26,133 --> 00:00:31,666
+Allergies: an allergy review, or a note that the patient has no known allergies.
+
+8
+00:00:31,933 --> 00:00:37,024
+Medications: a note that the medication list was reviewed and updated.
+
+9
+00:00:37,300 --> 00:00:41,242
+And Numbers to Track: the most recent labs, the latest vitals,
+
+10
+00:00:41,292 --> 00:00:44,382
+and any lab that's missing or not recent.
+
+11
+00:00:45,833 --> 00:00:50,260
+This lesson continues with the scratch patient from the earlier lessons.
+
+12
+00:00:50,533 --> 00:00:54,235
+You've created the profile, completed the initial assessment,
+
+13
+00:00:54,285 --> 00:00:56,333
+and updated Clinical Data.
+
+14
+00:00:56,600 --> 00:00:59,560
+Now you'll document this month's clinical review.
+
+15
+00:01:11,533 --> 00:01:13,597
+Open the Care Management tab.
+
+16
+00:01:13,867 --> 00:01:17,501
+At the top, the Task Type is Monthly Clinical Review.
+
+17
+00:01:17,767 --> 00:01:20,504
+It's performed by you, and dated today.
+
+18
+00:01:21,367 --> 00:01:23,955
+Scroll down to the workflow sub-tabs.
+
+19
+00:01:24,233 --> 00:01:28,937
+On the way, you pass the patient's conditions, care team, and time logs.
+
+20
+00:01:31,833 --> 00:01:36,332
+The monthly review uses two of them: Clinical Review, and Problems.
+
+21
+00:01:41,967 --> 00:01:43,927
+Start with Clinical Review.
+
+22
+00:01:45,167 --> 00:01:48,525
+The updates you post here go into the patient report.
+
+23
+00:01:48,800 --> 00:01:51,395
+At the end of the review, you print that report,
+
+24
+00:01:51,445 --> 00:01:54,376
+and upload it to Practice Fusion for billing.
+
+25
+00:01:55,533 --> 00:01:57,924
+Scroll down to the review sections.
+
+26
+00:01:58,200 --> 00:02:01,902
+On the left, each section shows what you entered in Clinical Data,
+
+27
+00:02:01,952 --> 00:02:03,880
+so it's already filled in.
+
+28
+00:02:04,133 --> 00:02:06,719
+On the right, each section has a notes column.
+
+29
+00:02:06,769 --> 00:02:09,625
+That's where you post this month's update.
+
+30
+00:02:09,900 --> 00:02:13,119
+Start with Allergies, near the bottom of the page.
+
+31
+00:02:16,800 --> 00:02:21,157
+If the patient has allergies, you've already added them in Clinical Data.
+
+32
+00:02:21,433 --> 00:02:24,391
+Click Allergies, at the top of Allergy Notes.
+
+33
+00:02:24,667 --> 00:02:27,786
+The Allergies window lists the patient's allergies.
+
+34
+00:02:27,836 --> 00:02:30,710
+This patient is allergic to penicillin.
+
+35
+00:02:30,967 --> 00:02:33,594
+To post an update, first select the allergies.
+
+36
+00:02:33,644 --> 00:02:36,655
+The checkbox in the header selects them all.
+
+37
+00:02:36,933 --> 00:02:41,879
+A template list appears: Select update regarding selected allergies.
+
+38
+00:02:42,133 --> 00:02:46,616
+Open it, and choose Allergies Reviewed with patient, no Changes.
+
+39
+00:02:48,800 --> 00:02:50,683
+Then click Post Update.
+
+40
+00:02:50,933 --> 00:02:56,067
+The update is posted in Allergy Notes, with today's date and the allergy list.
+
+41
+00:02:57,400 --> 00:03:01,875
+If the patient has no known allergies, don't use the Allergies button.
+
+42
+00:03:04,200 --> 00:03:05,742
+Click Add Update instead.
+
+43
+00:03:05,792 --> 00:03:07,834
+It adds a free-text note.
+
+44
+00:03:08,100 --> 00:03:13,029
+For no known allergies, always use this fixed text, exactly as written:
+
+45
+00:03:14,300 --> 00:03:16,510
+No known allergies have been added.
+
+46
+00:03:16,560 --> 00:03:21,207
+Due to system limitations, we can only add this update as a note.
+
+47
+00:03:21,467 --> 00:03:23,887
+Paste it in the note, and click Save.
+
+48
+00:03:24,167 --> 00:03:28,396
+This patient does have an allergy, so here the note is only an example,
+
+49
+00:03:28,446 --> 00:03:31,126
+and the window is closed with Cancel.
+
+50
+00:03:34,633 --> 00:03:36,370
+So there are two cases.
+
+51
+00:03:36,633 --> 00:03:40,795
+If the patient has allergies, select them in the Allergies window,
+
+52
+00:03:40,845 --> 00:03:45,953
+and post a template, such as Allergies Reviewed with patient, no Changes.
+
+53
+00:03:48,933 --> 00:03:53,115
+If there are none, use Add Update with the no-known-allergies note.
+
+54
+00:03:54,267 --> 00:03:55,959
+Next, Medications.
+
+55
+00:03:59,167 --> 00:04:02,626
+Click Medications, at the top of Medication Notes.
+
+56
+00:04:02,900 --> 00:04:08,327
+This opens the medication list you reviewed and reconciled in Clinical Data.
+
+57
+00:04:08,600 --> 00:04:12,332
+Below the list, you can see when it was last reconciled.
+
+58
+00:04:12,733 --> 00:04:16,199
+Select all the medications with the header checkbox.
+
+59
+00:04:17,700 --> 00:04:22,314
+Open the template list, and choose Medication list reviewed and updated.
+
+60
+00:04:22,567 --> 00:04:24,450
+Then click Post Update.
+
+61
+00:04:24,700 --> 00:04:27,534
+The note is posted in Medication Notes.
+
+62
+00:04:28,700 --> 00:04:30,424
+Next is Numbers to Track.
+
+63
+00:04:30,474 --> 00:04:33,692
+It covers two things: labs, and vitals.
+
+64
+00:04:35,200 --> 00:04:36,128
+Start with labs.
+
+65
+00:04:36,178 --> 00:04:39,623
+Click Labs, at the top of Numbers to Track Notes.
+
+66
+00:04:39,900 --> 00:04:44,106
+The Lab Results window lists the results you added in Clinical Data,
+
+67
+00:04:44,156 --> 00:04:46,046
+with their LOINC codes.
+
+68
+00:04:47,900 --> 00:04:50,654
+Select all of them with the header checkbox.
+
+69
+00:04:52,167 --> 00:04:55,074
+From the template list, choose Custom Update.
+
+70
+00:04:55,333 --> 00:04:59,101
+In the custom update box, type: Most recent labs.
+
+71
+00:05:02,133 --> 00:05:04,016
+Then click Post Update.
+
+72
+00:05:04,267 --> 00:05:09,579
+The labs are posted under Most recent labs, each with its LOINC code and value.
+
+73
+00:05:10,433 --> 00:05:13,819
+Vitals aren't lab results, so they're not in the Labs list.
+
+74
+00:05:13,869 --> 00:05:15,833
+You add them as free text.
+
+75
+00:05:20,700 --> 00:05:22,232
+Click Add Update.
+
+76
+00:05:22,500 --> 00:05:27,548
+Add the basic vitals monitored for every patient: blood pressure, and weight.
+
+77
+00:05:27,800 --> 00:05:32,759
+If one of the patient's conditions needs another vital, add it too.
+
+78
+00:05:32,809 --> 00:05:38,791
+For example, oxygen saturation for COPD, or pulse for atrial fibrillation.
+
+79
+00:05:40,100 --> 00:05:43,822
+Take the readings from the PointClickCare resident dashboard.
+
+80
+00:05:44,100 --> 00:05:47,101
+Copy the latest blood pressure, with its date,
+
+81
+00:05:47,367 --> 00:05:49,667
+and the latest weight, with its date.
+
+82
+00:05:55,200 --> 00:05:58,145
+Back in ThoroughCare, paste them into the note.
+
+83
+00:05:59,667 --> 00:06:04,352
+Before you finish the note, check which labs the patient's conditions require.
+
+84
+00:06:07,333 --> 00:06:11,649
+Open the Update Care Policy sheet, on the Numbers To Track tab.
+
+85
+00:06:11,900 --> 00:06:15,620
+For each CCM condition, it lists the numbers to track,
+
+86
+00:06:15,670 --> 00:06:20,727
+with their LOINC codes, normal levels, and recency period in days.
+
+87
+00:06:21,000 --> 00:06:24,580
+This patient's CCM condition is hypertension.
+
+88
+00:06:24,833 --> 00:06:30,805
+For hypertension, that's blood pressure, hemoglobin and hematocrit, BUN,
+
+89
+00:06:30,855 --> 00:06:34,234
+creatinine and GFR, the cholesterol panel
+
+90
+00:06:34,284 --> 00:06:38,330
+and triglycerides, hemoglobin A1C, and TSH.
+
+91
+00:06:38,600 --> 00:06:41,608
+Compare that list with the patient's results.
+
+92
+00:06:41,658 --> 00:06:43,535
+Here, there's no TSH.
+
+93
+00:06:44,867 --> 00:06:47,297
+Also check how old each result is.
+
+94
+00:06:47,347 --> 00:06:50,642
+Each lab has a recency period, in days.
+
+95
+00:06:50,900 --> 00:06:54,742
+Kidney function, for example, is 180 days.
+
+96
+00:06:55,000 --> 00:06:58,785
+If the latest result is older than that, it isn't recent.
+
+97
+00:06:59,067 --> 00:07:01,476
+Missing labs, and labs that aren't recent,
+
+98
+00:07:01,526 --> 00:07:04,551
+must be noted, so they're monitored on time.
+
+99
+00:07:04,833 --> 00:07:08,050
+Other conditions, such as hyperlipidemia, COPD,
+
+100
+00:07:08,100 --> 00:07:12,304
+or depression, have their own lists in the same sheet.
+
+101
+00:07:15,133 --> 00:07:19,322
+Back in ThoroughCare, the most recent labs are already posted.
+
+102
+00:07:20,833 --> 00:07:23,809
+Click Add Update again, and paste the vitals.
+
+103
+00:07:26,133 --> 00:07:31,420
+Under the vitals, add a line for each lab that's missing or not recent.
+
+104
+00:07:31,470 --> 00:07:33,874
+Here, type: no recent TSH.
+
+105
+00:07:34,433 --> 00:07:35,963
+Then click Save.
+
+106
+00:07:36,400 --> 00:07:39,247
+The note is saved: the vitals, the missing lab,
+
+107
+00:07:39,297 --> 00:07:41,842
+and the most recent labs below it.
+
+108
+00:07:42,100 --> 00:07:46,192
+That completes Allergies, Medications, and Numbers to Track.
+
+109
+00:07:48,500 --> 00:07:49,759
+To recap.
+
+110
+00:07:50,033 --> 00:07:53,640
+Open the Clinical Review sub-tab in Care Management.
+
+111
+00:07:53,900 --> 00:07:56,993
+For allergies, select them all and post a template,
+
+112
+00:07:57,043 --> 00:07:59,650
+or add the no-known-allergies note.
+
+113
+00:07:59,900 --> 00:08:04,129
+For medications, post Medication list reviewed and updated.
+
+114
+00:08:04,400 --> 00:08:08,129
+For labs, post a custom update: Most recent labs.
+
+115
+00:08:08,400 --> 00:08:11,544
+Add the latest blood pressure and weight as free text,
+
+116
+00:08:11,594 --> 00:08:13,996
+plus any vital a condition needs.
+
+117
+00:08:14,267 --> 00:08:18,565
+Check the care policy, note any missing or old labs, and save.
+
+118
+00:08:21,033 --> 00:08:22,940
+That's the end of Part 1.
+
+119
+00:08:23,200 --> 00:08:25,720
+Next, in Part 2: Resources and Support,
+
+120
+00:08:25,770 --> 00:08:28,921
+and Other Provider and Appointment Notes.

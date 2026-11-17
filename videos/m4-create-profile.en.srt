@@ -1,0 +1,123 @@
+1
+00:00:01,500 --> 00:00:04,976
+Welcome to the Brightwell CCM technical training.
+
+2
+00:00:05,076 --> 00:00:10,242
+In this video, you'll learn how to create a new patient profile in ThoroughCare.
+
+3
+00:00:11,892 --> 00:00:18,676
+On the Brightwell account, we provide Chronic Care Management to patients who live in skilled nursing facilities.
+
+4
+00:00:18,926 --> 00:00:23,966
+Every patient task you receive is one of two types: follow-up, or scratch.
+
+5
+00:00:24,116 --> 00:00:29,068
+A follow-up patient has been enrolled in the CCM program for a few months,
+
+6
+00:00:29,108 --> 00:00:36,168
+so their profile already exists in ThoroughCare, as well as in PointClickCare and Practice Fusion.
+
+7
+00:00:36,418 --> 00:00:39,097
+A scratch patient was enrolled this month.
+
+8
+00:00:39,137 --> 00:00:45,196
+Their records are in PointClickCare and Practice Fusion, but there's no ThoroughCare profile yet.
+
+9
+00:00:45,236 --> 00:00:47,887
+So you'll create one, from scratch.
+
+10
+00:00:49,637 --> 00:00:52,635
+A scratch task gives you everything you need:
+
+11
+00:00:52,675 --> 00:00:57,919
+the patient's name, date of birth, facility, provider, and ICD-10 code.
+
+12
+00:00:58,069 --> 00:01:01,964
+Keep it open. You'll copy each value into ThoroughCare.
+
+13
+00:01:03,414 --> 00:01:05,673
+Start on the ThoroughCare dashboard.
+
+14
+00:01:05,713 --> 00:01:08,568
+In the top-right corner, click New Patient.
+
+15
+00:01:09,714 --> 00:01:11,960
+The Create Patient form opens.
+
+16
+00:01:12,000 --> 00:01:16,878
+Enter the patient's first and last name, exactly as they appear in the task.
+
+17
+00:01:17,528 --> 00:01:19,731
+Next, enter the date of birth.
+
+18
+00:01:20,731 --> 00:01:24,115
+Then select whether the patient is male or female.
+
+19
+00:01:24,765 --> 00:01:28,500
+For Department, choose the facility where the patient lives.
+
+20
+00:01:28,540 --> 00:01:32,837
+Type the facility name from your task, then select it from the list.
+
+21
+00:01:33,587 --> 00:01:37,900
+Under Eligible For Programs, make sure CCM is checked.
+
+22
+00:01:38,650 --> 00:01:42,735
+For Primary Provider, select the provider listed in the task.
+
+23
+00:01:43,485 --> 00:01:46,652
+For Primary Care Manager, select your own name.
+
+24
+00:01:46,692 --> 00:01:50,953
+Every care manager with a ThoroughCare account appears in this list.
+
+25
+00:01:51,703 --> 00:01:56,327
+Before you save, scroll back up and check each entry against the task.
+
+26
+00:01:56,977 --> 00:02:02,124
+Then scroll to the bottom of the form, and click Create Patient to save the profile.
+
+27
+00:02:04,074 --> 00:02:05,429
+Let's recap.
+
+28
+00:02:05,469 --> 00:02:12,263
+For a scratch patient, click New Patient, then complete the first and last name, date of birth, sex,
+
+29
+00:02:12,303 --> 00:02:17,673
+department, the CCM program, primary provider, and primary care manager.
+
+30
+00:02:17,723 --> 00:02:21,344
+Finally, review your entries and click Create Patient.
+
+31
+00:02:23,194 --> 00:02:27,441
+And that's it. You've created a new patient profile in ThoroughCare.

@@ -1,0 +1,511 @@
+1
+00:00:01,500 --> 00:00:04,432
+Part two: the General Health Questionnaire.
+
+2
+00:00:04,632 --> 00:00:09,527
+You answer its key questions from the patient's records in PointClickCare.
+
+3
+00:00:11,427 --> 00:00:14,607
+You don't answer every question in this questionnaire.
+
+4
+00:00:14,907 --> 00:00:23,599
+Skip overall physical health, instrumental activities, understanding of health conditions, and everything after the diet question.
+
+5
+00:00:23,899 --> 00:00:31,076
+Answer five: activities of daily living, falls, pain, life planning documents, and recommended diet.
+
+6
+00:00:31,376 --> 00:00:34,177
+You'll find each answer in PointClickCare.
+
+7
+00:00:36,177 --> 00:00:40,361
+The initial assessment opens on the General Health Questionnaire.
+
+8
+00:00:40,611 --> 00:00:44,098
+It has many questions, but you don't answer all of them.
+
+9
+00:00:47,400 --> 00:00:51,754
+The first question is: How would you rate your overall physical health?
+
+10
+00:00:52,004 --> 00:00:55,230
+You don't answer it. Leave it blank, and move on.
+
+11
+00:00:56,544 --> 00:01:04,127
+The second question asks: What activities of daily living (ADLs) do you currently require assistance with?
+
+12
+00:01:04,377 --> 00:01:10,402
+The options are walking, feeding, toileting, transferring, bathing, grooming, and dressing.
+
+13
+00:01:10,652 --> 00:01:15,035
+You answer it from the patient's MDS, in PointClickCare.
+
+14
+00:01:16,344 --> 00:01:21,635
+The MDS (Minimum Data Set) is an assessment of the patient's basic functions
+
+15
+00:01:21,675 --> 00:01:24,841
+that the facility completes regularly.
+
+16
+00:01:25,091 --> 00:01:29,964
+Use the most recent one, so your answers match the patient's latest data.
+
+17
+00:01:30,214 --> 00:01:34,719
+On the patient's page in PointClickCare, click the MDS tab.
+
+18
+00:01:35,777 --> 00:01:39,154
+The assessments are listed by date, newest first.
+
+19
+00:01:39,404 --> 00:01:44,768
+The latest one is the annual assessment from 10/7/2026.
+
+20
+00:01:45,018 --> 00:01:49,779
+You can open it with view, or as a printout. Printing is the easier way.
+
+21
+00:01:50,029 --> 00:01:53,238
+Click reports, next to the latest assessment.
+
+22
+00:01:55,110 --> 00:01:57,492
+A Print Options window opens.
+
+23
+00:01:57,742 --> 00:02:01,357
+Under Select print options, check MDS Form.
+
+24
+00:02:02,726 --> 00:02:04,378
+Then click Print.
+
+25
+00:02:06,044 --> 00:02:10,869
+The MDS form opens as a PDF, in a new browser tab.
+
+26
+00:02:12,377 --> 00:02:16,814
+Before you open the MDS, here's how to read its function scores.
+
+27
+00:02:17,114 --> 00:02:22,662
+06 means independent: the patient completes the activity alone, with no help.
+
+28
+00:02:22,702 --> 00:02:25,379
+Leave that activity unchecked.
+
+29
+00:02:25,679 --> 00:02:29,511
+Any other code means the patient needs assistance,
+
+30
+00:02:29,551 --> 00:02:33,923
+from 05, setup or clean-up, down to 01, dependent.
+
+31
+00:02:34,223 --> 00:02:39,720
+Activities that weren't attempted, such as code 88, also count as needing assistance.
+
+32
+00:02:39,760 --> 00:02:42,019
+Check them in ThoroughCare.
+
+33
+00:02:44,019 --> 00:02:49,164
+Back in ThoroughCare, take the activities one at a time, starting with walking.
+
+34
+00:02:49,419 --> 00:02:51,754
+Switch to the MDS form.
+
+35
+00:02:52,004 --> 00:02:55,085
+Press Ctrl + F, and search for walk 10.
+
+36
+00:02:57,119 --> 00:03:01,438
+Step through the matches to Section GG, Functional Abilities.
+
+37
+00:03:01,688 --> 00:03:09,121
+Here are three walking items: walk 10 feet, walk 50 feet with two turns, and walk 150 feet.
+
+38
+00:03:09,371 --> 00:03:16,591
+Walk 10 feet is coded 88: not attempted, due to a medical condition or safety concerns.
+
+39
+00:03:16,841 --> 00:03:23,034
+Because of that code, walk 50 feet and walk 150 feet are skipped, and left blank.
+
+40
+00:03:23,284 --> 00:03:27,923
+The code isn't 06, so the patient needs assistance with walking.
+
+41
+00:03:28,176 --> 00:03:30,745
+So in ThoroughCare, check Walking.
+
+42
+00:03:36,319 --> 00:03:39,448
+You can also search for any activity by name.
+
+43
+00:03:39,698 --> 00:03:42,058
+For example, search for bath.
+
+44
+00:03:47,086 --> 00:03:50,978
+Step through the matches until you reach the self-care scores.
+
+45
+00:03:51,228 --> 00:03:56,123
+Here, eating is scored 05: setup or clean-up assistance.
+
+46
+00:03:56,373 --> 00:04:00,734
+It isn't 06, so the patient needs assistance with eating.
+
+47
+00:04:00,984 --> 00:04:03,316
+In ThoroughCare, check Feeding.
+
+48
+00:04:06,252 --> 00:04:10,933
+Back in the MDS, toileting hygiene is 01: dependent.
+
+49
+00:04:13,114 --> 00:04:14,886
+So check Toileting.
+
+50
+00:04:19,886 --> 00:04:25,015
+Shower/bathe self is also 01, so the patient needs assistance.
+
+51
+00:04:25,267 --> 00:04:26,756
+Check Bathing.
+
+52
+00:04:29,086 --> 00:04:33,981
+Grooming depends on two items: oral hygiene, and personal hygiene.
+
+53
+00:04:34,247 --> 00:04:41,702
+Oral hygiene is 04: supervision or touching assistance. Personal hygiene is 01.
+
+54
+00:04:44,881 --> 00:04:47,813
+Both need assistance, so check Grooming.
+
+55
+00:04:50,186 --> 00:04:55,443
+Dressing also has two items: upper body dressing, and lower body dressing.
+
+56
+00:05:01,533 --> 00:05:04,143
+Upper body dressing is 01.
+
+57
+00:05:04,393 --> 00:05:07,469
+Lower body dressing is 01 too.
+
+58
+00:05:08,532 --> 00:05:12,309
+The patient needs assistance with both, so check Dressing.
+
+59
+00:05:16,357 --> 00:05:18,585
+Last, search for transfer.
+
+60
+00:05:22,619 --> 00:05:25,743
+Step through the matches to the mobility items.
+
+61
+00:05:25,993 --> 00:05:30,213
+Three items show whether the patient needs help with transfers:
+
+62
+00:05:30,253 --> 00:05:35,014
+sit to stand, chair/bed-to-chair transfer, and toilet transfer.
+
+63
+00:05:35,264 --> 00:05:40,304
+Sit to stand and chair/bed-to-chair transfer are 01: dependent.
+
+64
+00:05:40,344 --> 00:05:43,828
+Toilet transfer is 88: not attempted.
+
+65
+00:05:44,085 --> 00:05:50,025
+Remember the scale at the top: 06 means independent, with no help from a helper.
+
+66
+00:05:50,723 --> 00:05:55,511
+Any other code means the patient needs assistance. So check Transferring.
+
+67
+00:05:58,852 --> 00:06:02,573
+Now every activity the patient needs help with is checked.
+
+68
+00:06:02,823 --> 00:06:08,296
+Skip the next question: What instrumental activities of daily living (IADLs)
+
+69
+00:06:08,336 --> 00:06:11,810
+do you currently require assistance with?
+
+70
+00:06:13,119 --> 00:06:17,928
+Next: Do you have a history of falling, or feeling unsteady while walking?
+
+71
+00:06:24,191 --> 00:06:27,656
+Answer it from the MDS. Search for fall.
+
+72
+00:06:27,906 --> 00:06:31,051
+Step through the matches to J1800.
+
+73
+00:06:31,301 --> 00:06:38,393
+It asks: Has the resident had any falls since admission, entry or reentry, or the prior assessment?
+
+74
+00:06:38,643 --> 00:06:44,071
+0 means No, and 1 means Yes. Here, the code is 0: no falls.
+
+75
+00:06:48,104 --> 00:06:49,704
+So answer No.
+
+76
+00:06:52,252 --> 00:06:55,163
+Next: Do you have any problems with pain?
+
+77
+00:06:55,413 --> 00:07:06,174
+There are three answers: No, I do not experience pain routinely. Yes, my pain is currently adequately managed. And yes, my pain is currently unmanaged.
+
+78
+00:07:06,424 --> 00:07:10,444
+Answer it from the patient's pain scores, in PointClickCare.
+
+79
+00:07:10,831 --> 00:07:15,439
+The patient's banner shows the latest pain score. Here, it's zero.
+
+80
+00:07:25,052 --> 00:07:29,243
+But one score isn't enough. You need the history of the pain scores.
+
+81
+00:07:29,499 --> 00:07:31,919
+Open the Weights and Vitals tab.
+
+82
+00:07:36,052 --> 00:07:38,782
+Find Pain Level, and click view all.
+
+83
+00:07:40,719 --> 00:07:45,635
+The Pain Level Summary lists every pain score from the last 90 days.
+
+84
+00:07:45,886 --> 00:07:51,143
+Here, almost every reading is zero. The patient doesn't have pain routinely.
+
+85
+00:07:52,454 --> 00:07:56,645
+So answer: No, I do not experience pain routinely.
+
+86
+00:07:58,086 --> 00:08:00,911
+What if the pain scores aren't always zero?
+
+87
+00:08:01,286 --> 00:08:07,290
+If they go up and down, for example five, seven, eight, or nine, the patient has pain.
+
+88
+00:08:07,552 --> 00:08:15,028
+Then choose between: Yes, my pain is currently adequately managed, and Yes, my pain is currently unmanaged.
+
+89
+00:08:16,352 --> 00:08:19,263
+To decide, go back to the MDS.
+
+90
+00:08:19,520 --> 00:08:24,287
+Search for pain, and find J0100: Pain Management.
+
+91
+00:08:27,152 --> 00:08:34,436
+It asks whether, at any time in the last five days, the patient received a scheduled pain medication regimen,
+
+92
+00:08:34,686 --> 00:08:40,690
+received PRN (as-needed) pain medication, or was offered and declined it,
+
+93
+00:08:40,940 --> 00:08:46,133
+or received a non-medication intervention for pain, such as physical therapy.
+
+94
+00:08:46,383 --> 00:08:49,894
+For each one, 1 means Yes, and 0 means No.
+
+95
+00:08:50,152 --> 00:08:55,623
+If any of the three is yes, choose: Yes, my pain is currently adequately managed.
+
+96
+00:08:55,873 --> 00:09:00,469
+If all three are no, choose: Yes, my pain is currently unmanaged.
+
+97
+00:09:00,719 --> 00:09:03,815
+For this patient, scheduled pain medication is 1.
+
+98
+00:09:03,855 --> 00:09:08,514
+So if the patient had pain, it would count as adequately managed.
+
+99
+00:09:08,764 --> 00:09:13,317
+But the pain scores show no routine pain, so the answer stays No.
+
+100
+00:09:14,619 --> 00:09:19,190
+Skip the next question: Do you have a good understanding of your health conditions,
+
+101
+00:09:19,230 --> 00:09:23,396
+including when to seek additional help from a healthcare provider?
+
+102
+00:09:23,659 --> 00:09:27,974
+For Do you have life planning documents in place?, always answer Yes.
+
+103
+00:09:28,224 --> 00:09:32,175
+These patients always have life planning documents in place.
+
+104
+00:09:35,986 --> 00:09:41,212
+The next question, What is your recommended diet?, is the last one you answer here.
+
+105
+00:09:41,462 --> 00:09:47,935
+The assessment's sections are listed on the left. After this question, you'll move on to the next section.
+
+106
+00:09:59,552 --> 00:10:04,361
+To find the patient's diet, open the patient's page in PointClickCare.
+
+107
+00:10:10,762 --> 00:10:14,675
+Click Expanded, at the top right of the patient's details.
+
+108
+00:10:15,086 --> 00:10:19,481
+The expanded view shows more about the patient, including the diet.
+
+109
+00:10:22,819 --> 00:10:28,518
+This patient's diet is NAS/LCS: no added salt and low concentrated sweets,
+
+110
+00:10:28,558 --> 00:10:33,090
+with regular texture and regular (thin) consistency.
+
+111
+00:10:38,719 --> 00:10:41,950
+In ThoroughCare, find the options that match.
+
+112
+00:10:42,200 --> 00:10:47,649
+Why would a patient be on low concentrated sweets? Because it's a diabetic diet.
+
+113
+00:10:47,916 --> 00:10:50,162
+So check Diabetic diet.
+
+114
+00:10:53,186 --> 00:10:56,633
+And no added salt means a low sodium diet.
+
+115
+00:10:56,883 --> 00:10:59,367
+So check Low sodium diet too.
+
+116
+00:11:00,512 --> 00:11:08,457
+If the patient eats a regular diet, with regular texture and consistency, and no restrictions, choose Other diet.
+
+117
+00:11:09,786 --> 00:11:14,275
+That's the last question you answer. Skip the rest of the questionnaire.
+
+118
+00:11:14,525 --> 00:11:20,273
+Skip the Goals section too, and the same goes for Barriers, Symptoms, and Interventions.
+
+119
+00:11:20,523 --> 00:11:23,359
+The next section you complete is Support.
+
+120
+00:11:24,786 --> 00:11:26,310
+Let's recap.
+
+121
+00:11:26,510 --> 00:11:34,413
+Skip the first question. Answer the ADL question from the latest MDS, printed as the MDS Form.
+
+122
+00:11:34,613 --> 00:11:42,025
+06 means independent. Any other code means the patient needs assistance, so check that activity.
+
+123
+00:11:42,225 --> 00:11:48,976
+Here, walking, feeding, toileting, bathing, grooming, dressing, and transferring all need assistance.
+
+124
+00:11:49,176 --> 00:11:55,671
+Skip instrumental activities. Answer falls from J1800 in the MDS.
+
+125
+00:11:55,871 --> 00:12:03,859
+Answer pain from the pain history in Weights and Vitals, and use J0100 to tell managed from unmanaged.
+
+126
+00:12:04,059 --> 00:12:10,426
+Always answer Yes for life planning, and match the diet from the expanded view in PointClickCare.
+
+127
+00:12:12,626 --> 00:12:15,698
+That's part two. The questionnaire is done.
+
+128
+00:12:15,898 --> 00:12:21,731
+In part three, you add the patient's providers and support contacts in the Support section.

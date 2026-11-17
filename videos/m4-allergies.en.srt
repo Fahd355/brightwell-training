@@ -1,0 +1,223 @@
+1
+00:00:01,500 --> 00:00:03,641
+Part four: Allergies.
+
+2
+00:00:03,841 --> 00:00:09,339
+The patient's allergies in ThoroughCare must be exactly the same as in PointClickCare.
+
+3
+00:00:09,379 --> 00:00:11,424
+You add them one by one.
+
+4
+00:00:13,324 --> 00:00:17,941
+Each allergy in PointClickCare becomes one entry in ThoroughCare.
+
+5
+00:00:18,241 --> 00:00:20,634
+The allergen goes in Substance.
+
+6
+00:00:20,934 --> 00:00:23,994
+A category of Drug becomes medication.
+
+7
+00:00:24,294 --> 00:00:30,213
+The date goes in Date Identified, and any reaction manifestation goes in Reaction.
+
+8
+00:00:30,513 --> 00:00:34,127
+And you check Critical only when the severity is Severe.
+
+9
+00:00:36,127 --> 00:00:39,123
+In the assessment menu, open Allergies.
+
+10
+00:00:39,373 --> 00:00:42,718
+The first question is: Do you have any allergies?
+
+11
+00:00:42,968 --> 00:00:51,553
+There are three options: Select from pre-defined list, which is recommended. Does not have any allergies. And Enter as free text.
+
+12
+00:00:51,818 --> 00:00:56,393
+This patient has allergies, so choose Select from pre-defined list.
+
+13
+00:00:56,643 --> 00:01:03,671
+A table opens: Let's list everything that you're allergic to. You'll add the allergies to it, one by one.
+
+14
+00:01:04,994 --> 00:01:07,030
+Switch to PointClickCare.
+
+15
+00:01:07,288 --> 00:01:13,153
+The patient's banner lists the allergies, but you need the details. Open the Allergies tab.
+
+16
+00:01:16,260 --> 00:01:23,800
+Every allergy is listed here, with its allergen, type, category, reaction manifestation, severity, and date.
+
+17
+00:01:24,050 --> 00:01:35,259
+This patient has seven: COVID-19 Adenovirus vaccine, insulin lispro, penicillin, MiraLax, statins, sulfa antibiotics, and Flagyl.
+
+18
+00:01:35,509 --> 00:01:38,633
+Each one needs its own entry in ThoroughCare.
+
+19
+00:01:39,960 --> 00:01:42,760
+Back in ThoroughCare, click New Allergy.
+
+20
+00:01:43,010 --> 00:01:49,782
+The Add/Edit Allergy window opens. It has Category, Date Identified, Reaction, Substance,
+
+21
+00:01:49,822 --> 00:01:53,384
+and two checkboxes: Critical and Active.
+
+22
+00:01:55,360 --> 00:02:01,812
+In PointClickCare, start with the first allergy: COVID-19 (Adenovirus) Vaccine.
+
+23
+00:02:02,074 --> 00:02:04,153
+Copy the allergen's name.
+
+24
+00:02:04,403 --> 00:02:06,738
+Note the category: Drug.
+
+25
+00:02:07,115 --> 00:02:11,429
+And copy the date: 9/23/2025.
+
+26
+00:02:12,771 --> 00:02:19,070
+Back in ThoroughCare, click Substance, and open your clipboard history with Windows key + V.
+
+27
+00:02:19,860 --> 00:02:21,832
+Paste the allergy's name.
+
+28
+00:02:23,160 --> 00:02:29,783
+Open the Category list. The options are food, medication, environment, and biologic.
+
+29
+00:02:30,033 --> 00:02:32,898
+A vaccine might look like a biologic.
+
+30
+00:02:33,153 --> 00:02:37,698
+But always follow PointClickCare. There, the category is Drug.
+
+31
+00:02:37,949 --> 00:02:41,564
+Drug means medication. So choose medication.
+
+32
+00:02:44,927 --> 00:02:49,459
+Click Date Identified, and paste the date from your clipboard history.
+
+33
+00:02:49,709 --> 00:02:55,521
+The date is 09/23/2025, the same as in PointClickCare.
+
+34
+00:02:55,776 --> 00:02:58,872
+Then check Active. The allergy is current.
+
+35
+00:03:00,860 --> 00:03:05,499
+Next, Critical. In PointClickCare, check the allergy's severity.
+
+36
+00:03:05,760 --> 00:03:13,556
+Check Critical only when the severity is Severe. If it's unknown, low, or moderate, the allergy isn't critical.
+
+37
+00:03:13,819 --> 00:03:17,434
+This one is Unknown, so leave Critical unchecked.
+
+38
+00:03:20,327 --> 00:03:25,091
+Then Reaction. If PCC lists a reaction manifestation, copy it here.
+
+39
+00:03:25,131 --> 00:03:28,571
+This allergy has none, so leave it blank.
+
+40
+00:03:28,835 --> 00:03:30,279
+Click Save.
+
+41
+00:03:32,494 --> 00:03:41,673
+The allergy is added to the table: medication, active, not critical, identified on 09/23/2025.
+
+42
+00:03:41,927 --> 00:03:45,819
+Do the same for the rest of the allergies in PointClickCare.
+
+43
+00:03:46,069 --> 00:03:50,713
+For each one, click New Allergy, and fill in the details the same way.
+
+44
+00:03:50,963 --> 00:03:56,178
+When you're done, the list in ThoroughCare is identical to the list in PointClickCare.
+
+45
+00:03:56,428 --> 00:03:58,994
+That's all you do in the Allergies section.
+
+46
+00:04:00,327 --> 00:04:03,110
+One more thing about the first question.
+
+47
+00:04:03,360 --> 00:04:08,276
+You chose Select from pre-defined list because this patient has allergies.
+
+48
+00:04:08,538 --> 00:04:14,585
+If the patient doesn't have any allergies, choose the second option: Does not have any allergies.
+
+49
+00:04:14,835 --> 00:04:17,191
+Next, the Medications section.
+
+50
+00:04:18,594 --> 00:04:20,118
+Let's recap.
+
+51
+00:04:20,318 --> 00:04:26,087
+Choose Select from pre-defined list. In PointClickCare, open the Allergies tab.
+
+52
+00:04:26,287 --> 00:04:32,675
+For each allergy, click New Allergy, and add the substance, the category, and the date identified.
+
+53
+00:04:32,875 --> 00:04:38,708
+Check Active. Check Critical only if the severity is Severe, and copy any reaction.
+
+54
+00:04:38,908 --> 00:04:43,376
+If the patient has no allergies, choose Does not have any allergies.
+
+55
+00:04:45,576 --> 00:04:49,592
+That's part four. The allergy list matches PointClickCare.
+
+56
+00:04:49,792 --> 00:04:54,751
+In part five, you add the patient's medications from their pharmacy orders.

@@ -1,0 +1,287 @@
+1
+00:00:01,500 --> 00:00:07,056
+Part six: Numbers to Track. This is the last section of the initial assessment.
+
+2
+00:00:07,256 --> 00:00:14,177
+You record three numbers for the patient, copied from PointClickCare. Then you finalize the assessment.
+
+3
+00:00:16,077 --> 00:00:20,989
+You track the same three numbers for every patient, whatever their condition:
+
+4
+00:00:21,029 --> 00:00:24,294
+weight, blood pressure, and hemoglobin A1C.
+
+5
+00:00:24,594 --> 00:00:30,854
+Weight and blood pressure are vitals. Copy the latest value of each, with the date it was taken.
+
+6
+00:00:31,154 --> 00:00:35,792
+The A1C is a lab result. Look for it in three places, in this order:
+
+7
+00:00:35,832 --> 00:00:40,804
+the Results tab, the lab reports in Misc, and the progress notes.
+
+8
+00:00:41,104 --> 00:00:44,249
+If there's no A1C anywhere, don't add one.
+
+9
+00:00:46,256 --> 00:00:49,679
+In the assessment menu, open Numbers to Track.
+
+10
+00:00:49,929 --> 00:00:54,461
+It has two parts: vitals to track, and lab results to track.
+
+11
+00:00:55,782 --> 00:01:00,074
+Under vitals, check Weight. Today's date fills in next to it.
+
+12
+00:01:00,329 --> 00:01:02,396
+Check Blood Pressure too.
+
+13
+00:01:02,652 --> 00:01:06,779
+Then scroll down to the lab results, and check HgbA1C.
+
+14
+00:01:07,029 --> 00:01:12,073
+Those are the three numbers. Next, find their values in PointClickCare.
+
+15
+00:01:14,049 --> 00:01:18,154
+In PointClickCare, scroll to the top of the patient's page.
+
+16
+00:01:18,416 --> 00:01:22,798
+The banner shows the latest vitals, each with the date it was taken.
+
+17
+00:01:23,049 --> 00:01:28,819
+The latest blood pressure is 142/92, taken on October 8.
+
+18
+00:01:29,082 --> 00:01:33,175
+The latest weight is 206 pounds, from the same day.
+
+19
+00:01:33,432 --> 00:01:36,471
+Click a vital to see its history as a chart.
+
+20
+00:01:38,116 --> 00:01:41,901
+Back in ThoroughCare, type the weight: 206.
+
+21
+00:01:44,016 --> 00:01:50,105
+Its date filled in as today, October 8. That matches PointClickCare, so keep it.
+
+22
+00:01:50,355 --> 00:01:55,271
+In Blood Pressure, type the top number, 142, in systolic.
+
+23
+00:01:55,521 --> 00:01:58,257
+Then the bottom number in diastolic.
+
+24
+00:02:00,416 --> 00:02:05,055
+Check every value against PointClickCare before you move on.
+
+25
+00:02:05,095 --> 00:02:10,196
+PointClickCare shows 92, so diastolic should be 92, not 88.
+
+26
+00:02:10,446 --> 00:02:15,276
+The blood pressure was taken on the same day, so its date stays as it is.
+
+27
+00:02:16,582 --> 00:02:20,197
+HgbA1C is checked, but it still needs a value.
+
+28
+00:02:20,462 --> 00:02:23,842
+In PointClickCare, start with the Results tab.
+
+29
+00:02:24,092 --> 00:02:30,075
+It lists the patient's lab results. For this patient, it's empty: No Reports Found.
+
+30
+00:02:30,325 --> 00:02:35,796
+That's not a problem. Lab reports are often uploaded as documents instead.
+
+31
+00:02:43,971 --> 00:02:51,042
+Next, open the Misc tab. It holds the documents uploaded to the patient's chart, sorted by category.
+
+32
+00:02:51,292 --> 00:02:54,160
+Press Ctrl + F, and search for lab.
+
+33
+00:02:56,316 --> 00:03:00,976
+Under Laboratory, you'll find the patient's lab reports, newest first.
+
+34
+00:03:07,179 --> 00:03:11,818
+Open them one by one, and look for a hemoglobin A1C value.
+
+35
+00:03:17,816 --> 00:03:22,732
+This report shows a chemistry panel and a blood count. There's no A1C.
+
+36
+00:03:24,816 --> 00:03:28,132
+Check every page of the report before you move on.
+
+37
+00:03:33,416 --> 00:03:36,360
+The next report has no A1C either.
+
+38
+00:03:46,598 --> 00:03:51,279
+Skip reports that can't include an A1C, such as a urine culture.
+
+39
+00:04:00,382 --> 00:04:05,511
+This one also has a blood count and a metabolic panel, but no A1C.
+
+40
+00:04:08,416 --> 00:04:14,441
+Keep checking the reports until you find an A1C. If there isn't one anywhere, don't add it.
+
+41
+00:04:16,416 --> 00:04:20,197
+Here, neither the results nor the lab reports have an A1C.
+
+42
+00:04:20,237 --> 00:04:23,636
+So check the last place: the progress notes.
+
+43
+00:04:23,886 --> 00:04:28,024
+They hold the details of every visit, including lab values.
+
+44
+00:04:28,274 --> 00:04:30,417
+Click the Prog Notes tab.
+
+45
+00:04:31,516 --> 00:04:34,981
+The patient's progress notes open, newest first.
+
+46
+00:04:41,910 --> 00:04:43,679
+Then click View All.
+
+47
+00:04:44,819 --> 00:04:50,311
+View All lists notes from a short time period only. To cover more, click Custom.
+
+48
+00:04:50,908 --> 00:04:53,008
+Check Effective Date Range.
+
+49
+00:04:53,653 --> 00:04:58,441
+Set the start date one year back, here 10/7/2025.
+
+50
+00:04:58,691 --> 00:05:00,919
+Keep today as the end date.
+
+51
+00:05:01,169 --> 00:05:02,821
+Then click Save.
+
+52
+00:05:08,516 --> 00:05:14,328
+Now the notes from the past year are listed. Press Ctrl + F, and search for A1C.
+
+53
+00:05:16,082 --> 00:05:23,665
+The first match is A1C q3m: a plan to check the A1C every three months. That's not a result.
+
+54
+00:05:23,916 --> 00:05:29,161
+Go to the next match. A hospital summary mentions HbA1c 7.0%,
+
+55
+00:05:29,201 --> 00:05:32,907
+but without the date it was measured.
+
+56
+00:05:38,816 --> 00:05:48,020
+Keep going. This match has both a value and a date: Glyco HbA1c (07/04/2026): 7.0.
+
+57
+00:05:48,270 --> 00:05:51,952
+That's what you need: the value, and the date it was measured.
+
+58
+00:05:53,288 --> 00:05:57,729
+Back in ThoroughCare, type the A1C value: 7.0.
+
+59
+00:05:57,979 --> 00:06:02,212
+Its date filled in as today. Change it to the date it was measured.
+
+60
+00:06:02,462 --> 00:06:06,887
+Use the calendar's arrows to go back to July, and pick the fourth.
+
+61
+00:06:07,137 --> 00:06:10,858
+The date now reads 07/04/2026.
+
+62
+00:06:12,382 --> 00:06:16,850
+That's all three numbers, and every section of the initial assessment.
+
+63
+00:06:17,100 --> 00:06:23,040
+To finish, click Finalize Incomplete. This marks the initial assessment as complete.
+
+64
+00:06:24,940 --> 00:06:26,464
+Let's recap.
+
+65
+00:06:26,664 --> 00:06:31,729
+Open Numbers to Track, and check Weight, Blood Pressure, and HgbA1C.
+
+66
+00:06:31,929 --> 00:06:36,187
+Copy the latest weight and blood pressure from the banner in PointClickCare,
+
+67
+00:06:36,227 --> 00:06:38,424
+and check each value and date.
+
+68
+00:06:38,624 --> 00:06:44,905
+For the A1C, look in the Results tab, then the lab reports in Misc, then the progress notes.
+
+69
+00:06:45,105 --> 00:06:49,914
+Search the notes for A1C, and enter the value with the date it was measured.
+
+70
+00:06:50,114 --> 00:06:52,555
+Then click Finalize Incomplete.
+
+71
+00:06:54,755 --> 00:06:58,281
+That's part six, and the end of lesson 4.2.
+
+72
+00:06:58,481 --> 00:07:03,717
+The patient is enrolled in CCM, and the initial assessment is complete.

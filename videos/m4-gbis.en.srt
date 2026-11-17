@@ -1,0 +1,551 @@
+1
+00:00:01,500 --> 00:00:05,319
+Lesson 4.5: GBIs and Problem Note.
+
+2
+00:00:09,800 --> 00:00:14,160
+For a scratch patient, the last piece of work in ThoroughCare is the care plan,
+
+3
+00:00:14,200 --> 00:00:18,288
+and the problem note we formulated in PointClickCare.
+
+4
+00:00:18,338 --> 00:00:20,200
+The care plan rests on three parts,
+
+5
+00:00:20,240 --> 00:00:25,212
+often called the GBIs: goals, barriers and interventions.
+
+6
+00:00:25,262 --> 00:00:27,294
+Goals describe what we want to achieve,
+
+7
+00:00:27,334 --> 00:00:33,483
+as SMART goals that fit the condition and the patient. Every patient gets at least two.
+
+8
+00:00:33,533 --> 00:00:35,521
+Barriers explain what could get in the way:
+
+9
+00:00:35,561 --> 00:00:39,583
+at least two linked to the condition, and two general ones.
+
+10
+00:00:39,633 --> 00:00:45,495
+And interventions are the care manager actions that move the goals forward and tackle the barriers.
+
+11
+00:00:45,535 --> 00:00:47,670
+Again, at least two.
+
+12
+00:00:49,833 --> 00:00:52,830
+All of this work happens under the Care Management tab,
+
+13
+00:00:52,870 --> 00:00:55,652
+where the care plan is split into subtabs.
+
+14
+00:00:55,702 --> 00:00:59,901
+The clinical review is already done, so our next stop is Problems.
+
+15
+00:01:02,633 --> 00:01:06,660
+ThoroughCare has already created two problems from the data we entered:
+
+16
+00:01:06,700 --> 00:01:09,700
+hyperlipidemia, and gaps in care.
+
+17
+00:01:10,633 --> 00:01:12,466
+We don't use these condition templates,
+
+18
+00:01:12,506 --> 00:01:15,744
+so we cancel both and keep the care plan clean.
+
+19
+00:01:20,400 --> 00:01:21,863
+Opening hyperlipidemia
+
+20
+00:01:21,903 --> 00:01:26,489
+and scrolling to the bottom of the page brings us to the Cancel button.
+
+21
+00:01:26,539 --> 00:01:30,930
+Cancelling removes the problem, and gaps in care goes the same way.
+
+22
+00:01:35,233 --> 00:01:40,193
+Now the Problems section is empty, ready for the care plan we actually use.
+
+23
+00:01:42,520 --> 00:01:46,043
+Clicking the plus button opens the Add Problem window.
+
+24
+00:01:51,967 --> 00:01:56,225
+We use one fixed template for every patient: SNF Care Plan,
+
+25
+00:01:56,265 --> 00:02:00,581
+because all our patients live in skilled nursing facilities.
+
+26
+00:02:01,533 --> 00:02:05,252
+The first two sections, desired outcomes and long-term goals,
+
+27
+00:02:05,292 --> 00:02:07,593
+stay empty. We skip them.
+
+28
+00:02:14,167 --> 00:02:17,465
+The three sections that follow are the heart of the care plan:
+
+29
+00:02:17,505 --> 00:02:20,853
+SMART goals, interventions, and barriers.
+
+30
+00:02:23,233 --> 00:02:26,092
+SMART goals have to fit two things: the condition,
+
+31
+00:02:26,132 --> 00:02:30,720
+here hyperlipidemia, and the patient's actual situation.
+
+32
+00:02:31,867 --> 00:02:34,774
+To see which goals fit, we turn to the Care Policy.
+
+33
+00:02:34,814 --> 00:02:40,758
+Its Conditions Guide lists goals, barriers and interventions for each condition.
+
+34
+00:02:43,467 --> 00:02:45,435
+Each goal comes with a reason to choose it.
+
+35
+00:02:45,475 --> 00:02:53,232
+Exercise goals suit a patient who is physically inactive, with no physical or occupational therapy.
+
+36
+00:02:53,282 --> 00:02:56,629
+A blood pressure goal fits when blood pressure is uncontrolled:
+
+37
+00:02:56,669 --> 00:03:04,438
+systolic above 140 or below 90, or diastolic above 90 or below 60.
+
+38
+00:03:04,500 --> 00:03:06,694
+Hemoglobin A1C works the same way.
+
+39
+00:03:06,734 --> 00:03:12,114
+Say the latest A1C was 10.5, drawn on October 1.
+
+40
+00:03:12,167 --> 00:03:16,885
+We check A1C every three months, so the next recheck falls on January 1,
+
+41
+00:03:16,925 --> 00:03:21,432
+and the goal is a better value by then, maybe 7 or 8.
+
+42
+00:03:21,482 --> 00:03:27,999
+Cholesterol, LDL, blood sugar, triglycerides and HDL goals follow the same logic,
+
+43
+00:03:28,039 --> 00:03:31,386
+whenever the last reading was out of range.
+
+44
+00:03:31,436 --> 00:03:35,933
+After comparing the list with the patient's data, we pick at least two goals.
+
+45
+00:03:44,167 --> 00:03:45,311
+Back in ThoroughCare,
+
+46
+00:03:45,351 --> 00:03:50,552
+typing hemoglobin into the New SMART Goal field brings up the matching goals.
+
+47
+00:03:50,602 --> 00:03:52,956
+Here is the one we found in the Care Policy:
+
+48
+00:03:52,996 --> 00:03:58,765
+lower my hemoglobin A1C to less than a target percent, by next recheck.
+
+49
+00:04:03,600 --> 00:04:06,317
+Filling in the blanks turns it into this patient's goal:
+
+50
+00:04:06,356 --> 00:04:11,127
+below 9 percent, by January 1, 2027.
+
+51
+00:04:11,177 --> 00:04:15,741
+Every patient needs at least two goals, so a second one follows the same method,
+
+52
+00:04:15,781 --> 00:04:19,134
+matched to what the patient actually needs.
+
+53
+00:04:20,000 --> 00:04:23,013
+We'll come back to interventions. Barriers come first,
+
+54
+00:04:23,053 --> 00:04:28,166
+because they shape what we do: what could prevent us from resolving this problem?
+
+55
+00:04:35,667 --> 00:04:38,886
+The Conditions Guide lists the barriers for each condition,
+
+56
+00:04:38,926 --> 00:04:41,203
+right beside the SMART goals.
+
+57
+00:04:41,267 --> 00:04:45,393
+Each one is checked against the patient's data. Diet adherence issues,
+
+58
+00:04:45,433 --> 00:04:49,499
+for example, came up while we formulated the problem note.
+
+59
+00:04:49,549 --> 00:04:52,363
+Current tobacco use shows up in the progress notes,
+
+60
+00:04:52,403 --> 00:04:56,832
+with searches like tobacco, cigarettes, smoking or smoker.
+
+61
+00:04:56,882 --> 00:05:00,996
+Physical inactivity applies when the patient isn't in any therapy,
+
+62
+00:05:01,036 --> 00:05:03,440
+physical or occupational.
+
+63
+00:05:03,500 --> 00:05:08,676
+A knowledge deficit about self-monitoring fits a patient who refuses monitoring,
+
+64
+00:05:08,716 --> 00:05:12,594
+so vitals like blood pressure aren't checked regularly.
+
+65
+00:05:12,644 --> 00:05:17,725
+Medication adherence issues come straight from the adherence check we already did.
+
+66
+00:05:17,775 --> 00:05:22,496
+And an unmanaged comorbid condition means another condition isn't controlled,
+
+67
+00:05:22,536 --> 00:05:25,691
+like diabetes with a high A1C.
+
+68
+00:05:25,741 --> 00:05:28,986
+We pick at least two of these condition-specific barriers.
+
+69
+00:05:35,933 --> 00:05:36,830
+In ThoroughCare,
+
+70
+00:05:36,870 --> 00:05:42,127
+checking Diet adherence issues and Physical inactivity adds them as barriers.
+
+71
+00:05:44,300 --> 00:05:46,850
+Then come at least two general barriers from this list,
+
+72
+00:05:46,890 --> 00:05:49,415
+whichever apply to the patient.
+
+73
+00:05:51,067 --> 00:05:55,445
+Impaired mobility, for instance, rests on the walking items we reviewed,
+
+74
+00:05:55,485 --> 00:05:59,955
+10, 50 and 150 feet, and on the MDS.
+
+75
+00:06:04,767 --> 00:06:08,934
+Altered cognitive function is verified in the MDS as well,
+
+76
+00:06:08,974 --> 00:06:15,431
+so we open the MDS tab in PointClickCare and its latest completed assessment.
+
+77
+00:06:21,333 --> 00:06:24,488
+The MDS covers the patient's basic functions:
+
+78
+00:06:24,528 --> 00:06:28,500
+mobility, activities of daily living, and cognition.
+
+79
+00:06:30,167 --> 00:06:32,760
+For cognition, every patient takes the BIMS,
+
+80
+00:06:32,800 --> 00:06:35,511
+the Brief Interview for Mental Status.
+
+81
+00:06:35,567 --> 00:06:38,306
+It asks about time and place, short-term memory,
+
+82
+00:06:38,346 --> 00:06:42,919
+and recalling new information, and gives a score out of 15.
+
+83
+00:06:42,969 --> 00:06:45,810
+13 to 15 means cognition is intact.
+
+84
+00:06:45,850 --> 00:06:51,806
+8 to 12 points to a moderate decline, and 7 or below to a severe one.
+
+85
+00:06:51,867 --> 00:06:54,567
+This patient scored 9, a moderate decline,
+
+86
+00:06:54,607 --> 00:06:58,505
+so altered cognitive function is a fitting barrier.
+
+87
+00:07:02,233 --> 00:07:07,945
+Behavioral health issues apply when the patient has an active psychiatric diagnosis,
+
+88
+00:07:07,985 --> 00:07:13,100
+such as depression, anxiety, schizophrenia or bipolar disorder.
+
+89
+00:07:17,433 --> 00:07:20,218
+The MED DIAG tab in PointClickCare answers that.
+
+90
+00:07:20,258 --> 00:07:24,458
+This patient has depression, so it joins the barriers.
+
+91
+00:07:29,300 --> 00:07:31,448
+By now, the plan has at least two goals,
+
+92
+00:07:31,488 --> 00:07:35,145
+two barriers for the condition, and two general ones.
+
+93
+00:07:41,233 --> 00:07:43,017
+Interventions answer the question:
+
+94
+00:07:43,057 --> 00:07:48,125
+how do we achieve those goals? They build on the goals and barriers we just set.
+
+95
+00:07:53,300 --> 00:07:56,763
+The section has three tabs and opens on Patient Actions,
+
+96
+00:07:56,803 --> 00:08:01,352
+which we don't use. Care Manager Actions is the one we need.
+
+97
+00:08:01,402 --> 00:08:05,767
+It offers 11 ready-made care manager actions to choose from.
+
+98
+00:08:09,033 --> 00:08:13,173
+The Care Policy also lists care manager actions for each condition,
+
+99
+00:08:13,213 --> 00:08:15,559
+next to its goals and barriers.
+
+100
+00:08:19,333 --> 00:08:22,263
+They're picked to match the barriers. An active smoker,
+
+101
+00:08:22,303 --> 00:08:26,497
+for example, calls for smoking cessation education.
+
+102
+00:08:26,547 --> 00:08:31,534
+An uncontrolled lipid profile calls for education on the types of cholesterol
+
+103
+00:08:31,574 --> 00:08:33,416
+and their goal levels.
+
+104
+00:08:33,467 --> 00:08:38,039
+And diet adherence issues call for reviewing foods high in cholesterol to avoid
+
+105
+00:08:38,079 --> 00:08:39,665
+or limit.
+
+106
+00:08:43,433 --> 00:08:44,578
+Back in ThoroughCare,
+
+107
+00:08:44,618 --> 00:08:48,738
+searching for smoking cessation adds that action to the plan.
+
+108
+00:08:52,167 --> 00:08:55,999
+Reviewing foods high in cholesterol goes in the same way.
+
+109
+00:09:00,300 --> 00:09:05,240
+Actions from the predefined list can join too, whenever they fit the patient.
+
+110
+00:09:06,567 --> 00:09:09,177
+Before saving, the second SMART goal goes in:
+
+111
+00:09:09,217 --> 00:09:12,673
+exercise, 60 minutes, 3 days a week.
+
+112
+00:09:14,867 --> 00:09:17,959
+The rule for every patient: at least two SMART goals,
+
+113
+00:09:17,999 --> 00:09:21,574
+two care manager actions, and two barriers.
+
+114
+00:09:24,272 --> 00:09:28,535
+With all three in place, saving creates the SNF care plan.
+
+115
+00:09:31,567 --> 00:09:34,637
+The SNF Care Plan now sits under Problems.
+
+116
+00:09:34,677 --> 00:09:39,529
+Opening it shows the goals, interventions and barriers we chose.
+
+117
+00:09:44,133 --> 00:09:46,434
+At the bottom is the Problem Notes box:
+
+118
+00:09:46,474 --> 00:09:51,244
+this is where the problem note we formulated from PointClickCare goes.
+
+119
+00:09:56,933 --> 00:09:59,271
+Before saving, it's worth a careful read:
+
+120
+00:09:59,311 --> 00:10:02,911
+no inaccuracies, and no text that doesn't belong.
+
+121
+00:10:05,633 --> 00:10:07,384
+Gaps in care should read clearly,
+
+122
+00:10:07,424 --> 00:10:10,684
+so anyone can understand exactly what happened.
+
+123
+00:10:10,734 --> 00:10:14,781
+A gap about spirometry testing for COPD, for example,
+
+124
+00:10:14,821 --> 00:10:18,920
+tells the reader the patient hasn't had a spirometry test.
+
+125
+00:10:22,167 --> 00:10:26,477
+Every relevant section should be there, including patient education.
+
+126
+00:10:28,133 --> 00:10:35,555
+And the note always ends with our fixed sentence: this care plan has been reviewed and shared with the facility's medical team,
+
+127
+00:10:35,595 --> 00:10:40,591
+nursing staff, and any direct caregiver involved in the patient's care.
+
+128
+00:10:47,033 --> 00:10:50,028
+Saving posts the note under Previous Updates.
+
+129
+00:10:51,933 --> 00:10:55,610
+If something needs fixing later, the edit button reopens the note,
+
+130
+00:10:55,650 --> 00:10:58,414
+so we can correct it and save again.
+
+131
+00:11:03,233 --> 00:11:08,748
+To wrap up: we cancelled the suggested problems and added the SNF Care Plan.
+
+132
+00:11:08,798 --> 00:11:13,879
+We chose at least two SMART goals that fit both the condition and the patient.
+
+133
+00:11:13,929 --> 00:11:17,584
+We added two barriers linked to the condition and two general ones,
+
+134
+00:11:17,624 --> 00:11:20,205
+each backed by the patient's data.
+
+135
+00:11:20,255 --> 00:11:23,969
+We picked at least two care manager actions that answer those goals
+
+136
+00:11:24,009 --> 00:11:25,306
+and barriers.
+
+137
+00:11:25,356 --> 00:11:29,124
+And we added the problem note, read it carefully, and saved it.
+
+138
+00:11:31,267 --> 00:11:35,728
+Next, we log the encounter time and export the encounter file.

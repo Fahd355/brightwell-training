@@ -1,0 +1,331 @@
+1
+00:00:01,500 --> 00:00:07,077
+Welcome to lesson 4.2 of the Brightwell CCM technical training.
+
+2
+00:00:07,277 --> 00:00:12,963
+It has six parts. In part one, you enroll a scratch patient in Chronic Care Management,
+
+3
+00:00:13,003 --> 00:00:17,057
+record their consent, and open the initial assessment.
+
+4
+00:00:18,957 --> 00:00:21,932
+Here's what you've done so far for this patient.
+
+5
+00:00:22,232 --> 00:00:26,977
+You received the patient task, and its type is scratch: a new patient.
+
+6
+00:00:27,277 --> 00:00:31,370
+You found the patient in PointClickCare, and checked eligibility:
+
+7
+00:00:31,410 --> 00:00:34,326
+the patient is active in the facility.
+
+8
+00:00:34,626 --> 00:00:37,602
+You used the ICD-10 code to find the condition,
+
+9
+00:00:37,642 --> 00:00:43,019
+and made sure it's eligible, and that the patient takes a medication for it.
+
+10
+00:00:43,319 --> 00:00:47,382
+You wrote the problem note, the template for the patient's care plan.
+
+11
+00:00:47,682 --> 00:00:53,905
+And because this is a scratch patient, you created the patient's profile in ThoroughCare, from scratch.
+
+12
+00:00:54,205 --> 00:00:57,052
+A scratch patient needs one more job.
+
+13
+00:00:57,352 --> 00:01:03,911
+You enroll the patient in CCM, record their consent, and add their CCM condition.
+
+14
+00:01:04,211 --> 00:01:08,743
+Then you complete the initial assessment, which parts two to six cover.
+
+15
+00:01:12,043 --> 00:01:17,620
+When you open the patient's profile in ThoroughCare, you see many tabs across the page.
+
+16
+00:01:17,870 --> 00:01:22,743
+You do all of your work in two of them: Clinical Data, and Care Management.
+
+17
+00:01:22,993 --> 00:01:28,784
+Clinical Data holds the patient's clinical lists, such as conditions and allergies.
+
+18
+00:01:29,047 --> 00:01:33,003
+Enrollment starts in the other one. Click Care Management.
+
+19
+00:01:34,376 --> 00:01:39,505
+Care Management opens on the CCM tab, for Chronic Care Management.
+
+20
+00:01:39,755 --> 00:01:43,306
+This is where you work with the patient's CCM program.
+
+21
+00:01:44,613 --> 00:01:48,356
+Scroll down the CCM tab to Program Setup.
+
+22
+00:01:54,110 --> 00:01:58,621
+Here is Enrollment And Consent. Its status is Not Enrolled.
+
+23
+00:01:58,871 --> 00:02:05,131
+Assign Care Team already has a check mark, with the care manager and provider from the profile.
+
+24
+00:02:05,381 --> 00:02:11,406
+Enrollment and consent is a first-time step. You do it only once, for a scratch patient.
+
+25
+00:02:11,656 --> 00:02:16,807
+Once the patient is enrolled, they're a follow-up patient, and you don't repeat it.
+
+26
+00:02:17,057 --> 00:02:19,285
+Click Enrollment And Consent.
+
+27
+00:02:20,643 --> 00:02:26,668
+The CCM Enrollment Status window opens. The current status is Not Enrolled.
+
+28
+00:02:26,928 --> 00:02:30,201
+Click the box under Change enrollment status to.
+
+29
+00:02:30,451 --> 00:02:37,976
+The list has one active status, Active, and inactive ones, such as Considering, Decline, and Ineligible.
+
+30
+00:02:38,226 --> 00:02:41,521
+This patient is active, so select Active.
+
+31
+00:02:42,876 --> 00:02:48,368
+Below are five statements, under Patients must consent and agree to the following.
+
+32
+00:02:48,624 --> 00:02:52,606
+The patient must agree to all five, so check every box.
+
+33
+00:02:52,861 --> 00:03:00,716
+Patient agrees to participate in CCM & PCM. Patient understands that there may be a copay,
+
+34
+00:03:00,756 --> 00:03:04,326
+and that they can cancel CCM & PCM.
+
+35
+00:03:04,910 --> 00:03:12,749
+Information can be shared with other providers, and only one practitioner can bill for CCM & PCM.
+
+36
+00:03:13,013 --> 00:03:15,570
+For Consent method, choose Verbal.
+
+37
+00:03:16,710 --> 00:03:22,351
+Updated by and Start Date are filled in for you, and Patient is Billable stays checked.
+
+38
+00:03:22,601 --> 00:03:24,253
+Then click Save.
+
+39
+00:03:25,576 --> 00:03:30,492
+Enrollment And Consent now has a check mark, and its status is Active.
+
+40
+00:03:30,743 --> 00:03:37,963
+Next, the Edit Patient Conditions window opens. Here you add the condition the patient is enrolled for.
+
+41
+00:03:38,213 --> 00:03:45,156
+Use the condition you confirmed in PointClickCare. For this patient, it's I10: hypertension.
+
+42
+00:03:45,415 --> 00:03:47,243
+Click Add condition.
+
+43
+00:03:47,493 --> 00:03:52,537
+A list of conditions opens. Type the first letters, hyper, to filter it.
+
+44
+00:03:52,792 --> 00:03:54,977
+Then select Hypertension.
+
+45
+00:03:57,343 --> 00:04:00,851
+Hypertension is now on the list of conditions.
+
+46
+00:04:01,101 --> 00:04:05,872
+Because it's the only chronic condition, a note says the patient's care
+
+47
+00:04:05,912 --> 00:04:10,817
+will be managed under Principal Care Management (PCM) guidelines.
+
+48
+00:04:11,067 --> 00:04:15,215
+Under Programs, make sure the condition is set to CCM.
+
+49
+00:04:16,543 --> 00:04:21,950
+Next, under Diagnosis Code, add the ICD-10 code for the condition.
+
+50
+00:04:22,200 --> 00:04:27,607
+Use the exact code from PointClickCare. Some conditions have several codes.
+
+51
+00:04:27,857 --> 00:04:34,544
+Type 2 diabetes, for example, can be E11.22 or E11.40.
+
+52
+00:04:34,794 --> 00:04:37,491
+Click Add From Diagnosis History.
+
+53
+00:04:39,610 --> 00:04:46,169
+The list shows codes commonly used for hypertension. If the patient's code is there, select it.
+
+54
+00:04:46,419 --> 00:04:48,839
+Scroll the list to see more codes.
+
+55
+00:04:49,788 --> 00:04:52,635
+If the code isn't listed, click Add New.
+
+56
+00:04:52,885 --> 00:04:55,924
+Search for the code. Here, type I10.
+
+57
+00:04:57,525 --> 00:04:59,902
+Select the code, and click Save.
+
+58
+00:05:01,076 --> 00:05:07,336
+The code now appears next to the condition: I10 - Essential (primary) hypertension.
+
+59
+00:05:08,643 --> 00:05:10,490
+Click Save and Close.
+
+60
+00:05:11,610 --> 00:05:17,123
+The window closes, and the CCM tab now shows the Initial Monthly Workflow.
+
+61
+00:05:17,373 --> 00:05:24,849
+So far, the patient is enrolled, consent is recorded, and the CCM condition and its code are added.
+
+62
+00:05:25,109 --> 00:05:27,721
+Scroll up to check the top of the tab.
+
+63
+00:05:28,210 --> 00:05:31,419
+CCM now has a check mark next to it.
+
+64
+00:05:31,683 --> 00:05:36,578
+Under CCM Conditions, you see Hypertension, with code I10.
+
+65
+00:05:36,828 --> 00:05:43,125
+And under Program Status, Chronic Care Management and Principal Care Management are now Active.
+
+66
+00:05:44,443 --> 00:05:47,930
+Scroll back down to the Initial Monthly Workflow.
+
+67
+00:05:48,180 --> 00:05:54,634
+For a scratch patient, there's one more first-time task: the Initial Patient-Centered Care Plan.
+
+68
+00:05:54,884 --> 00:05:59,203
+It's a short assessment that you do once, when the patient is enrolled.
+
+69
+00:05:59,457 --> 00:06:02,368
+Click Initial Patient-Centered Care Plan.
+
+70
+00:06:03,710 --> 00:06:09,735
+A window opens, to choose the chronic conditions managed under the CCM program.
+
+71
+00:06:09,985 --> 00:06:14,133
+It notes that ICD-10 codes aren't required to begin a care plan,
+
+72
+00:06:14,173 --> 00:06:18,272
+but they must be added before any claims are submitted.
+
+73
+00:06:18,522 --> 00:06:23,822
+Check that the condition is right, the code is right, and the program is CCM.
+
+74
+00:06:24,072 --> 00:06:26,705
+Then click Save and Start Assessment.
+
+75
+00:06:28,843 --> 00:06:33,241
+The initial assessment opens, with its sections listed on the left.
+
+76
+00:06:33,491 --> 00:06:41,564
+You'll complete the General Health Questionnaire, Support, Allergies, Medications, and Numbers to Track, one part at a time.
+
+77
+00:06:42,976 --> 00:06:44,500
+Let's recap.
+
+78
+00:06:44,700 --> 00:06:51,749
+Open Care Management, and on the CCM tab, click Enrollment And Consent, under Program Setup.
+
+79
+00:06:51,949 --> 00:06:57,761
+Set the status to Active, check all five consent statements, choose Verbal, and save.
+
+80
+00:06:57,961 --> 00:07:06,717
+Add the CCM condition, keep its program as CCM, and add the exact ICD-10 code from PointClickCare.
+
+81
+00:07:06,917 --> 00:07:14,585
+Save and close. Then open the Initial Patient-Centered Care Plan, check it, and click Save and Start Assessment.
+
+82
+00:07:16,785 --> 00:07:23,322
+That's part one. The patient is enrolled in CCM, and the initial assessment is open.
+
+83
+00:07:23,522 --> 00:07:27,265
+In part two, you answer the General Health Questionnaire.

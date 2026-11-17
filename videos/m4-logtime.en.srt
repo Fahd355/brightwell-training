@@ -1,0 +1,187 @@
+1
+00:00:01,500 --> 00:00:05,394
+Lesson 4.6: LogTime and Exporting the File.
+
+2
+00:00:09,800 --> 00:00:13,114
+With the care plan complete, two things are left in ThoroughCare:
+
+3
+00:00:13,154 --> 00:00:17,742
+logging the time, and exporting the encounter as a PDF.
+
+4
+00:00:17,792 --> 00:00:22,383
+Every encounter logs exactly 60 minutes: that's our billing time.
+
+5
+00:00:22,433 --> 00:00:25,621
+The task type is always Monthly Clinical Review.
+
+6
+00:00:25,671 --> 00:00:30,484
+And the time is performed by the patient's provider, never by the care manager.
+
+7
+00:00:36,600 --> 00:00:41,322
+Scrolling back up to the top of Care Management brings us to the task timer.
+
+8
+00:00:45,100 --> 00:00:49,028
+First comes the task type. We always use Monthly Clinical Review,
+
+9
+00:00:49,068 --> 00:00:51,940
+so it's worth checking before anything else.
+
+10
+00:00:52,900 --> 00:00:57,091
+Performed By has to be the provider's name, not the care manager's.
+
+11
+00:01:01,933 --> 00:01:05,208
+It's the patient's primary provider from the task information:
+
+12
+00:01:05,248 --> 00:01:07,316
+here, Keisha Asante.
+
+13
+00:01:11,633 --> 00:01:13,689
+Searching the list finds her name.
+
+14
+00:01:15,867 --> 00:01:18,838
+This name has to match the provider on the task portal.
+
+15
+00:01:18,878 --> 00:01:23,533
+If it doesn't, we correct it here before submitting the encounter.
+
+16
+00:01:28,367 --> 00:01:33,509
+With the task type and provider set, the task timer gets exactly 60 minutes.
+
+17
+00:01:34,623 --> 00:01:39,467
+Clicking Log Time records it, and Logged this month now shows 60 minutes.
+
+18
+00:01:42,228 --> 00:01:46,307
+To double-check the details, View Logs opens the time logs.
+
+19
+00:01:47,433 --> 00:01:50,647
+Here we confirm the category, Monthly Clinical Review,
+
+20
+00:01:50,687 --> 00:01:55,022
+the provider, Keisha Asante, and exactly 60 minutes.
+
+21
+00:01:57,733 --> 00:01:58,852
+If anything is wrong,
+
+22
+00:01:58,892 --> 00:02:02,561
+deleting the log and logging the time again sets it straight.
+
+23
+00:02:03,667 --> 00:02:06,457
+Delete asks for a quick confirmation first.
+
+24
+00:02:08,633 --> 00:02:13,096
+Then the 60 minutes go in again, with the same task type and provider.
+
+25
+00:02:18,170 --> 00:02:21,473
+Once the log is right, the encounter is ready to export.
+
+26
+00:02:21,513 --> 00:02:24,981
+Print / Preview sits right next to the timer.
+
+27
+00:02:26,100 --> 00:02:27,824
+It opens the printing options:
+
+28
+00:02:27,864 --> 00:02:31,444
+everything that appears in the final encounter file.
+
+29
+00:02:33,633 --> 00:02:35,625
+The file follows one fixed structure,
+
+30
+00:02:35,665 --> 00:02:39,123
+so these options should match exactly what's checked here:
+
+31
+00:02:39,173 --> 00:02:44,358
+the program, patient conditions, the care plan with its problem notes, goals, barriers,
+
+32
+00:02:44,398 --> 00:02:53,345
+interventions and clinical review notes, then clinical data, providers, resources and support, time logs, and patient consent.
+
+33
+00:02:55,000 --> 00:02:59,936
+Setting them once in our ThoroughCare account keeps them the same for every patient.
+
+34
+00:03:03,200 --> 00:03:07,026
+The date range runs from the first of the month to the end of it.
+
+35
+00:03:08,123 --> 00:03:11,109
+Clicking Download PDF starts the export.
+
+36
+00:03:13,300 --> 00:03:17,965
+A moment later, a green pop-up tells us the report is ready to download.
+
+37
+00:03:18,015 --> 00:03:21,387
+The file name carries the patient's initial and last name,
+
+38
+00:03:21,427 --> 00:03:24,325
+so it's easy to match to the right patient.
+
+39
+00:03:27,600 --> 00:03:31,196
+Clicking the pop-up downloads the file straight to our computer.
+
+40
+00:03:34,433 --> 00:03:38,324
+That's the file we upload to Practice Fusion for the billing encounter,
+
+41
+00:03:38,364 --> 00:03:42,104
+and with it, the patient is complete in ThoroughCare.
+
+42
+00:03:44,800 --> 00:03:48,907
+To wrap up: the task type is always Monthly Clinical Review.
+
+43
+00:03:48,957 --> 00:03:53,553
+Performed By is the patient's provider, matching the task information.
+
+44
+00:03:53,603 --> 00:03:58,345
+We log exactly 60 minutes, and confirm the details in View Logs.
+
+45
+00:03:58,395 --> 00:04:03,009
+Print / Preview uses our fixed options, with this month's date range.
+
+46
+00:04:03,059 --> 00:04:07,677
+And the downloaded PDF goes to Practice Fusion for the billing encounter.
+
+47
+00:04:09,833 --> 00:04:13,851
+Next, the encounter file moves to Practice Fusion for billing.

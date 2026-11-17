@@ -1,0 +1,239 @@
+1
+00:00:01,500 --> 00:00:03,877
+Part three: the Support section.
+
+2
+00:00:04,077 --> 00:00:09,716
+Here you add two things: the patient's providers, and the patient's emergency contacts.
+
+3
+00:00:09,756 --> 00:00:12,214
+Both come from PointClickCare.
+
+4
+00:00:14,114 --> 00:00:18,433
+Both lists are on the patient's Profile tab in PointClickCare.
+
+5
+00:00:18,733 --> 00:00:23,308
+Providers are under Medical Professionals. You add them one by one.
+
+6
+00:00:23,608 --> 00:00:27,564
+Each one needs a full name, a phone number, and a specialty.
+
+7
+00:00:27,864 --> 00:00:34,913
+Emergency contacts are under Contacts. You copy each one's name, phone number, and relationship.
+
+8
+00:00:35,213 --> 00:00:39,169
+Then you paste them all into one answer box, as free text.
+
+9
+00:00:41,183 --> 00:00:44,456
+In the assessment's menu on the left, click Support.
+
+10
+00:00:48,269 --> 00:00:52,993
+The Support section opens. It starts with: Let's review Providers.
+
+11
+00:00:53,243 --> 00:00:58,287
+You can choose Select from pre-defined list, Enter as free text, or N/A.
+
+12
+00:00:58,537 --> 00:01:05,863
+Below it is the second question: Who is available in your support system to help you manage your health if needed?
+
+13
+00:01:06,113 --> 00:01:10,112
+Start with the providers. You'll find them in PointClickCare.
+
+14
+00:01:11,436 --> 00:01:15,477
+Switch to PointClickCare, where the patient's chart is open.
+
+15
+00:01:15,727 --> 00:01:17,647
+Click the Profile tab.
+
+16
+00:01:20,769 --> 00:01:26,951
+The Profile tab lists the patient's Contacts at the top, and Medical Professionals below.
+
+17
+00:01:28,269 --> 00:01:33,014
+Scroll down to Medical Professionals. These are the patient's providers.
+
+18
+00:01:33,264 --> 00:01:37,860
+Each row shows the first name, surname, profession, and office phone.
+
+19
+00:01:38,110 --> 00:01:40,903
+The primary physician is shown in bold.
+
+20
+00:01:42,336 --> 00:01:48,084
+Start with the first provider: Ferdinand Akoko, a nurse practitioner, or NP.
+
+21
+00:01:48,336 --> 00:01:53,167
+Copy the first name and surname together. That's the provider's full name.
+
+22
+00:01:53,417 --> 00:01:57,416
+Then copy the profession, NP. It goes in Specialty.
+
+23
+00:01:57,669 --> 00:02:00,044
+Then copy the office phone number.
+
+24
+00:02:02,869 --> 00:02:07,252
+Tip: press the Windows key and V to open your clipboard history.
+
+25
+00:02:07,502 --> 00:02:12,845
+It keeps everything you copied, newest first: the phone number, NP, and the name.
+
+26
+00:02:13,095 --> 00:02:17,627
+So copy all three first. Then paste each one where it belongs.
+
+27
+00:02:18,936 --> 00:02:22,572
+Back in ThoroughCare, go to Let's review Providers.
+
+28
+00:02:24,390 --> 00:02:26,981
+Choose Select from pre-defined list.
+
+29
+00:02:28,169 --> 00:02:35,816
+A provider table appears. Enter all of the patient's providers here. If the patient has none, check Not Applicable.
+
+30
+00:02:36,066 --> 00:02:38,955
+To add a provider, click New Provider.
+
+31
+00:02:41,569 --> 00:02:43,931
+The New Provider window opens.
+
+32
+00:02:44,181 --> 00:02:51,209
+It has fields for the provider's full name, phone number, fax number, specialty, address, and NPI.
+
+33
+00:02:51,459 --> 00:02:56,204
+Click Provider Full Name, open the clipboard history, and paste the name.
+
+34
+00:02:57,702 --> 00:03:00,314
+Paste the phone number into Phone Number.
+
+35
+00:03:00,702 --> 00:03:03,155
+And paste NP into Specialty.
+
+36
+00:03:03,405 --> 00:03:05,057
+Then click Save.
+
+37
+00:03:06,402 --> 00:03:11,361
+The provider is added to the table, with the name, phone number, and specialty.
+
+38
+00:03:11,611 --> 00:03:16,378
+Repeat these steps for every provider on the Medical Professionals list.
+
+39
+00:03:16,628 --> 00:03:21,011
+The providers in ThoroughCare must match PointClickCare exactly.
+
+40
+00:03:23,280 --> 00:03:28,196
+Keep Select from pre-defined list chosen, and click New Provider for each one.
+
+41
+00:03:28,446 --> 00:03:31,707
+To close the window without saving, click Back.
+
+42
+00:03:36,769 --> 00:03:43,008
+Next question: Who is available in your support system to help you manage your health if needed?
+
+43
+00:03:43,258 --> 00:03:47,449
+This means the patient's emergency contacts. Add them too.
+
+44
+00:03:47,702 --> 00:03:53,386
+In PointClickCare, scroll up to Contacts, at the top of the same Profile tab.
+
+45
+00:03:53,636 --> 00:03:58,040
+Copy the first contact's name, phone number, and relationship.
+
+46
+00:04:00,102 --> 00:04:04,229
+In ThoroughCare, click in the answer box and paste the contact.
+
+47
+00:04:04,479 --> 00:04:09,736
+Contacts go in as free text. You don't add them one by one, like providers.
+
+48
+00:04:10,002 --> 00:04:13,126
+Copy the next contact from PointClickCare.
+
+49
+00:04:14,002 --> 00:04:17,487
+Leave a blank line, and paste it below the first one.
+
+50
+00:04:17,737 --> 00:04:20,498
+Repeat for every contact on the list.
+
+51
+00:04:25,636 --> 00:04:29,891
+Each contact shows a name, a phone number, and a relationship.
+
+52
+00:04:30,141 --> 00:04:35,228
+That completes Support: the provider list, and the emergency contacts list.
+
+53
+00:04:36,636 --> 00:04:38,160
+Let's recap.
+
+54
+00:04:38,360 --> 00:04:44,897
+Open Support. In PointClickCare, open the Profile tab, and find Medical Professionals.
+
+55
+00:04:45,097 --> 00:04:51,506
+Copy each provider's name, profession, and phone. Windows and V shows your clipboard history.
+
+56
+00:04:51,706 --> 00:04:57,390
+Choose Select from pre-defined list, click New Provider, paste the details, and save.
+
+57
+00:04:57,590 --> 00:04:59,989
+Repeat until both lists match.
+
+58
+00:05:00,189 --> 00:05:06,641
+Then copy the patient's contacts, and paste them as free text, with a blank line between each one.
+
+59
+00:05:08,841 --> 00:05:11,681
+That's part three. Support is done.
+
+60
+00:05:11,881 --> 00:05:16,157
+In part four, you match the patient's allergies to PointClickCare.

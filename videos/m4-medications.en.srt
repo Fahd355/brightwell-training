@@ -1,0 +1,219 @@
+1
+00:00:01,500 --> 00:00:03,728
+Part five: Medications.
+
+2
+00:00:03,928 --> 00:00:09,037
+The patient's medication list in ThoroughCare must be identical to PointClickCare.
+
+3
+00:00:09,077 --> 00:00:13,345
+You add every medication from the patient's pharmacy orders.
+
+4
+00:00:15,245 --> 00:00:21,718
+Each pharmacy order has two parts: the order, which is the medication's name, and the directions.
+
+5
+00:00:22,018 --> 00:00:24,277
+The name goes in Medication.
+
+6
+00:00:24,577 --> 00:00:28,597
+Then you read the directions. Give 2 tablet is the dosage.
+
+7
+00:00:28,897 --> 00:00:31,424
+Two times a day is the frequency.
+
+8
+00:00:31,724 --> 00:00:36,314
+By mouth is the route, oral. And for pain is the reason taken.
+
+9
+00:00:38,314 --> 00:00:41,502
+In the assessment menu, open Medications.
+
+10
+00:00:41,752 --> 00:00:50,508
+The question asks you to review the patient's prescription medications, dietary or herbal supplements, and over-the-counter medicines.
+
+11
+00:00:50,758 --> 00:00:57,140
+The options are Select from pre-defined list, which is recommended; Enter as free text;
+
+12
+00:00:57,180 --> 00:01:02,773
+List reviewed in EHR; Patient does not take any medications; and N/A.
+
+13
+00:01:03,026 --> 00:01:05,617
+Choose Select from pre-defined list.
+
+14
+00:01:06,481 --> 00:01:13,125
+A medication table opens, with a New Medication button. You'll add the medications one by one.
+
+15
+00:01:13,375 --> 00:01:15,731
+You'll find them in PointClickCare.
+
+16
+00:01:17,047 --> 00:01:20,640
+Switch to PointClickCare, and open the Orders tab.
+
+17
+00:01:23,781 --> 00:01:31,172
+The Orders tab lists all of the patient's orders: pharmacy, diet, laboratory, diagnostic, and other.
+
+18
+00:01:31,422 --> 00:01:35,634
+You only need the medications. Those are the pharmacy orders.
+
+19
+00:01:37,614 --> 00:01:39,706
+Open Display Filters.
+
+20
+00:01:39,956 --> 00:01:48,982
+Under Order Category, every category is checked: Pharmacy, Diet, Supplement, Laboratory, Diagnostic, Other, and Enteral Feed.
+
+21
+00:01:49,247 --> 00:01:52,115
+Uncheck all of them, except Pharmacy.
+
+22
+00:01:56,779 --> 00:01:58,410
+Then click Search.
+
+23
+00:02:01,147 --> 00:02:05,743
+Now the list shows only pharmacy orders: the patient's medications.
+
+24
+00:02:05,993 --> 00:02:10,525
+Click the Order column heading to sort the medications alphabetically.
+
+25
+00:02:10,914 --> 00:02:15,318
+Now you can work down the list, and add the medications one by one.
+
+26
+00:02:16,647 --> 00:02:24,699
+Start with the first medication: Acetaminophen ER Tablet Extended Release 650 MG.
+
+27
+00:02:24,949 --> 00:02:28,884
+Copy the whole medication name, exactly as it's written.
+
+28
+00:02:29,142 --> 00:02:34,634
+Then copy the whole directions: Give 2 tablet by mouth two times a day for Pain.
+
+29
+00:02:35,947 --> 00:02:39,391
+Back in ThoroughCare, go to the medication table.
+
+30
+00:02:42,247 --> 00:02:44,112
+Click New Medication.
+
+31
+00:02:45,247 --> 00:02:52,219
+The Add/Edit Medication window opens, with Medication, Prescribed by, Dosage, Frequency, Route,
+
+32
+00:02:52,259 --> 00:02:55,859
+Reason Taken, Started, Stopped, and Notes.
+
+33
+00:02:57,847 --> 00:03:00,912
+First, click Notes, and paste the directions.
+
+34
+00:03:01,162 --> 00:03:04,391
+That way they stay in front of you while you fill in the rest,
+
+35
+00:03:04,431 --> 00:03:07,462
+and you don't have to go back to PointClickCare.
+
+36
+00:03:08,781 --> 00:03:14,550
+Next, click Medication, and open your clipboard history with Windows key + V.
+
+37
+00:03:14,814 --> 00:03:19,666
+Paste the full medication name, exactly as it is in PointClickCare.
+
+38
+00:03:20,981 --> 00:03:24,617
+Now fill in the rest, using the directions in Notes.
+
+39
+00:03:27,425 --> 00:03:30,489
+Give 2 tablet: in Dosage, enter 2.
+
+40
+00:03:30,739 --> 00:03:32,921
+In Units, choose tablets.
+
+41
+00:03:33,274 --> 00:03:36,910
+Two times a day: in Frequency, choose Twice a day.
+
+42
+00:03:40,281 --> 00:03:43,673
+By mouth means oral: in Route, choose Oral.
+
+43
+00:03:45,581 --> 00:03:48,662
+For Pain: in Reason Taken, type Pain.
+
+44
+00:03:48,912 --> 00:03:53,124
+Leave Prescribed by, Started, and Stopped blank. Click Save.
+
+45
+00:03:55,147 --> 00:04:01,322
+The medication is added to the table: 2 tablets, twice a day, oral, active, for pain.
+
+46
+00:04:01,581 --> 00:04:06,646
+Repeat these steps for each and every medication on the pharmacy order list.
+
+47
+00:04:06,896 --> 00:04:13,903
+Add all of them, until the medication list in ThoroughCare is complete, and identical to PointClickCare.
+
+48
+00:04:14,153 --> 00:04:16,765
+That completes the Medications section.
+
+49
+00:04:18,214 --> 00:04:19,738
+Let's recap.
+
+50
+00:04:19,938 --> 00:04:27,627
+Choose Select from pre-defined list. In PointClickCare, open Orders, filter for Pharmacy, and sort by Order.
+
+51
+00:04:27,827 --> 00:04:32,423
+Copy each medication's name and directions, exactly as written.
+
+52
+00:04:32,623 --> 00:04:38,200
+Click New Medication, paste the directions into Notes, and the name into Medication.
+
+53
+00:04:38,400 --> 00:04:46,239
+Read the dosage, frequency, route, and reason from the directions. Then save, and repeat for every medication.
+
+54
+00:04:48,439 --> 00:04:52,689
+That's part five. The medication list matches PointClickCare.
+
+55
+00:04:52,889 --> 00:05:00,258
+In part six, the last part, you record the numbers to track: weight, blood pressure, and hemoglobin A1C.

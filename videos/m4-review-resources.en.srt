@@ -1,0 +1,683 @@
+1
+00:00:00,900 --> 00:00:06,390
+Welcome back to Lesson 4.4, Documenting the Monthly Clinical Review.
+
+2
+00:00:06,667 --> 00:00:09,333
+This is Part 2 of 2: Resources and Support,
+
+3
+00:00:09,383 --> 00:00:12,424
+and Other Provider and Appointment Notes.
+
+4
+00:00:14,000 --> 00:00:18,926
+In Part 1, you posted Allergies, Medications, and Numbers to Track.
+
+5
+00:00:19,200 --> 00:00:21,633
+Now you'll finish the clinical review.
+
+6
+00:00:21,900 --> 00:00:25,147
+Resources and Support: the patient's mobility,
+
+7
+00:00:25,197 --> 00:00:29,231
+falls, and medical equipment, from the latest MDS.
+
+8
+00:00:29,500 --> 00:00:30,290
+Other Provider
+
+9
+00:00:30,340 --> 00:00:34,373
+and Appointment Notes: signed provider visits from the last 30 days,
+
+10
+00:00:34,423 --> 00:00:36,434
+and upcoming appointments.
+
+11
+00:00:36,700 --> 00:00:39,845
+Then, you'll mark the clinical review as reviewed.
+
+12
+00:00:42,267 --> 00:00:45,340
+The next section is Resources and Support.
+
+13
+00:00:45,600 --> 00:00:47,743
+Here, you report two things.
+
+14
+00:00:48,000 --> 00:00:52,258
+First, the patient's mobility: can they walk on their own, and how far?
+
+15
+00:00:52,308 --> 00:00:54,457
+And have they had any falls?
+
+16
+00:00:54,733 --> 00:00:59,105
+Second, the durable medical equipment, or DME, the patient uses,
+
+17
+00:00:59,155 --> 00:01:03,197
+such as a wheelchair, a walker, a cane, or crutches.
+
+18
+00:01:03,467 --> 00:01:07,788
+You'll find both in the patient's MDS, in PointClickCare.
+
+19
+00:01:09,800 --> 00:01:13,719
+In PointClickCare, open the resident's MDS tab.
+
+20
+00:01:14,000 --> 00:01:16,821
+MDS stands for Minimum Data Set.
+
+21
+00:01:17,100 --> 00:01:21,847
+It's an assessment the facility completes for each resident at least every quarter,
+
+22
+00:01:21,897 --> 00:01:23,619
+or every three months.
+
+23
+00:01:23,900 --> 00:01:26,207
+It covers basic functions: mobility,
+
+24
+00:01:26,257 --> 00:01:31,420
+and activities of daily living such as eating, showering, and toileting.
+
+25
+00:01:31,700 --> 00:01:37,400
+It also covers mood, with the PHQ-9 score for depression, and cognition.
+
+26
+00:01:37,667 --> 00:01:42,004
+The tab lists the patient's MDS assessments, newest first.
+
+27
+00:01:42,267 --> 00:01:46,758
+Use the most recent one with the status Accepted or Completed.
+
+28
+00:01:57,467 --> 00:02:00,022
+To open an assessment, use View or Print.
+
+29
+00:02:00,072 --> 00:02:01,539
+Here, use Print.
+
+30
+00:02:05,600 --> 00:02:09,618
+In the print options, select MDS Form, and click Print.
+
+31
+00:02:12,600 --> 00:02:14,564
+The full MDS form opens.
+
+32
+00:02:14,614 --> 00:02:16,575
+It has many pages.
+
+33
+00:02:16,833 --> 00:02:18,534
+Start with mobility.
+
+34
+00:02:21,367 --> 00:02:24,395
+Press Control F, and search for: walk 10.
+
+35
+00:02:24,667 --> 00:02:27,883
+This finds the walking items: walk 10 feet,
+
+36
+00:02:27,933 --> 00:02:31,952
+walk 50 feet with two turns, and walk 150 feet.
+
+37
+00:02:35,767 --> 00:02:37,336
+The first match isn't coded,
+
+38
+00:02:37,386 --> 00:02:40,959
+so keep searching until you reach the section that is.
+
+39
+00:02:41,433 --> 00:02:44,977
+Here, all three distances are coded 04.
+
+40
+00:02:52,100 --> 00:02:53,262
+What does 04 mean?
+
+41
+00:02:53,312 --> 00:02:55,177
+Check the coding key.
+
+42
+00:02:55,433 --> 00:03:00,995
+06 means independent: the resident completes the activity with no help.
+
+43
+00:03:01,267 --> 00:03:08,195
+Any lower code, such as 05, 04, or 03, means the patient needs some help.
+
+44
+00:03:14,500 --> 00:03:20,440
+So, coded 04 for all three distances, this patient needs assistance to walk.
+
+45
+00:03:22,867 --> 00:03:25,575
+Each mobility case has a fixed template,
+
+46
+00:03:25,625 --> 00:03:28,970
+in the CCM Clinical Tool, under Templates.
+
+47
+00:03:32,767 --> 00:03:35,203
+Needs assistance in all 3: use it when
+
+48
+00:03:35,253 --> 00:03:39,432
+the patient needs assistance in all three walk distances.
+
+49
+00:03:39,700 --> 00:03:42,899
+If the patient can't walk 10 feet without help,
+
+50
+00:03:42,949 --> 00:03:46,164
+they can't manage 50 or 150 feet either.
+
+51
+00:03:46,433 --> 00:03:48,830
+It reads: The patient has significant
+
+52
+00:03:48,880 --> 00:03:51,806
+difficulty with ambulation and moving around.
+
+53
+00:03:51,856 --> 00:03:55,310
+They are not able to walk without assistance, and do,
+
+54
+00:03:55,360 --> 00:03:58,852
+or do not, experience falls or balance issues.
+
+55
+00:04:08,500 --> 00:04:12,199
+No issues: use it when the patient is independent,
+
+56
+00:04:12,249 --> 00:04:15,173
+coded 06, in all three distances.
+
+57
+00:04:17,800 --> 00:04:22,909
+Some difficulty: use it when the patient isn't independent in all three,
+
+58
+00:04:22,959 --> 00:04:27,924
+for example 06 for 10 feet, but lower for the longer distances.
+
+59
+00:04:28,200 --> 00:04:31,934
+No recent MDS evaluation: use it when no new
+
+60
+00:04:31,984 --> 00:04:36,219
+MDS was done after the last date of service.
+
+61
+00:04:40,767 --> 00:04:41,461
+Independent
+
+62
+00:04:41,511 --> 00:04:46,402
+but falls: use it when the patient is independent in all three distances,
+
+63
+00:04:46,452 --> 00:04:47,849
+but has falls.
+
+64
+00:04:48,100 --> 00:04:50,857
+Also note: reading glasses aren't DME.
+
+65
+00:04:50,907 --> 00:04:55,938
+Instead, write: Patient uses over the counter reading glasses.
+
+66
+00:05:05,567 --> 00:05:10,053
+For this patient, the right template is: needs assistance in all 3.
+
+67
+00:05:12,233 --> 00:05:15,582
+The template also says whether the patient has falls.
+
+68
+00:05:15,632 --> 00:05:17,749
+Check that in the MDS too.
+
+69
+00:05:18,600 --> 00:05:20,257
+Search for: falls.
+
+70
+00:05:21,567 --> 00:05:26,609
+Find Any Falls Since Admission, Entry or Reentry, or Prior Assessment.
+
+71
+00:05:26,867 --> 00:05:28,951
+0 means no, and 1 means yes.
+
+72
+00:05:29,001 --> 00:05:32,881
+Here it's 0, so the patient has had no falls.
+
+73
+00:05:36,433 --> 00:05:40,727
+Back in the CCM Clinical Tool, click Copy on the template.
+
+74
+00:05:44,133 --> 00:05:48,595
+In ThoroughCare, click Add Update, in Resources and Support Notes.
+
+75
+00:05:49,067 --> 00:05:50,571
+Paste the template.
+
+76
+00:05:50,833 --> 00:05:53,130
+Then fix the do, or do not, part.
+
+77
+00:05:53,180 --> 00:05:54,978
+This patient has no falls,
+
+78
+00:05:55,028 --> 00:05:59,388
+so it reads: do not experience falls or balance issues.
+
+79
+00:06:00,500 --> 00:06:01,911
+Next, the equipment.
+
+80
+00:06:01,961 --> 00:06:04,238
+Start a new line for DME.
+
+81
+00:06:05,733 --> 00:06:08,327
+In the MDS, search for: walker.
+
+82
+00:06:09,933 --> 00:06:15,785
+This finds Mobility Devices: the devices normally used in the last 7 days.
+
+83
+00:06:16,267 --> 00:06:19,802
+Cane or crutch, walker, wheelchair, or limb prosthesis.
+
+84
+00:06:19,852 --> 00:06:22,910
+Here, walker and wheelchair are checked.
+
+85
+00:06:24,933 --> 00:06:27,061
+Then search for: glasses.
+
+86
+00:06:29,267 --> 00:06:33,654
+Corrective lenses are coded 0, so the patient doesn't use them.
+
+87
+00:06:37,100 --> 00:06:42,614
+Back in ThoroughCare, type: DMEs: Patient uses a walker and a wheelchair.
+
+88
+00:06:42,867 --> 00:06:44,397
+Then click Save.
+
+89
+00:06:45,667 --> 00:06:48,372
+The Resources and Support note is saved.
+
+90
+00:06:49,967 --> 00:06:53,541
+The last section is Other Provider and Appointment Notes.
+
+91
+00:06:53,800 --> 00:06:56,072
+Here, you document two things.
+
+92
+00:06:56,333 --> 00:06:56,680
+First,
+
+93
+00:06:56,730 --> 00:07:01,379
+every provider visit from the last 30 days that the provider documented
+
+94
+00:07:01,429 --> 00:07:02,607
+and signed.
+
+95
+00:07:02,867 --> 00:07:07,598
+You follow up on the patient every month, so you cover the last 30 days.
+
+96
+00:07:07,867 --> 00:07:12,945
+Second, any upcoming appointments, lab tests, or diagnostic tests.
+
+97
+00:07:20,967 --> 00:07:25,644
+Provider visits are in PointClickCare, in the resident's progress notes.
+
+98
+00:07:25,694 --> 00:07:27,195
+Open PROG NOTES.
+
+99
+00:07:31,000 --> 00:07:35,780
+At the top left, check that you're in Progress Notes, not Practitioner Notes.
+
+100
+00:07:36,033 --> 00:07:37,333
+Click View All.
+
+101
+00:07:43,800 --> 00:07:46,703
+Then set the view to show the last 30 days.
+
+102
+00:07:49,333 --> 00:07:50,780
+Next, search the notes.
+
+103
+00:07:50,830 --> 00:07:53,362
+You only document signed visits.
+
+104
+00:07:53,633 --> 00:07:57,393
+A signed visit means a provider saw the patient for a reason,
+
+105
+00:07:57,443 --> 00:08:01,079
+documented the visit, and signed it electronically.
+
+106
+00:08:02,567 --> 00:08:04,486
+So search for: signed.
+
+107
+00:08:05,800 --> 00:08:06,786
+Here's one.
+
+108
+00:08:06,836 --> 00:08:11,053
+The date of service is October 12, 2026.
+
+109
+00:08:18,200 --> 00:08:22,379
+Scroll down to the Diagnosis, Assessment and Plan section.
+
+110
+00:08:22,633 --> 00:08:26,435
+It shows the conditions the provider reviewed, and the plan.
+
+111
+00:08:29,400 --> 00:08:32,894
+Here: mild depression, generalized anxiety disorder,
+
+112
+00:08:32,944 --> 00:08:38,028
+pseudobulbar affect, and dementia, with the medications to continue.
+
+113
+00:08:42,667 --> 00:08:46,608
+At the end of the note are the provider's name, and the signed date.
+
+114
+00:08:46,867 --> 00:08:51,674
+Copy the provider's name, the date of service, and the Assessment and Plan.
+
+115
+00:09:02,433 --> 00:09:07,369
+Visits are documented with a fixed template, in the CCM Clinical Tool.
+
+116
+00:09:08,667 --> 00:09:11,414
+Under Templates, open Progress Notes.
+
+117
+00:09:11,667 --> 00:09:15,269
+Its tip: add only signed notes with an assessment and plan,
+
+118
+00:09:15,319 --> 00:09:20,163
+or recommendations, from the last date of service up to your follow-up.
+
+119
+00:09:20,433 --> 00:09:24,961
+The template reads: The patient was seen by, provider name and specialty,
+
+120
+00:09:25,011 --> 00:09:28,533
+on, date of service, and the plan was as follows.
+
+121
+00:09:28,800 --> 00:09:29,930
+Copy it.
+
+122
+00:09:30,200 --> 00:09:31,429
+On the same page,
+
+123
+00:09:31,479 --> 00:09:36,171
+the DMEs template notes where DME comes from: the care profile,
+
+124
+00:09:36,221 --> 00:09:40,434
+or the most recent MDS if there's no care profile.
+
+125
+00:09:43,933 --> 00:09:48,706
+In ThoroughCare, click Add Update, in Other Provider and Appointment Notes.
+
+126
+00:09:49,167 --> 00:09:50,671
+Paste the template.
+
+127
+00:09:55,967 --> 00:10:00,039
+Fill in the provider's name and specialty, and the date of service.
+
+128
+00:10:00,300 --> 00:10:02,640
+Here, the specialty was left out.
+
+129
+00:10:02,690 --> 00:10:06,545
+Always include it, for example: Dawn Kopp, FNP.
+
+130
+00:10:07,000 --> 00:10:09,907
+Then paste the Assessment and Plan below it.
+
+131
+00:10:10,167 --> 00:10:12,700
+Document every signed visit from the last
+
+132
+00:10:12,750 --> 00:10:16,413
+30 days that's related to the patient's conditions.
+
+133
+00:10:19,233 --> 00:10:22,743
+Back in the progress notes, check the other signed matches.
+
+134
+00:10:23,000 --> 00:10:25,623
+Here, there's no other signed provider visit.
+
+135
+00:10:25,673 --> 00:10:29,211
+If there were, you'd document each one the same way.
+
+136
+00:10:34,667 --> 00:10:39,068
+Next, the second part of this section: upcoming appointments,
+
+137
+00:10:39,118 --> 00:10:43,947
+lab tests, and diagnostic tests, such as an X-ray or an MRI.
+
+138
+00:10:44,200 --> 00:10:48,975
+For example, the patient may be scheduled to see a cardiologist next week.
+
+139
+00:10:53,467 --> 00:10:56,846
+They're in PointClickCare, in the resident's Orders tab.
+
+140
+00:10:56,896 --> 00:10:59,427
+It lists all the patient's orders.
+
+141
+00:11:03,433 --> 00:11:06,306
+Open Display Filters to narrow the list.
+
+142
+00:11:10,933 --> 00:11:15,035
+Under Order Category, keep only Laboratory, Diagnostic, and Other.
+
+143
+00:11:15,085 --> 00:11:17,359
+Appointments are under Other.
+
+144
+00:11:18,833 --> 00:11:20,325
+Then click Search.
+
+145
+00:11:24,133 --> 00:11:28,429
+Here's an upcoming appointment: a follow-up with Dr.
+
+146
+00:11:28,479 --> 00:11:33,610
+Conner, an orthopedic doctor, one time only, at 1:00 PM.
+
+147
+00:11:33,867 --> 00:11:36,144
+Copy it exactly as it's written.
+
+148
+00:11:44,067 --> 00:11:47,562
+A tip for finding upcoming orders: double-click the Start
+
+149
+00:11:47,612 --> 00:11:50,922
+Date column header to sort the orders by date.
+
+150
+00:11:54,200 --> 00:11:57,733
+You only need what's still to come, after today.
+
+151
+00:11:57,783 --> 00:12:02,936
+Today is October 23, so only the October 27 appointment counts.
+
+152
+00:12:10,900 --> 00:12:14,807
+Nothing else is scheduled after it, so there's nothing more to add.
+
+153
+00:12:19,767 --> 00:12:23,310
+Paste it in the same Other Provider and Appointment Notes update,
+
+154
+00:12:23,360 --> 00:12:24,694
+under the visit.
+
+155
+00:12:24,967 --> 00:12:29,647
+Document any upcoming lab or diagnostic test the same way.
+
+156
+00:12:29,900 --> 00:12:31,430
+Then click Save.
+
+157
+00:12:32,567 --> 00:12:37,755
+The note is saved, and every section of the clinical review is now documented.
+
+158
+00:12:42,767 --> 00:12:46,588
+Scroll to the bottom of the page, and click Mark as Reviewed.
+
+159
+00:12:46,867 --> 00:12:51,276
+A confirmation opens, with today's date as the clinical review date.
+
+160
+00:12:51,326 --> 00:12:52,497
+Click Save.
+
+161
+00:12:53,667 --> 00:12:54,925
+To recap.
+
+162
+00:12:55,200 --> 00:13:00,029
+For Resources and Support, open the latest Accepted or Completed MDS,
+
+163
+00:13:00,079 --> 00:13:02,580
+and check the walking scores.
+
+164
+00:13:02,833 --> 00:13:06,840
+Post the matching mobility template, with or without falls.
+
+165
+00:13:07,100 --> 00:13:09,599
+Add the DME the patient uses.
+
+166
+00:13:09,867 --> 00:13:12,247
+For Other Provider and Appointment Notes,
+
+167
+00:13:12,297 --> 00:13:17,074
+document each signed visit from the last 30 days with the visit template.
+
+168
+00:13:17,333 --> 00:13:22,534
+Add upcoming appointments, labs, and diagnostic tests from the Orders tab.
+
+169
+00:13:22,800 --> 00:13:26,673
+Save each note, then mark the clinical review as reviewed.
+
+170
+00:13:29,133 --> 00:13:31,740
+That's the end of Lesson 4.4.
+
+171
+00:13:32,000 --> 00:13:35,843
+You can now document a complete monthly clinical review.
