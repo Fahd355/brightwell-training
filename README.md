@@ -41,17 +41,27 @@ You already have the project `hkazorugtrnqppxyeatj`.
 | 3.1 Login and Locating Pt's Profile | `m3-login-profile.mp4` |
 | 3.2 Eligibility Checks | `m3-eligibility-checks.mp4` |
 | 3.3 Formulating the Care Plan's Problem Note | `m3-problem-note.mp4` |
-| 4.1 Creating a Patient Profile | `m4-create-profile.mp4` |
-| 4.2 Enrollment and Consent, Initial Pt Assessment | `m4-enrollment.mp4` |
-| 4.3 Updating Clinical Data | `m4-clinical-data.mp4` |
-| 4.4 Documenting the Monthly Clinical Review | `m4-monthly-review.mp4` |
-| 4.5 GBIs and Problem Note | `m4-gbis.mp4` |
-| 4.6 LogTime and Extracting the File | `m4-logtime.mp4` |
+| 4.1 Creating a Patient Profile | `m4-create-profile.mp4` + `m4-create-profile.en.srt` |
+| 4.2.1 Enrollment and Consent | `m4-enrollment-consent.mp4` + `m4-enrollment-consent.en.srt` |
+| 4.2.2 General Health Questionnaire | `m4-ghq.mp4` + `m4-ghq.en.srt` |
+| 4.2.3 Support | `m4-support.mp4` + `m4-support.en.srt` |
+| 4.2.4 Allergies | `m4-allergies.mp4` + `m4-allergies.en.srt` |
+| 4.2.5 Medications | `m4-medications.mp4` + `m4-medications.en.srt` |
+| 4.2.6 Numbers to Track | `m4-numbers.mp4` + `m4-numbers.en.srt` |
+| 4.3.1 Conditions and Allergies | `m4-conditions-allergies.mp4` + `m4-conditions-allergies.en.srt` |
+| 4.3.2 Lab Results, Medications and Immunizations | `m4-labs-meds-imm.mp4` + `m4-labs-meds-imm.en.srt` |
+| 4.4.1 Allergies, Medications and Numbers to Track | `m4-review-meds-numbers.mp4` + `m4-review-meds-numbers.en.srt` |
+| 4.4.2 Resources and Support, Other Provider and Appointments | `m4-review-resources.mp4` + `m4-review-resources.en.srt` |
+| 4.5 GBIs and Problem Note | `m4-gbis.mp4` + `m4-gbis.en.srt` |
+| 4.6 LogTime and Exporting the File | `m4-logtime.mp4` + `m4-logtime.en.srt` |
+| 4.7 Module Assessment | no video |
 | 5.1 Monthly Encounter | `m5-monthly-encounter.mp4` |
 | 5.2 Billing Requirements | `m5-billing.mp4` |
 | 6.1 FU vs Scratch | `m6-fu-vs-scratch.mp4` |
 | 6.2 Task Portal | `m6-task-portal.mp4` |
 | 6.3 Job Aids | `m6-job-aids.mp4` |
+
+**Captions:** upload each `.srt` next to its video, named `<file name>.en.srt` (e.g. `m4-ghq.en.srt`). The site converts it automatically and adds a CC button to the player. Sections without a caption file play normally.
 
 **Video size:** the Supabase free plan rejects files over **50 MB** (this was your earlier upload error). A 15-minute screen recording fits if you compress it in HandBrake (free): preset **Fast 720p30** → Video tab: **Avg Bitrate 350 kbps**, tick **2-Pass** → Audio tab: **AAC, 64 kbps, Mono**. Screen recordings stay sharp at this rate.
 

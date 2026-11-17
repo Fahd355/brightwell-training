@@ -5,6 +5,9 @@
 //  • quiz    → list of questions. The FIRST option is always the correct one; the site shuffles them.
 //  • video   → optional full URL to override the default Supabase video location.
 //  • resource→ optional { label, url } link shown under the summary.
+//  • video:false → section has no video (e.g. a module assessment).
+//  • captions→ optional URL to a .srt/.vtt file; default is the video path with .en.srt. Set false to disable.
+//  • lessons → put sub-videos under one heading: { title, lessons: [ {id,…}, … ] } → numbered 4.2.1, 4.2.2 …
 // Content below is a starting draft — have an SME review every question before launch.
 
 window.BW_MODULES = [
@@ -71,44 +74,68 @@ window.BW_MODULES = [
       ] }
   ]},
   { title: 'TC Navigation', sections: [
+    // Each lesson = one video + one task. The module assessment (4.7) comes after the last video.
+    // A section with "lessons" groups sub-videos (4.2.1, 4.2.2 …). Captions: upload <id>.en.srt next to <id>.mp4.
     { id: 'm4-create-profile', title: 'Creating a Patient Profile', minutes: 10,
       summary: 'Set up a new resident in ThoroughCare without duplicates and with matching demographics.',
-      quiz: [
-        { q: 'Before creating a profile in TC, you should…', options: ['Search to make sure the patient does not already exist', 'Create it and merge later', 'Ask the resident to sign up', 'Copy another patient’s profile'] },
-        { q: 'Demographics in TC must match…', options: ['The PCC face sheet', 'Last month’s spreadsheet', 'What the facility told you verbally', 'The billing invoice'] }
-      ] },
-    { id: 'm4-enrollment', title: 'Enrollment and Consent, Initial Pt Assessment', minutes: 15,
-      summary: 'Record enrollment and consent, then complete the initial assessment that sets the baseline.',
-      task: 'List, in order, the steps to enroll a resident in TC, record consent and complete the initial assessment.',
-      quiz: [
-        { q: 'When must consent be documented?', options: ['Before CCM services are billed', 'Within a year', 'Only if the resident asks', 'After the first claim is paid'] },
-        { q: 'The initial assessment establishes…', options: ['The resident’s baseline for future monthly reviews', 'The billing amount', 'The facility’s staffing', 'The discharge date'] }
-      ] },
-    { id: 'm4-clinical-data', title: 'Updating Clinical Data', minutes: 12,
-      summary: 'Keep conditions, medications and allergies in TC in line with the current PCC chart.',
-      quiz: [
-        { q: 'The medication list in TC should match…', options: ['Current active orders in PCC', 'The admission medication list', 'Last month’s TC list', 'The pharmacy’s catalogue'] },
-        { q: 'A medication was discontinued in PCC. In TC you…', options: ['Remove it or mark it inactive', 'Leave it as active', 'Add a duplicate entry', 'Ignore it until next quarter'] }
-      ] },
-    { id: 'm4-monthly-review', title: 'Documenting the Monthly Clinical Review', minutes: 15,
-      summary: 'Capture what changed this month: vitals, labs, events and orders, in the review template.',
-      task: 'Write the monthly review summary for the training resident: changes since last month, abnormal results and new orders.',
-      quiz: [
-        { q: 'The monthly review focuses on…', options: ['What changed since the last review', 'Repeating the admission history', 'Billing totals', 'Facility news'] },
-        { q: 'A new hospital visit this month should be…', options: ['Documented with date and reason', 'Left for next month', 'Recorded only if the resident mentions it', 'Skipped if discharged'] }
-      ] },
+      task: 'Create the training resident’s profile in TC. List the fields you filled in and the PCC source you used for each.' },
+    { title: 'Enrollment and Consent, Initial Pt Assessment', lessons: [
+      { id: 'm4-enrollment-consent', title: 'Enrollment and Consent', minutes: 8,
+        summary: 'Enroll the resident in the CCM program and record consent before any service is billed.',
+        task: 'List, in order, the steps to enroll the training resident in TC and record their consent.' },
+      { id: 'm4-ghq', title: 'General Health Questionnaire', minutes: 8,
+        summary: 'Complete the General Health Questionnaire that opens the initial assessment.',
+        task: 'Complete the General Health Questionnaire for the training resident. Note any answer you could not find in PCC and where you looked.' },
+      { id: 'm4-support', title: 'Support', minutes: 6,
+        summary: 'Record the resident’s support network and care contacts.',
+        task: 'Fill in the Support section for the training resident. Write down who you listed and where in PCC you found them.' },
+      { id: 'm4-allergies', title: 'Allergies', minutes: 6,
+        summary: 'Enter the resident’s allergies so they match the PCC chart.',
+        task: 'Enter every allergy for the training resident. List each one with its reaction, if recorded.' },
+      { id: 'm4-medications', title: 'Medications', minutes: 8,
+        summary: 'Build the medication list in TC from the current active orders in PCC.',
+        task: 'Enter the training resident’s active medications. How many did you enter, and which PCC tab did you use?' },
+      { id: 'm4-numbers', title: 'Numbers to Track', minutes: 6,
+        summary: 'Set the vitals and labs to follow for each chronic condition.',
+        task: 'Set up the Numbers to Track for the training resident. For each one, name the condition it monitors.' }
+    ]},
+    { title: 'Updating Clinical Data', lessons: [
+      { id: 'm4-conditions-allergies', title: 'Conditions and Allergies', minutes: 8,
+        summary: 'Keep conditions and allergies in TC in line with the current PCC chart.',
+        task: 'Compare the training resident’s conditions and allergies in TC against PCC. List what you added, changed or removed.' },
+      { id: 'm4-labs-meds-imm', title: 'Lab Results, Medications and Immunizations', minutes: 10,
+        summary: 'Update lab results, medications and immunizations from PCC.',
+        task: 'Update the training resident’s labs, medications and immunizations. List each change with its date.' }
+    ]},
+    { title: 'Documenting the Monthly Clinical Review', lessons: [
+      { id: 'm4-review-meds-numbers', title: 'Allergies, Medications and Numbers to Track', minutes: 8,
+        summary: 'Review this month’s allergies, medications and tracked numbers in the review template.',
+        task: 'Write this month’s review of the training resident’s allergies, medications and Numbers to Track: what changed since last month?' },
+      { id: 'm4-review-resources', title: 'Resources and Support, Other Provider and Appointments', minutes: 8,
+        summary: 'Document resources and support, other providers and appointments for the month.',
+        task: 'Document the training resident’s resources and support, other providers and appointments for this month.' }
+    ]},
     { id: 'm4-gbis', title: 'GBIs and Problem Note', minutes: 12,
       summary: 'Link Goals, Barriers and Interventions to each problem and carry the Problem Note into TC.',
-      task: 'For one problem (e.g. diabetes), write one measurable goal, one barrier and one intervention.',
-      quiz: [
-        { q: 'GBI stands for…', options: ['Goals, Barriers, Interventions', 'General Baseline Information', 'Glucose, BP, Intake', 'Guided Billing Index'] },
-        { q: 'A well-written goal is…', options: ['Specific and measurable', 'Broad and open-ended', 'Copied from another resident', 'Written without a timeframe'] }
-      ] },
-    { id: 'm4-logtime', title: 'LogTime and Extracting the File', minutes: 10,
+      task: 'For one problem (e.g. diabetes), write one measurable goal, one barrier and one intervention.' },
+    { id: 'm4-logtime', title: 'LogTime and Exporting the File', minutes: 10,
       summary: 'Log time accurately against the month and export the completed file.',
+      task: 'Log your time for the training resident and export the file. Write down the minutes logged and the file name.' },
+    { id: 'm4-assessment', title: 'Module Assessment', video: false,
+      summary: 'Questions covering every video in TC Navigation.',
       quiz: [
+        { q: 'Before creating a profile in TC, you should…', options: ['Search to make sure the patient does not already exist', 'Create it and merge later', 'Ask the resident to sign up', 'Copy another patient’s profile'] },
+        { q: 'Demographics in TC must match…', options: ['The PCC face sheet', 'Last month’s spreadsheet', 'What the facility told you verbally', 'The billing invoice'] },
+        { q: 'When must consent be documented?', options: ['Before CCM services are billed', 'Within a year', 'Only if the resident asks', 'After the first claim is paid'] },
+        { q: 'The initial assessment establishes…', options: ['The resident’s baseline for future monthly reviews', 'The billing amount', 'The facility’s staffing', 'The discharge date'] },
+        { q: 'The medication list in TC should match…', options: ['Current active orders in PCC', 'The admission medication list', 'Last month’s TC list', 'The pharmacy’s catalogue'] },
+        { q: 'A medication was discontinued in PCC. In TC you…', options: ['Remove it or mark it inactive', 'Leave it as active', 'Add a duplicate entry', 'Ignore it until next quarter'] },
+        { q: 'The monthly review focuses on…', options: ['What changed since the last review', 'Repeating the admission history', 'Billing totals', 'Facility news'] },
+        { q: 'A new hospital visit this month should be…', options: ['Documented with date and reason', 'Left for next month', 'Recorded only if the resident mentions it', 'Skipped if discharged'] },
+        { q: 'GBI stands for…', options: ['Goals, Barriers, Interventions', 'General Baseline Information', 'Glucose, BP, Intake', 'Guided Billing Index'] },
+        { q: 'A well-written goal is…', options: ['Specific and measurable', 'Broad and open-ended', 'Copied from another resident', 'Written without a timeframe'] },
         { q: 'Time logged in TC must reflect…', options: ['The actual time spent on that resident', 'A standard 20 minutes for everyone', 'Time estimated at month end', 'Time spent on any resident'] },
-        { q: 'When do you extract the file?', options: ['After the review is complete and saved', 'Before starting the review', 'Only at quarter end', 'Whenever the system is open'] }
+        { q: 'When do you export the file?', options: ['After the review is complete and saved', 'Before starting the review', 'Only at quarter end', 'Whenever the system is open'] }
       ] }
   ]},
   { title: 'PracticeFusion and Billing', sections: [

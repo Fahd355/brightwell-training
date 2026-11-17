@@ -2,7 +2,17 @@
 const C = window.BW_CONFIG, MODS = window.BW_MODULES;
 const DEMO = !C.SUPABASE_ANON_KEY || C.SUPABASE_ANON_KEY.includes('PASTE');
 const sb = DEMO ? null : window.supabase.createClient(C.SUPABASE_URL, C.SUPABASE_ANON_KEY);
-const SECTIONS = MODS.flatMap((m, mi) => m.sections.map((s, si) => ({ ...s, mod: m, mi, code: `${mi + 1}.${si + 1}` })));
+const SECTIONS = [];
+MODS.forEach((m, mi) => {
+  m.items = m.sections.map((s, si) => {
+    const code = `${mi + 1}.${si + 1}`;
+    if (!s.lessons) { const x = { ...s, mod: m, mi, code }; SECTIONS.push(x); return x; }
+    const g = { ...s, mod: m, mi, code, kids: [] };
+    s.lessons.forEach((l, li) => { const x = { ...l, mod: m, mi, code: `${code}.${li + 1}`, group: g }; g.kids.push(x); SECTIONS.push(x); });
+    return g;
+  });
+  m.leaves = SECTIONS.filter(x => x.mod === m);
+});
 const byId = Object.fromEntries(SECTIONS.map(s => [s.id, s]));
 const $app = document.getElementById('app');
 let user = null, profile = null, P = {};
@@ -61,19 +71,51 @@ const api = {
 /* ---------- progress logic ---------- */
 function steps(s, prog = P) {
   const p = prog[s.id] || {};
-  const list = [{ k: 'video', label: 'Watch', done: !!p.video_done }];
+  const list = hasVid(s) ? [{ k: 'video', label: 'Watch', done: !!p.video_done }] : [];
   if (s.task) list.push({ k: 'task', label: 'Task', done: !!p.task_done });
   if (s.quiz && s.quiz.length) list.push({ k: 'quiz', label: 'Assessment', done: !!p.quiz_passed });
   return list;
 }
 const pct = (s, prog = P) => { const st = steps(s, prog); return st.filter(x => x.done).length / st.length; };
 const isDone = (s, prog = P) => pct(s, prog) === 1;
-const modPct = (m, prog = P) => m.sections.reduce((a, s) => a + pct(s, prog), 0) / m.sections.length;
+const modPct = (m, prog = P) => m.leaves.reduce((a, s) => a + pct(s, prog), 0) / m.leaves.length;
 const overall = (prog = P) => SECTIONS.reduce((a, s) => a + pct(s, prog), 0) / SECTIONS.length;
 const unlocked = s => !C.SEQUENTIAL || profile?.is_admin || SECTIONS.indexOf(s) === 0 || isDone(SECTIONS[SECTIONS.indexOf(s) - 1]);
 const nextUp = () => SECTIONS.find(s => !isDone(s)) || null;
 const videoUrl = s => s.video || (C.VIDEO_SOURCE === 'github' ? `videos/${s.id}.mp4` : `${C.SUPABASE_URL}/storage/v1/object/public/${C.VIDEO_BUCKET}/${s.id}.mp4`);
 const stateOf = s => !unlocked(s) ? 'locked' : isDone(s) ? 'done' : pct(s) > 0 ? 'progress' : 'todo';
+const hasVid = s => s.video !== false;
+const itemDone = x => x.kids ? x.kids.every(k => isDone(k)) : isDone(x);
+const groupState = g => g.kids.every(k => isDone(k)) ? 'done' : g.kids.some(k => pct(k) > 0) ? 'progress' : !unlocked(g.kids[0]) ? 'locked' : 'todo';
+function secRow(s) {
+  const st = stateOf(s), body = `<i class="ph-duotone ${ICON[st]} st"></i><span class="code">${s.code}</span><span class="t">${esc(s.title)}</span>${chips(s)}`;
+  return `<li>${st === 'locked' ? `<span class="sec locked" title="Complete the previous section first">${body}</span>` : `<a class="sec ${st}" href="#/s/${s.id}">${body}</a>`}</li>`;
+}
+function rowHTML(it) {
+  if (!it.kids) return secRow(it);
+  const st = groupState(it), d = it.kids.filter(k => isDone(k)).length;
+  return `<li class="grp"><div class="sec grp-head ${st}"><i class="ph-duotone ${ICON[st]} st"></i><span class="code">${it.code}</span><span class="t">${esc(it.title)}</span><span class="chips"><span class="chip ${d === it.kids.length ? 'ok' : ''}">${d} of ${it.kids.length} videos</span></span></div>
+    <ol class="sec-list sub">${it.kids.map(secRow).join('')}</ol></li>`;
+}
+function outlineItem(it, cur) {
+  const one = x => { const st = stateOf(x), inner = `<i class="ph-duotone ${ICON[st]}"></i><span>${x.code} ${esc(x.title)}</span>`;
+    return st === 'locked' ? `<span class="o-sec locked">${inner}</span>` : `<a class="o-sec ${x === cur ? 'cur' : ''} ${st}" href="#/s/${x.id}">${inner}</a>`; };
+  if (!it.kids) return one(it);
+  const st = groupState(it);
+  return `<div class="o-grp"><span class="o-sec o-ghead ${st}"><i class="ph-duotone ${ICON[st]}"></i><span>${it.code} ${esc(it.title)}</span></span><div class="o-kids">${it.kids.map(one).join('')}</div></div>`;
+}
+function addCaptions(s, v) {
+  const url = s.captions === false ? null : s.captions || (s.video ? null : videoUrl(s).replace(/\.mp4$/, '.en.srt'));
+  if (!url) return;
+  fetch(url).then(r => r.ok ? r.text() : null).then(t => {
+    if (!t || !t.includes('-->')) return;
+    t = t.replace(/^\uFEFF/, '');
+    const vtt = /^WEBVTT/.test(t) ? t : 'WEBVTT\n\n' + t.replace(/\r/g, '').replace(/(\d\d:\d\d:\d\d),(\d{3})/g, '$1.$2');
+    const tr = document.createElement('track');
+    Object.assign(tr, { kind: 'captions', label: 'English', srclang: 'en', default: true, src: URL.createObjectURL(new Blob([vtt], { type: 'text/vtt' })) });
+    v.appendChild(tr);
+  }).catch(() => {});
+}
 const ICON = { locked: 'ph-lock-simple', done: 'ph-check-circle', progress: 'ph-circle-half', todo: 'ph-circle' };
 
 function seededOrder(seed, n) {
@@ -116,7 +158,7 @@ function renderLogin() {
       <p class="muted">Forgot your password? Ask your trainer to reset it.</p>
       ${DEMO ? `<p class="demo-note"><i class="ph-duotone ph-flask"></i>Demo mode: any username and password will work.</p>` : ''}
     </div>
-    <ol class="login-mods">${MODS.map((m, i) => `<li><span class="num">${pad(i + 1)}</span><span><b>${esc(m.title)}</b><small>${m.sections.length} sections</small></span></li>`).join('')}</ol>
+    <ol class="login-mods">${MODS.map((m, i) => `<li><span class="num">${pad(i + 1)}</span><span><b>${esc(m.title)}</b><small>${m.items.length} sections</small></span></li>`).join('')}</ol>
   </div>`;
   document.getElementById('loginF').onsubmit = async e => {
     e.preventDefault(); const f = e.target, btn = f.querySelector('button'); btn.disabled = true;
@@ -139,9 +181,8 @@ function renderHome() {
     </section>
     <section class="mods">${MODS.map((m, mi) => `<div class="mod">
       <div class="mod-head"><span class="mod-num">${pad(mi + 1)}</span><div class="mod-t"><p class="kicker">Module ${mi + 1}</p><h2>${esc(m.title)}</h2></div>
-        <div class="mod-m">${meter(modPct(m))}<small>${m.sections.filter(s => isDone(s)).length} of ${m.sections.length}</small></div></div>
-      <ol class="sec-list">${m.sections.map(o => { const s = byId[o.id], st = stateOf(s); const body = `<i class="ph-duotone ${ICON[st]} st"></i><span class="code">${s.code}</span><span class="t">${esc(s.title)}</span>${chips(s)}`;
-        return `<li>${st === 'locked' ? `<span class="sec locked" title="Complete the previous section first">${body}</span>` : `<a class="sec ${st}" href="#/s/${s.id}">${body}</a>`}</li>`; }).join('')}</ol>
+        <div class="mod-m">${meter(modPct(m))}<small>${m.items.filter(x => itemDone(x)).length} of ${m.items.length}</small></div></div>
+      <ol class="sec-list">${m.items.map(rowHTML).join('')}</ol>
     </div>`).join('')}</section>
   </div>`, 'home');
 }
@@ -150,47 +191,46 @@ function renderHome() {
 function renderSection(s) {
   const i = SECTIONS.indexOf(s), prev = SECTIONS[i - 1], next = SECTIONS[i + 1];
   const outline = `<aside class="outline">${MODS.map((m, mi) => `<div class="o-mod"><p class="kicker">${pad(mi + 1)} · ${esc(m.title)}</p>
-    ${m.sections.map(o => { const x = byId[o.id], st = stateOf(x); const inner = `<i class="ph-duotone ${ICON[st]}"></i><span>${x.code} ${esc(x.title)}</span>`;
-      return st === 'locked' ? `<span class="o-sec locked">${inner}</span>` : `<a class="o-sec ${x === s ? 'cur' : ''} ${st}" href="#/s/${x.id}">${inner}</a>`; }).join('')}</div>`).join('')}</aside>`;
+    ${m.items.map(it => outlineItem(it, s)).join('')}</div>`).join('')}</aside>`;
   if (!unlocked(s)) {
     $app.innerHTML = shell(`<div class="layout">${outline}<article class="lesson"><p class="kicker">Module ${s.mi + 1} · ${esc(s.mod.title)}</p><h1>${esc(s.title)}</h1>
       <p class="locked-big"><i class="ph-duotone ph-lock-simple"></i>This section opens once you complete <a href="#/s/${prev.id}">${prev.code} ${esc(prev.title)}</a>.</p></article></div>`, 'home');
     return;
   }
-  let n = 1; const nTask = s.task ? ++n : 0, nQuiz = s.quiz?.length ? ++n : 0;
+  let n = hasVid(s) ? 1 : 0; const nTask = s.task ? ++n : 0, nQuiz = s.quiz?.length ? ++n : 0;
   const res = s.resource ? (s.resource.url === 'PROBLEM_NOTE_LIBRARY' ? (C.PROBLEM_NOTE_LIBRARY_URL ? { ...s.resource, url: C.PROBLEM_NOTE_LIBRARY_URL } : null) : s.resource) : null;
   $app.innerHTML = shell(`<div class="layout">${outline}<article class="lesson">
     <a href="#/" class="back"><i class="ph-bold ph-arrow-left"></i>All modules</a>
-    <p class="kicker">Module ${s.mi + 1} · ${esc(s.mod.title)} · Section ${s.code}</p>
+    <p class="kicker">Module ${s.mi + 1} · ${esc(s.mod.title)} · ${s.group ? `${s.group.code} ${esc(s.group.title)} · ` : ''}Section ${s.code}</p>
     <h1>${esc(s.title)}</h1>
     <p class="lead">${esc(s.summary)}</p>
     ${res ? `<a class="res" href="${esc(res.url)}" target="_blank" rel="noopener"><i class="ph-duotone ph-book-open-text"></i>${esc(res.label)}</a>` : ''}
     <div id="tracker"></div>
-    <section class="step"><h2><span class="n" id="n-video">1</span>Watch the video<small>${s.minutes ? s.minutes + ' min' : ''}</small></h2>
+    ${hasVid(s) ? `<section class="step"><h2><span class="n" id="n-video">1</span>Watch the video<small>${s.minutes ? s.minutes + ' min' : ''}</small></h2>
       <div class="video-wrap"><video id="vid" controls preload="metadata" playsinline controlslist="nodownload" src="${esc(videoUrl(s))}"></video>
         <div id="vidmsg" class="vidmsg" hidden><i class="ph-duotone ph-film-slate"></i><b>Video coming soon</b><span>The task and assessment are open in the meantime.</span>${DEMO ? '<button class="btn ghost sm" data-act="demo-watch">Mark as watched (demo)</button>' : ''}</div></div>
       <div class="vbar">${meter(0)}<span id="vtxt"></span></div>
       <p class="muted small">You can rewind at any time. Skipping ahead opens once you have watched the video through.</p>
-    </section>
+    </section>` : ''}
     ${nTask ? `<section class="step" id="taskBox" data-n="${nTask}"></section>` : ''}
     ${nQuiz ? `<section class="step" id="quizBox" data-n="${nQuiz}"></section>` : ''}
     <nav class="pager">${prev ? `<a href="#/s/${prev.id}" class="btn ghost"><i class="ph-bold ph-arrow-left"></i>${prev.code} ${esc(prev.title)}</a>` : '<span></span>'}
       <span id="nextSlot"></span></nav>
   </article></div>`, 'home');
-  refresh(s); mountVideo(s);
+  refresh(s); if (hasVid(s)) mountVideo(s);
 }
 
 function refresh(s) {
   const st = steps(s), done = isDone(s), i = SECTIONS.indexOf(s), next = SECTIONS[i + 1];
   document.getElementById('tracker').innerHTML = `<div class="tracker">${st.map((x, k) => `<span class="tk ${x.done ? 'ok' : ''}"><span class="tk-n">${x.done ? '<i class="ph-bold ph-check"></i>' : k + 1}</span>${x.label}</span>`).join('<span class="tk-line"></span>')}</div>
     ${done ? `<p class="complete"><i class="ph-duotone ph-seal-check"></i>Section complete.${next ? ` <a href="#/s/${next.id}">Go to ${next.code} ${esc(next.title)}</a>` : ' You have finished the program.'}</p>` : ''}`;
-  const nv = document.getElementById('n-video'); nv.className = 'n ' + (P[s.id]?.video_done ? 'ok' : ''); nv.innerHTML = P[s.id]?.video_done ? '<i class="ph-bold ph-check"></i>' : '1';
+  const nv = document.getElementById('n-video'); if (nv) nv.className = 'n ' + (P[s.id]?.video_done ? 'ok' : ''); if (nv) nv.innerHTML = P[s.id]?.video_done ? '<i class="ph-bold ph-check"></i>' : '1';
   const tb = document.getElementById('taskBox'); if (tb) tb.innerHTML = taskHTML(s, tb.dataset.n);
   const qb = document.getElementById('quizBox'); if (qb) qb.innerHTML = quizHTML(s, qb.dataset.n);
   const ns = document.getElementById('nextSlot');
   if (ns) ns.innerHTML = next ? (unlocked(next) ? `<a href="#/s/${next.id}" class="btn ${done ? 'primary' : 'ghost'}">${next.code} ${esc(next.title)}<i class="ph-bold ph-arrow-right"></i></a>` : `<span class="muted"><i class="ph-duotone ph-lock-simple"></i> Next section opens when this one is complete</span>`) : '';
 }
-const stepOpen = s => P[s.id]?.video_done || vidMissing[s.id] || profile?.is_admin;
+const stepOpen = s => !hasVid(s) || P[s.id]?.video_done || vidMissing[s.id] || profile?.is_admin;
 const stepHead = (n, done, label) => `<h2><span class="n ${done ? 'ok' : ''}">${done ? '<i class="ph-bold ph-check"></i>' : n}</span>${label}</h2>`;
 
 function taskHTML(s, n) {
@@ -220,6 +260,7 @@ function quizHTML(s, n) {
 function mountVideo(s) {
   const v = document.getElementById('vid'), bar = document.querySelector('.vbar .meter i'), txt = document.getElementById('vtxt');
   let max = 0, saved = P[s.id]?.video_pct || 0;
+  addCaptions(s, v);
   const show = () => { const pc = v.duration ? Math.min(100, Math.round(max / v.duration * 100)) : saved; bar.style.width = (P[s.id]?.video_done ? 100 : pc) + '%'; txt.textContent = P[s.id]?.video_done ? 'Watched' : pc ? pc + '% watched' : 'Not started'; };
   show();
   v.addEventListener('loadedmetadata', () => { max = saved / 100 * v.duration; if (!P[s.id]?.video_done && max > 5) v.currentTime = Math.max(0, max - 3); show(); });
