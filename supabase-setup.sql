@@ -85,9 +85,9 @@ create policy "feedback insert" on public.feedback for insert with check (public
 drop policy if exists "feedback delete" on public.feedback;
 create policy "feedback delete" on public.feedback for delete using (public.is_admin());
 create or replace function public.mark_feedback_read(ids uuid[]) returns void
-language sql security definer set search_path = public as $
+language sql security definer set search_path = public as $$
   update public.feedback set read_at = now() where id = any(ids) and user_id = auth.uid() and read_at is null;
-$;
+$$;
 
 -- 7. Q&A — trainees see their own questions plus every answered one
 create table if not exists public.questions (
@@ -111,9 +111,9 @@ create policy "questions answer" on public.questions for update using (public.is
 drop policy if exists "questions delete" on public.questions;
 create policy "questions delete" on public.questions for delete using (public.is_admin());
 create or replace function public.mark_answers_seen() returns void
-language sql security definer set search_path = public as $
+language sql security definer set search_path = public as $$
   update public.questions set answer_seen = true where user_id = auth.uid() and answer is not null and not answer_seen;
-$;
+$$;
 
 -- 8. Live sessions (Google Meet links)
 create table if not exists public.meetings (
