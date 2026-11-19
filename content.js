@@ -32,10 +32,7 @@ window.BW_MODULES = [
       links: [{ label: 'Outline of Care', url: 'https://docs.google.com/spreadsheets/d/1fMM8aA0m-hctRFn0ZLxi33pCnjZh7z-JdDqqRr0ZXRE/edit?usp=sharing' }, { label: 'CCM Tool', url: 'https://ccmclinical.pages.dev/' }],
       quiz: { pending: 10 } },
     { id: 'm1-reference', title: 'Reference Material',
-      summary: 'The reference materials you will use on shift. All links are in the Reference tab.' },
-    { id: 'm6-task-portal', title: 'Task Portal',
-      summary: 'The possible scenarios of submitting a case on the portal.',
-      quiz: { pending: 5 } }
+      summary: 'The reference materials you will use on shift. All links are in the Reference tab.' }
   ]},
   { title: 'PCC Navigation', sections: [
     { id: 'm3-login-profile', title: 'Login and Locating Pt’s Profile', minutes: 10,
@@ -155,10 +152,13 @@ window.BW_MODULES = [
       summary: 'The different documentation standards between a FU pt and a Scratch pt.',
       quiz: { pending: 15 } }
   ]},
-  { title: 'MatrixCare', sections: [
+  { title: 'Add-ons', sections: [
     { id: 'm7-matrixcare', title: 'Alternative EHR System',
-      summary: 'MatrixCare, followed by the final assessment on the whole training.',
-      quiz: { pending: 25 } }
+      summary: 'MatrixCare as an alternative EHR system, with the final assessment on the whole training.',
+      quiz: { pending: 25 } },
+    { id: 'm6-task-portal', title: 'Task Portal',
+      summary: 'The possible scenarios of submitting a case on the portal.',
+      quiz: { pending: 5 } }
   ]}
 ];
 
