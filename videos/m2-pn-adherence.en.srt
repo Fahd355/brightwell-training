@@ -1,0 +1,431 @@
+1
+00:00:01,500 --> 00:00:05,374
+Lesson 3.3: Formulating the Care Plan's Problem Note.
+
+2
+00:00:05,414 --> 00:00:08,402
+Part 2: Medication Adherence.
+
+3
+00:00:10,067 --> 00:00:14,749
+Medication adherence means the patient takes the medications as prescribed.
+
+4
+00:00:14,789 --> 00:00:18,836
+You check it in the medication administration record.
+
+5
+00:00:18,886 --> 00:00:22,463
+Check adherence only for the CCM medications: here,
+
+6
+00:00:22,503 --> 00:00:26,780
+rosuvastatin. Not the patient's other medications.
+
+7
+00:00:26,830 --> 00:00:31,718
+For a scratch patient, check exactly 30 days, counting back from today.
+
+8
+00:00:31,768 --> 00:00:35,327
+If today is November 13, that's from October 13:
+
+9
+00:00:35,367 --> 00:00:38,090
+so you read two monthly reports.
+
+10
+00:00:38,140 --> 00:00:41,305
+Every scheduled dose in those 30 days must be given,
+
+11
+00:00:41,345 --> 00:00:44,008
+or have a reason you can document.
+
+12
+00:00:45,433 --> 00:00:48,150
+You check adherence from the same Orders tab.
+
+13
+00:00:50,100 --> 00:00:52,916
+In the top right corner, open Reports.
+
+14
+00:00:53,854 --> 00:00:57,604
+It lists several reports. Choose Administration Record.
+
+15
+00:01:01,567 --> 00:01:06,254
+The report setup opens. Keep the report type: Monthly Reports.
+
+16
+00:01:07,633 --> 00:01:12,947
+Under Administration Records, check Medication Administration Record, or MAR.
+
+17
+00:01:14,067 --> 00:01:15,490
+Then choose the month.
+
+18
+00:01:15,540 --> 00:01:19,401
+For a scratch patient, you check adherence for exactly 30 days,
+
+19
+00:01:19,441 --> 00:01:21,451
+counting back from today.
+
+20
+00:01:21,501 --> 00:01:27,902
+If today is November 13, 2026, you check from October 13 to today.
+
+21
+00:01:29,567 --> 00:01:31,726
+So you need two reports: November,
+
+22
+00:01:31,766 --> 00:01:36,998
+for November 1 to today, and October, for October 13 to 31.
+
+23
+00:01:38,877 --> 00:01:41,966
+Start with November. Then click Run Report.
+
+24
+00:01:43,667 --> 00:01:45,972
+The report opens as a PDF.
+
+25
+00:01:46,033 --> 00:01:50,128
+Each medication has a row, with a box for every day of the month.
+
+26
+00:01:51,233 --> 00:01:55,673
+Take alendronate sodium. On Sunday, the 1st, it's marked X.
+
+27
+00:01:56,933 --> 00:02:02,442
+Its directions: one tablet, once a day, every Wednesday, for osteoporosis.
+
+28
+00:02:04,000 --> 00:02:09,016
+So X marks the days it isn't scheduled. The patient isn't meant to take it then.
+
+29
+00:02:10,667 --> 00:02:12,520
+On Wednesdays, the box is checked,
+
+30
+00:02:12,560 --> 00:02:15,804
+with the nurse's initials: the dose was given.
+
+31
+00:02:17,733 --> 00:02:23,606
+You only check adherence for the CCM medications. Here, that's rosuvastatin.
+
+32
+00:02:25,267 --> 00:02:27,019
+Search the report for it.
+
+33
+00:02:28,133 --> 00:02:34,157
+Rosuvastatin Calcium Tablet 20 MG: one tablet at bedtime, every day.
+
+34
+00:02:37,400 --> 00:02:41,203
+Every day, from the 1st to yesterday, the 12th, is checked.
+
+35
+00:02:41,267 --> 00:02:45,222
+The patient took it on every date. So the patient is adherent.
+
+36
+00:02:49,100 --> 00:02:52,699
+When a day isn't checked, find out why the dose wasn't given.
+
+37
+00:02:53,600 --> 00:02:57,745
+The Chart Codes table, at the end of the report, explains each code.
+
+38
+00:02:59,933 --> 00:03:03,428
+R means refused: the patient refused that dose.
+
+39
+00:03:05,600 --> 00:03:09,074
+HD means the dose was held. See the nurse notes.
+
+40
+00:03:09,600 --> 00:03:14,483
+NG means the parameters were out of range, so the medication wasn't given.
+
+41
+00:03:15,667 --> 00:03:16,499
+For example,
+
+42
+00:03:16,539 --> 00:03:22,824
+a blood pressure medication like losartan is held when the patient's blood pressure is too low.
+
+43
+00:03:25,567 --> 00:03:30,264
+HO means hospitalized, and AW means away from the center.
+
+44
+00:03:31,567 --> 00:03:36,751
+This patient took rosuvastatin on every date, so there are no adherence issues.
+
+45
+00:03:39,133 --> 00:03:44,091
+Under Medication Adherence, write: patient is adherent to medications.
+
+46
+00:03:45,767 --> 00:03:49,290
+If you find refusals, the patient is non-adherent.
+
+47
+00:03:53,633 --> 00:03:57,230
+Write which medication was refused, and on which dates.
+
+48
+00:03:58,367 --> 00:04:01,741
+If a dose was held because the parameters were out of range,
+
+49
+00:04:01,781 --> 00:04:03,778
+the patient is still adherent.
+
+50
+00:04:09,167 --> 00:04:12,024
+Write that the medication wasn't taken on those dates,
+
+51
+00:04:12,064 --> 00:04:14,907
+because the parameters were out of range.
+
+52
+00:04:17,800 --> 00:04:21,957
+A scheduled day with no check mark and no code is a blank day.
+
+53
+00:04:22,007 --> 00:04:25,706
+Here, Wednesday the 18th is blank because it hasn't happened yet.
+
+54
+00:04:25,746 --> 00:04:29,685
+Inside your 30 days, a blank day needs checking.
+
+55
+00:04:29,735 --> 00:04:32,832
+A blank day is a documentation error. But first,
+
+56
+00:04:32,872 --> 00:04:36,577
+check whether the patient was in the facility that day.
+
+57
+00:04:36,633 --> 00:04:40,757
+The patient may have been in the hospital, or on a leave of absence.
+
+58
+00:04:43,200 --> 00:04:44,786
+For the rest of your 30 days,
+
+59
+00:04:44,826 --> 00:04:48,346
+run the report again, with the month set to October.
+
+60
+00:04:51,141 --> 00:04:52,678
+Click Run Report.
+
+61
+00:04:55,033 --> 00:04:59,435
+Search for rosuvastatin, and check October 13 to 31.
+
+62
+00:05:02,700 --> 00:05:07,597
+Every day is checked. There are no adherence issues, so the patient is adherent.
+
+63
+00:05:09,067 --> 00:05:11,645
+Here is every scenario you can find in the record,
+
+64
+00:05:11,685 --> 00:05:14,098
+and what you document for each.
+
+65
+00:05:14,148 --> 00:05:19,277
+The patient took the medication on every relevant date: the patient is adherent.
+
+66
+00:05:19,327 --> 00:05:22,547
+Refusals, marked R: the patient is non-adherent.
+
+67
+00:05:22,587 --> 00:05:27,155
+Document which medication was refused, and on which dates.
+
+68
+00:05:27,205 --> 00:05:30,910
+Held per parameters, marked NG: the patient is adherent,
+
+69
+00:05:30,950 --> 00:05:35,629
+despite missing those doses, because the parameters were out of range.
+
+70
+00:05:35,679 --> 00:05:39,898
+Blank days while the patient was hospitalized, or out of the facility:
+
+71
+00:05:39,938 --> 00:05:44,424
+adherent. The doses were missed because the patient was away.
+
+72
+00:05:44,474 --> 00:05:47,146
+Blank days while the patient was in the facility:
+
+73
+00:05:47,186 --> 00:05:51,867
+still adherent, but mark the blank days as a documentation error.
+
+74
+00:05:51,917 --> 00:05:53,505
+Marked X: find out why.
+
+75
+00:05:53,545 --> 00:05:58,680
+Check whether the medication was prescribed on those dates, or what else happened.
+
+76
+00:06:03,000 --> 00:06:07,499
+To check whether the patient was out of the facility, use the progress notes.
+
+77
+00:06:08,438 --> 00:06:11,565
+Everything that happens to the patient is documented there.
+
+78
+00:06:11,605 --> 00:06:13,884
+Open the Prog Notes tab.
+
+79
+00:06:18,733 --> 00:06:22,045
+Make sure Display eMAR Progress Notes is checked,
+
+80
+00:06:22,085 --> 00:06:25,761
+so notes about medication administration show.
+
+81
+00:06:27,141 --> 00:06:31,197
+Click View All. Stay on Progress Notes, not Practitioner Notes.
+
+82
+00:06:35,911 --> 00:06:39,079
+You can filter the notes by date. Click Custom.
+
+83
+00:06:43,933 --> 00:06:49,649
+Set the effective date range to your 30 days: October 13 to today. Then save.
+
+84
+00:06:53,067 --> 00:06:55,763
+Now search the notes for hospitalization.
+
+85
+00:06:57,967 --> 00:07:01,422
+This fall risk evaluation from October 21 says:
+
+86
+00:07:01,462 --> 00:07:06,256
+recent hospitalization history in the last 30 days, no.
+
+87
+00:07:07,200 --> 00:07:10,186
+Search for refusals too. Here, there are none.
+
+88
+00:07:12,701 --> 00:07:15,209
+To confirm, open the Census tab.
+
+89
+00:07:16,867 --> 00:07:20,245
+It lists the patient's status over time. Since July 1,
+
+90
+00:07:20,285 --> 00:07:23,510
+the patient has been active in the facility.
+
+91
+00:07:26,233 --> 00:07:29,059
+A hospital stay shows up as its own row.
+
+92
+00:07:29,109 --> 00:07:35,742
+Here, on June 10, 2026, the patient went to the hospital for less than 24 hours,
+
+93
+00:07:35,782 --> 00:07:37,837
+and was back the same day.
+
+94
+00:07:37,900 --> 00:07:42,127
+A leave of absence, like this therapeutic leave, shows up here too.
+
+95
+00:07:42,177 --> 00:07:45,131
+That's everything you check for medication adherence.
+
+96
+00:07:50,267 --> 00:07:53,338
+To recap: check only the CCM medications,
+
+97
+00:07:53,378 --> 00:07:58,154
+for exactly 30 days, in the November and October reports.
+
+98
+00:07:58,204 --> 00:08:01,446
+Given on every date: the patient is adherent.
+
+99
+00:08:01,496 --> 00:08:05,596
+Refused: non-adherent. Name the medication and the dates.
+
+100
+00:08:05,646 --> 00:08:09,214
+Held because the parameters were out of range: adherent.
+
+101
+00:08:09,264 --> 00:08:12,974
+Blank while the patient was out of the facility: adherent.
+
+102
+00:08:13,024 --> 00:08:15,998
+Blank while the patient was in the facility: adherent,
+
+103
+00:08:16,038 --> 00:08:19,823
+with the blank days marked as a documentation error.
+
+104
+00:08:19,873 --> 00:08:23,703
+Marked X: find out why, starting with the order's dates.
+
+105
+00:08:23,753 --> 00:08:25,076
+And use the progress notes
+
+106
+00:08:25,116 --> 00:08:29,152
+and the census to confirm hospital stays and refusals.
+
+107
+00:08:31,300 --> 00:08:33,936
+Next, you document lab and vital trends,
+
+108
+00:08:33,976 --> 00:08:37,215
+gaps in care, risk factors and symptoms.

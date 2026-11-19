@@ -1,0 +1,395 @@
+1
+00:00:01,500 --> 00:00:05,694
+Lesson 3.3.4: Trending of Labs and Vitals.
+
+2
+00:00:09,800 --> 00:00:13,788
+Trending means comparing the most recent value with the previous one,
+
+3
+00:00:13,828 --> 00:00:17,853
+and saying whether it's improving, stable or worsening.
+
+4
+00:00:17,903 --> 00:00:21,615
+For labs, that's every lab relevant to the CCM condition,
+
+5
+00:00:21,655 --> 00:00:25,239
+plus hemoglobin A1C, from the past year.
+
+6
+00:00:25,289 --> 00:00:29,764
+For vitals, it's blood pressure and weight, which we track for every patient.
+
+7
+00:00:29,814 --> 00:00:36,262
+And some conditions add vitals of their own, like oxygen saturation for COPD.
+
+8
+00:00:38,567 --> 00:00:41,735
+Every condition has its own monitoring criteria,
+
+9
+00:00:41,775 --> 00:00:44,394
+and the Update Care Policy lists them.
+
+10
+00:00:46,333 --> 00:00:50,252
+Its Numbers To Track tab shows what to monitor for each condition,
+
+11
+00:00:50,292 --> 00:00:51,720
+and how often.
+
+12
+00:00:55,133 --> 00:00:57,946
+For hyperlipidemia, that's the lipid profile,
+
+13
+00:00:57,986 --> 00:01:01,831
+every 180 days, and blood pressure, every day.
+
+14
+00:01:04,533 --> 00:01:07,588
+Blood pressure isn't a lab, so for trending of labs,
+
+15
+00:01:07,628 --> 00:01:10,172
+the lipid profile is what we're after.
+
+16
+00:01:13,033 --> 00:01:17,032
+PointClickCare keeps labs in three places: the Results tab,
+
+17
+00:01:17,072 --> 00:01:21,324
+the Misc tab, and, as a last resort, the progress notes.
+
+18
+00:01:23,467 --> 00:01:25,036
+The Results tab comes first.
+
+19
+00:01:25,076 --> 00:01:29,482
+It's split into two sections, Laboratory and Radiology.
+
+20
+00:01:33,267 --> 00:01:40,292
+Searching for lipid finds a single lipid panel, completed on July 15, 2026.
+
+21
+00:01:43,915 --> 00:01:47,158
+Actions, then View Results, opens the report.
+
+22
+00:01:49,333 --> 00:01:58,947
+Here's the lipid panel: cholesterol 100, triglycerides 143, HDL 44, and LDL 27.
+
+23
+00:02:03,267 --> 00:02:07,651
+All four were collected on July 15, 2026.
+
+24
+00:02:10,133 --> 00:02:18,616
+In the note, each lab gets its value and its date: HDL was 44 on July 15, 2026.
+
+25
+00:02:20,200 --> 00:02:25,011
+Then comes the trend: the most recent value compared with the previous one.
+
+26
+00:02:26,667 --> 00:02:28,381
+This panel was never repeated,
+
+27
+00:02:28,421 --> 00:02:32,016
+so the note says there's no previous result to compare with.
+
+28
+00:02:32,967 --> 00:02:35,928
+We also say whether the lab is controlled, improving,
+
+29
+00:02:35,968 --> 00:02:41,119
+stable or worsening. Every value here is in the normal range.
+
+30
+00:02:44,900 --> 00:02:49,434
+Triglycerides, total cholesterol and LDL follow the same pattern,
+
+31
+00:02:49,474 --> 00:02:51,530
+all from the same date.
+
+32
+00:02:52,467 --> 00:02:55,790
+With an earlier result, the note trends the two instead.
+
+33
+00:02:57,467 --> 00:03:03,454
+Say HDL had been 29 in February 2026, below the normal range.
+
+34
+00:03:03,494 --> 00:03:08,491
+Now it's 44, so the note says: improving, now controlled.
+
+35
+00:03:09,633 --> 00:03:14,134
+And a lab we need but can't find at all is simply marked: not found.
+
+36
+00:03:16,867 --> 00:03:18,991
+Three numbers are tracked for every patient,
+
+37
+00:03:19,031 --> 00:03:24,195
+whatever the condition: blood pressure, weight, and hemoglobin A1C.
+
+38
+00:03:25,133 --> 00:03:29,945
+A1C is the only lab of the three, so it belongs in this section too.
+
+39
+00:03:35,333 --> 00:03:41,059
+Its report shows an A1C of 6, on August 19, 2026.
+
+40
+00:03:44,300 --> 00:03:51,589
+So the note reads: hemoglobin A1C was 6.0 on August 19, 2026.
+
+41
+00:03:54,333 --> 00:03:59,853
+And when there's no A1C at all, the note says so: not found, no recent A1C.
+
+42
+00:04:01,540 --> 00:04:04,170
+Opening every report one by one takes time.
+
+43
+00:04:04,210 --> 00:04:09,131
+The Trending button shows every value of a lab side by side.
+
+44
+00:04:12,000 --> 00:04:15,210
+Here we pick HDL and TSH, and search.
+
+45
+00:04:17,600 --> 00:04:23,532
+HDL was measured once: 44, on July 15. That's what we already found.
+
+46
+00:04:26,433 --> 00:04:31,013
+TSH has three values: 0.72 on November 9,
+
+47
+00:04:31,053 --> 00:04:37,702
+0.42 on October 5, and 0.02 on August 19.
+
+48
+00:04:43,800 --> 00:04:46,738
+If the Results tab comes up empty, the Misc tab,
+
+49
+00:04:46,778 --> 00:04:49,684
+sometimes called Documents, is next.
+
+50
+00:04:54,000 --> 00:04:55,545
+It holds the patient's files,
+
+51
+00:04:55,585 --> 00:05:00,128
+uploaded as PDFs instead of being entered in their own sections.
+
+52
+00:05:04,433 --> 00:05:06,209
+Sorting by category groups them,
+
+53
+00:05:06,249 --> 00:05:10,050
+and the Laboratory category holds the lab results.
+
+54
+00:05:12,767 --> 00:05:18,072
+Each file opens a lab report, such as a metabolic panel or a CBC.
+
+55
+00:05:20,667 --> 00:05:24,878
+The last resort is the progress notes, with View All, as before.
+
+56
+00:05:28,667 --> 00:05:31,692
+This time the custom date range covers a whole year,
+
+57
+00:05:31,732 --> 00:05:36,000
+because a lab from three, four or six months ago still counts.
+
+58
+00:05:40,867 --> 00:05:47,121
+Here, the effective date runs from November 17, 2025 until today.
+
+59
+00:05:50,000 --> 00:05:53,025
+Searching for HDL finds the same result:
+
+60
+00:05:53,065 --> 00:05:59,477
+high density lipoprotein, 44, on July 15, 2026.
+
+61
+00:06:05,567 --> 00:06:10,014
+So, the rules for labs: we document every lab relevant to the condition,
+
+62
+00:06:10,054 --> 00:06:12,785
+plus A1C, from the past year.
+
+63
+00:06:12,835 --> 00:06:15,666
+We look in the Results tab and the Misc tab first,
+
+64
+00:06:15,706 --> 00:06:19,378
+and in the progress notes only if those two have nothing.
+
+65
+00:06:19,433 --> 00:06:22,904
+The most recent result is trended against the previous one,
+
+66
+00:06:22,944 --> 00:06:25,373
+and both must fall within that year.
+
+67
+00:06:25,433 --> 00:06:28,591
+A result older than one year isn't documented.
+
+68
+00:06:30,967 --> 00:06:33,039
+Trending of vitals works the same way,
+
+69
+00:06:33,079 --> 00:06:37,630
+for the two vitals tracked for every patient: blood pressure and weight.
+
+70
+00:06:39,767 --> 00:06:41,660
+The Weights and Vitals tab lists them,
+
+71
+00:06:41,700 --> 00:06:45,253
+along with temperature, pulse and respiration.
+
+72
+00:06:46,900 --> 00:06:54,232
+The most recent blood pressure is 132 over 70, on November 12, 2026.
+
+73
+00:06:56,933 --> 00:06:59,348
+We compare it with a reading from the previous month:
+
+74
+00:06:59,388 --> 00:07:03,980
+166 over 84, on October 20.
+
+75
+00:07:07,967 --> 00:07:12,756
+That earlier reading was above our upper limit of 140 over 90,
+
+76
+00:07:12,796 --> 00:07:14,388
+so it was uncontrolled.
+
+77
+00:07:16,000 --> 00:07:19,428
+Now it's within range, so the note says: improving.
+
+78
+00:07:22,800 --> 00:07:26,610
+Weight is next. View All beside it shows the weight history.
+
+79
+00:07:30,400 --> 00:07:37,711
+The most recent weight is 191.7 pounds, on November 1, 2026.
+
+80
+00:07:37,767 --> 00:07:42,138
+A month earlier, on October 4, it was 190.1 pounds:
+
+81
+00:07:42,178 --> 00:07:45,382
+almost no change, so the weight is stable.
+
+82
+00:07:49,300 --> 00:07:52,239
+The last section, vitals related to the condition,
+
+83
+00:07:52,279 --> 00:07:55,126
+also comes from the outline of care.
+
+84
+00:07:57,300 --> 00:08:00,603
+For hyperlipidemia, there's nothing beyond blood pressure,
+
+85
+00:08:00,643 --> 00:08:03,134
+which we already track for everyone.
+
+86
+00:08:06,933 --> 00:08:10,945
+So the note simply says: no vitals related to the condition.
+
+87
+00:08:12,800 --> 00:08:17,408
+With COPD, though, the outline lists oxygen saturation.
+
+88
+00:08:18,533 --> 00:08:21,946
+Then the most recent oxygen saturation would go here,
+
+89
+00:08:21,986 --> 00:08:26,434
+trended against the previous reading, just like blood pressure and weight.
+
+90
+00:08:30,500 --> 00:08:34,334
+To wrap up: the numbers to track come from the Update Care Policy,
+
+91
+00:08:34,374 --> 00:08:36,393
+here the lipid profile.
+
+92
+00:08:36,443 --> 00:08:40,674
+The Results tab comes first, through View Results or the Trending view.
+
+93
+00:08:40,724 --> 00:08:45,250
+Then the Misc tab, and finally a one-year search of the progress notes.
+
+94
+00:08:45,300 --> 00:08:50,159
+Each lab is trended, latest against previous, both within the past year.
+
+95
+00:08:50,209 --> 00:08:53,492
+Blood pressure and weight are trended against the previous month,
+
+96
+00:08:53,532 --> 00:08:55,069
+for every patient.
+
+97
+00:08:55,119 --> 00:08:59,214
+And vitals related to the condition come from the outline of care.
+
+98
+00:09:01,367 --> 00:09:07,729
+Still ahead in the problem note: gaps in care, symptoms, risk factors and complications, falls,
+
+99
+00:09:07,769 --> 00:09:15,689
+provider visits, hospitalizations and ER visits, referrals, medication changes, and escalation.

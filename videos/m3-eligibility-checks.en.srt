@@ -1,0 +1,495 @@
+1
+00:00:00,900 --> 00:00:04,690
+Welcome to Lesson 3.2: Eligibility Checks.
+
+2
+00:00:09,300 --> 00:00:12,590
+Each month, before you start working on a CCM patient,
+
+3
+00:00:12,640 --> 00:00:15,750
+confirm that the patient is still eligible.
+
+4
+00:00:16,033 --> 00:00:17,956
+There are four criteria.
+
+5
+00:00:18,233 --> 00:00:20,635
+The patient is still in the facility.
+
+6
+00:00:20,900 --> 00:00:25,628
+The CCM condition is a chronic condition that the patient has.
+
+7
+00:00:25,900 --> 00:00:28,920
+The condition is managed with medication.
+
+8
+00:00:29,200 --> 00:00:32,828
+And the patient's profile is active in Practice Fusion.
+
+9
+00:00:34,300 --> 00:00:35,385
+In the last lesson,
+
+10
+00:00:35,435 --> 00:00:39,826
+you located the patient's profile in the three systems you'll use.
+
+11
+00:00:42,633 --> 00:00:45,944
+PointClickCare, ThoroughCare, and Practice Fusion.
+
+12
+00:00:47,533 --> 00:00:49,791
+Before you start working on the patient,
+
+13
+00:00:49,841 --> 00:00:53,348
+make sure they're still eligible for the CCM program.
+
+14
+00:00:53,600 --> 00:00:55,999
+CCM, or Chronic Care Management,
+
+15
+00:00:56,049 --> 00:01:01,586
+is a service for elderly patients who live in skilled nursing facilities,
+
+16
+00:01:01,636 --> 00:01:02,698
+or SNFs.
+
+17
+00:01:02,967 --> 00:01:05,185
+There are four eligibility criteria.
+
+18
+00:01:05,235 --> 00:01:07,957
+You check the first three in PointClickCare,
+
+19
+00:01:08,007 --> 00:01:10,725
+and the last one in Practice Fusion.
+
+20
+00:01:11,600 --> 00:01:15,403
+The first criterion: the patient is still in the facility.
+
+21
+00:01:15,453 --> 00:01:19,491
+Not discharged, not in the hospital, and not deceased.
+
+22
+00:01:19,767 --> 00:01:23,250
+Start with the resident banner, at the top of the page.
+
+23
+00:01:23,500 --> 00:01:26,637
+It shows the patient's general information: name,
+
+24
+00:01:26,687 --> 00:01:29,673
+date of birth, physician, and location.
+
+25
+00:01:41,200 --> 00:01:42,405
+Then check the Status.
+
+26
+00:01:42,455 --> 00:01:46,955
+It should be Current, meaning the patient is in the facility right now.
+
+27
+00:01:47,233 --> 00:01:50,121
+Active, or In-house, means the same thing.
+
+28
+00:01:52,500 --> 00:01:54,627
+Next, open the Census tab.
+
+29
+00:01:54,900 --> 00:01:57,938
+It shows the patient's insurance and census history,
+
+30
+00:01:57,988 --> 00:02:00,695
+with the most recent entry at the top.
+
+31
+00:02:06,433 --> 00:02:09,803
+Here, the latest entry is from August 18,
+
+32
+00:02:09,853 --> 00:02:13,805
+2026: Private Pay, with the status Active.
+
+33
+00:02:14,067 --> 00:02:16,935
+Active means the patient is in the facility.
+
+34
+00:02:19,933 --> 00:02:23,272
+If the latest status is Stop Billing, Hospital Leave,
+
+35
+00:02:23,322 --> 00:02:27,416
+or Hospital, the patient isn't in the facility right now.
+
+36
+00:02:27,667 --> 00:02:32,062
+For this patient, the latest status is Active, so you can move on.
+
+37
+00:02:38,367 --> 00:02:40,547
+Then open the MDS tab.
+
+38
+00:02:40,800 --> 00:02:42,957
+MDS stands for Minimum Data Set.
+
+39
+00:02:43,007 --> 00:02:48,407
+It's an assessment the facility completes for each resident every three months,
+
+40
+00:02:48,457 --> 00:02:50,356
+on a quarterly basis.
+
+41
+00:02:50,633 --> 00:02:54,927
+It assesses the patient's basic functions: whether they can walk alone,
+
+42
+00:02:54,977 --> 00:02:57,924
+and whether they need help with daily activities,
+
+43
+00:02:57,974 --> 00:03:00,932
+such as showering, eating, and toileting.
+
+44
+00:03:02,500 --> 00:03:08,036
+For eligibility, you only need the most recent MDS, at the top of the list.
+
+45
+00:03:08,300 --> 00:03:11,196
+Routine assessments are Quarterly or Annual.
+
+46
+00:03:13,167 --> 00:03:14,685
+But there are exceptions.
+
+47
+00:03:14,735 --> 00:03:17,258
+When a patient is about to be discharged,
+
+48
+00:03:17,308 --> 00:03:21,836
+the facility completes one final assessment before the discharge.
+
+49
+00:03:22,100 --> 00:03:27,501
+Its description starts with Discharge, such as Discharge Return Anticipated,
+
+50
+00:03:27,551 --> 00:03:30,582
+or Discharge Return Not Anticipated.
+
+51
+00:03:32,133 --> 00:03:35,891
+The most recent MDS must not be a discharge assessment,
+
+52
+00:03:35,941 --> 00:03:38,537
+even if it's still In Progress.
+
+53
+00:03:38,800 --> 00:03:41,460
+If it is, the patient may already have left,
+
+54
+00:03:41,510 --> 00:03:44,171
+and the status just hasn't been updated yet.
+
+55
+00:03:44,221 --> 00:03:46,704
+Or the patient is about to leave.
+
+56
+00:03:46,967 --> 00:03:50,808
+In that case, don't work on the patient, to be on the safe side.
+
+57
+00:03:51,067 --> 00:03:58,066
+Here, the most recent MDS is the October 7, 2026 Annual assessment, In Progress.
+
+58
+00:03:58,116 --> 00:04:00,416
+It isn't a discharge.
+
+59
+00:04:01,267 --> 00:04:04,372
+So, to confirm the patient is still in the facility,
+
+60
+00:04:04,422 --> 00:04:07,118
+check three places in PointClickCare.
+
+61
+00:04:07,400 --> 00:04:10,399
+The Status in the resident banner: Current.
+
+62
+00:04:18,633 --> 00:04:21,976
+The Census tab: the latest status isn't Stop Billing,
+
+63
+00:04:22,026 --> 00:04:26,573
+Hospital Leave, or anything else that means the patient is away.
+
+64
+00:04:34,800 --> 00:04:39,634
+And the MDS tab: the most recent assessment isn't a discharge.
+
+65
+00:04:40,633 --> 00:04:43,924
+All three confirm that this patient is in the facility.
+
+66
+00:04:43,974 --> 00:04:46,065
+That's the first criterion.
+
+67
+00:04:48,033 --> 00:04:50,974
+The second criterion: the CCM condition is
+
+68
+00:04:51,024 --> 00:04:55,035
+a chronic condition that the patient actually has.
+
+69
+00:04:55,767 --> 00:04:58,858
+When you receive the patient's information,
+
+70
+00:04:58,908 --> 00:05:02,938
+it includes the ICD-10 code of the CCM condition.
+
+71
+00:05:03,200 --> 00:05:04,873
+Here, it's I10.
+
+72
+00:05:05,133 --> 00:05:07,586
+Because this is a chronic care program,
+
+73
+00:05:07,636 --> 00:05:12,462
+confirm two things: the condition is on the patient's active diagnosis list,
+
+74
+00:05:12,512 --> 00:05:14,758
+and it's chronic, not acute.
+
+75
+00:05:20,300 --> 00:05:24,606
+The patient's active conditions are in the MED DIAG tab.
+
+76
+00:05:27,000 --> 00:05:31,185
+It lists each active condition, with its ICD-10 code.
+
+77
+00:05:31,467 --> 00:05:34,264
+Look for the code of the CCM condition.
+
+78
+00:05:37,500 --> 00:05:41,686
+Here it is: I10, Essential (primary) hypertension.
+
+79
+00:05:41,967 --> 00:05:45,633
+Hypertension is a chronic condition, not an acute one,
+
+80
+00:05:45,683 --> 00:05:47,973
+such as a urinary tract infection.
+
+81
+00:05:48,023 --> 00:05:49,780
+So you can move on.
+
+82
+00:06:04,267 --> 00:06:08,846
+The third criterion: the condition is managed with medication.
+
+83
+00:06:09,100 --> 00:06:12,117
+This patient's CCM condition is hypertension,
+
+84
+00:06:12,167 --> 00:06:16,978
+so they must be taking at least one medication for hypertension.
+
+85
+00:06:19,367 --> 00:06:21,275
+You'll find this in the ORDERS tab,
+
+86
+00:06:21,325 --> 00:06:24,404
+which lists all of the patient's active orders.
+
+87
+00:06:24,667 --> 00:06:26,239
+First, filter the list.
+
+88
+00:06:26,289 --> 00:06:28,220
+Open Display Filters.
+
+89
+00:06:29,200 --> 00:06:33,488
+Under Order Category, untick every category except Pharmacy.
+
+90
+00:06:37,467 --> 00:06:38,958
+Then click Search.
+
+91
+00:06:39,833 --> 00:06:44,160
+Now the list shows the medications the patient is currently taking.
+
+92
+00:06:44,433 --> 00:06:48,555
+Look for at least one medication for the CCM condition.
+
+93
+00:06:52,633 --> 00:06:57,079
+Here, the patient takes diltiazem HCl, 60 mg.
+
+94
+00:06:57,333 --> 00:07:02,604
+Its directions show what it's for: give 1 tablet by mouth two times a day,
+
+95
+00:07:02,654 --> 00:07:03,179
+for HTN.
+
+96
+00:07:03,229 --> 00:07:05,117
+That's hypertension.
+
+97
+00:07:05,367 --> 00:07:08,154
+So the condition is managed with medication.
+
+98
+00:07:08,204 --> 00:07:10,394
+That's the third criterion.
+
+99
+00:07:12,000 --> 00:07:14,646
+So far, the patient is in the facility,
+
+100
+00:07:14,696 --> 00:07:19,500
+the CCM condition is chronic, and it's managed with medication.
+
+101
+00:07:25,667 --> 00:07:30,663
+The fourth criterion: the patient's profile is active in Practice Fusion.
+
+102
+00:07:30,933 --> 00:07:34,439
+Practice Fusion is the platform where you upload the encounter,
+
+103
+00:07:34,489 --> 00:07:37,365
+and submit it to the insurance for billing.
+
+104
+00:07:38,933 --> 00:07:46,130
+To check, search for the patient by date of birth, in the format MM/DD/YYYY.
+
+105
+00:07:47,700 --> 00:07:51,027
+The results show every patient with that date of birth.
+
+106
+00:07:54,033 --> 00:07:58,674
+An inactive profile is marked Inactive, and its name is grayed out.
+
+107
+00:08:04,133 --> 00:08:08,783
+Make sure the patient's own profile is active, with no Inactive label.
+
+108
+00:08:09,033 --> 00:08:12,647
+Here, it's active, so the fourth criterion is met.
+
+109
+00:08:14,633 --> 00:08:18,390
+This patient meets all four eligibility criteria.
+
+110
+00:08:18,667 --> 00:08:23,825
+In PointClickCare, the patient is in the facility: the Status is Current,
+
+111
+00:08:23,875 --> 00:08:28,535
+the census is Active, and the latest MDS isn't a discharge.
+
+112
+00:08:28,800 --> 00:08:35,061
+The CCM condition, hypertension, is a chronic condition on the diagnosis list.
+
+113
+00:08:44,767 --> 00:08:48,504
+It's managed with medication: in the filtered Orders tab,
+
+114
+00:08:48,554 --> 00:08:51,995
+the patient takes diltiazem for hypertension.
+
+115
+00:08:56,933 --> 00:09:00,561
+And the patient's profile is active in Practice Fusion.
+
+116
+00:09:00,833 --> 00:09:03,693
+Now you're ready to start working on the patient.
+
+117
+00:09:04,867 --> 00:09:06,125
+To recap.
+
+118
+00:09:06,400 --> 00:09:10,957
+First, the patient is still in the facility: the Status is Current,
+
+119
+00:09:11,007 --> 00:09:16,476
+the latest census status is Active, and the latest MDS isn't a discharge.
+
+120
+00:09:16,733 --> 00:09:22,157
+Second, the CCM condition is chronic, and it's on the MED DIAG list.
+
+121
+00:09:22,433 --> 00:09:27,344
+Third, the condition is managed with medication, in the pharmacy orders.
+
+122
+00:09:27,600 --> 00:09:31,650
+And fourth, the patient's profile is active in Practice Fusion.
+
+123
+00:09:34,133 --> 00:09:36,622
+That's the end of Lesson 3.2.
+
+124
+00:09:36,900 --> 00:09:42,049
+Next, in Lesson 3.3: formulating the care plan's problem note.

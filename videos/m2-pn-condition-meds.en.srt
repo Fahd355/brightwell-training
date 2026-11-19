@@ -1,0 +1,343 @@
+1
+00:00:01,500 --> 00:00:05,374
+Lesson 3.3: Formulating the Care Plan's Problem Note.
+
+2
+00:00:05,414 --> 00:00:08,977
+Part 1: Condition and Its Medication.
+
+3
+00:00:10,633 --> 00:00:13,762
+This part covers the first two lines of the problem note:
+
+4
+00:00:13,802 --> 00:00:17,497
+the condition, and the medications that manage it.
+
+5
+00:00:17,547 --> 00:00:20,058
+Three documentation standards apply.
+
+6
+00:00:20,108 --> 00:00:23,249
+First, the medication name includes its concentration.
+
+7
+00:00:23,289 --> 00:00:26,735
+If it's missing, add it from the directions.
+
+8
+00:00:26,785 --> 00:00:30,261
+Second, a PRN medication, given only as needed,
+
+9
+00:00:30,301 --> 00:00:36,063
+can't be the only CCM medication. A scheduled one is required.
+
+10
+00:00:36,113 --> 00:00:41,762
+Third, judge which medications treat the condition with your medical knowledge and the Reference tab,
+
+11
+00:00:41,802 --> 00:00:43,901
+not the directions alone.
+
+12
+00:00:45,167 --> 00:00:50,293
+For this scratch patient, you've located the profile, and confirmed eligibility.
+
+13
+00:00:50,343 --> 00:00:52,488
+Next, you formulate the problem note:
+
+14
+00:00:52,528 --> 00:00:56,357
+the care plan template for the chronic condition you monitor.
+
+15
+00:00:56,407 --> 00:00:57,823
+It starts with the condition,
+
+16
+00:00:57,863 --> 00:01:01,849
+the medications that manage it, and medication adherence.
+
+17
+00:01:01,900 --> 00:01:04,927
+Then come trends in labs and vitals, gaps in care,
+
+18
+00:01:04,967 --> 00:01:08,667
+risk factors and complications, and symptoms.
+
+19
+00:01:09,667 --> 00:01:13,731
+Further down: falls, provider visits, hospital and ER visits,
+
+20
+00:01:13,771 --> 00:01:17,455
+referrals, medication changes, and escalation.
+
+21
+00:01:17,900 --> 00:01:20,209
+In this part, you fill in the first two lines:
+
+22
+00:01:20,249 --> 00:01:23,940
+the condition, and the medications that manage it.
+
+23
+00:01:28,633 --> 00:01:29,806
+Start with the condition.
+
+24
+00:01:29,846 --> 00:01:36,580
+The task information gives its ICD-10 code. Here, it's E78.5.
+
+25
+00:01:38,233 --> 00:01:42,589
+At the top of the patient's record, the banner shows general information,
+
+26
+00:01:46,700 --> 00:01:48,701
+such as the patient's allergies.
+
+27
+00:01:50,367 --> 00:01:53,574
+The most recent vitals are in the top right corner.
+
+28
+00:01:53,833 --> 00:01:57,316
+Below the banner, the record is divided into tabs.
+
+29
+00:01:58,267 --> 00:02:00,626
+Each tab holds different information.
+
+30
+00:02:00,686 --> 00:02:04,279
+Open MED DIAG, short for medical diagnosis.
+
+31
+00:02:06,467 --> 00:02:10,446
+It lists the patient's active diagnoses, chronic or acute.
+
+32
+00:02:11,411 --> 00:02:15,181
+Search the page for the code: E78.5.
+
+33
+00:02:16,833 --> 00:02:20,754
+E78.5 is hyperlipidemia, unspecified.
+
+34
+00:02:20,794 --> 00:02:25,423
+So the condition you follow up on is hyperlipidemia.
+
+35
+00:02:25,473 --> 00:02:30,533
+On the note's first line, replace the code with the condition: hyperlipidemia.
+
+36
+00:02:34,090 --> 00:02:37,268
+Next, the medications. Open the Orders tab.
+
+37
+00:02:38,933 --> 00:02:42,784
+It lists all of the patient's orders, not only medications.
+
+38
+00:02:43,055 --> 00:02:45,933
+To filter them, open Display Filters.
+
+39
+00:02:46,867 --> 00:02:50,445
+Order Category lists the kinds of orders: pharmacy, diet,
+
+40
+00:02:50,485 --> 00:02:55,235
+supplement, laboratory, diagnostic, other, and enteral feed.
+
+41
+00:02:55,300 --> 00:03:00,049
+You only need medications. So keep Pharmacy checked, and clear the rest.
+
+42
+00:03:01,742 --> 00:03:03,147
+Then click Search.
+
+43
+00:03:04,433 --> 00:03:07,573
+Now the list shows only the patient's medications.
+
+44
+00:03:09,233 --> 00:03:10,660
+They're all active orders:
+
+45
+00:03:10,700 --> 00:03:14,719
+the patient takes every one of them now, whatever the start date.
+
+46
+00:03:15,667 --> 00:03:22,314
+To manage hyperlipidemia, the patient takes Rosuvastatin Calcium Tablet 20 MG.
+
+47
+00:03:22,567 --> 00:03:27,731
+Its directions: give 1 tablet by mouth at bedtime, for lipid control.
+
+48
+00:03:28,000 --> 00:03:33,184
+In the note, the second line reads: continues to be managed through medications.
+
+49
+00:03:35,400 --> 00:03:39,846
+Copy the medication name exactly as it's written in PointClickCare,
+
+50
+00:03:42,133 --> 00:03:43,405
+and paste it on that line:
+
+51
+00:03:43,445 --> 00:03:49,480
+continues to be managed through Rosuvastatin Calcium Tablet 20 MG.
+
+52
+00:03:50,533 --> 00:03:55,878
+The name you document must include its concentration: here, 20 MG.
+
+53
+00:03:55,928 --> 00:04:00,546
+Some order names leave it out, like Rosuvastatin Calcium Tablet.
+
+54
+00:04:00,596 --> 00:04:06,200
+Then take the strength from the directions, for example, give 20 mg at bedtime,
+
+55
+00:04:06,250 --> 00:04:10,676
+and add it: Rosuvastatin Calcium Tablet 20 MG.
+
+56
+00:04:12,333 --> 00:04:17,816
+Standard 2 is about PRN orders: medications given only as needed.
+
+57
+00:04:17,867 --> 00:04:20,394
+Their directions say as needed. For example,
+
+58
+00:04:20,434 --> 00:04:24,583
+acetaminophen, every 8 hours as needed for pain,
+
+59
+00:04:24,633 --> 00:04:27,771
+and albuterol, every 6 hours as needed.
+
+60
+00:04:27,833 --> 00:04:33,365
+A PRN medication can't be the only CCM medication for a condition.
+
+61
+00:04:33,415 --> 00:04:38,205
+The patient must also take a medication for that condition on a regular schedule.
+
+62
+00:04:38,245 --> 00:04:40,861
+It's an eligibility requirement.
+
+63
+00:04:40,911 --> 00:04:45,067
+For example, if the condition were COPD, Spiriva Respimat,
+
+64
+00:04:45,107 --> 00:04:49,115
+taken every morning, would be that scheduled medication.
+
+65
+00:04:49,167 --> 00:04:52,819
+Albuterol could be listed with it, but never on its own.
+
+66
+00:04:54,567 --> 00:04:59,204
+Standard 3: don't rely only on the reason written in the directions.
+
+67
+00:04:59,267 --> 00:05:03,398
+Rosuvastatin is a statin, so you know it treats hyperlipidemia,
+
+68
+00:05:03,438 --> 00:05:06,587
+even if its directions didn't say so.
+
+69
+00:05:06,733 --> 00:05:11,720
+To check your judgement, use the Reference tab in the CCM Clinical Tool.
+
+70
+00:05:12,667 --> 00:05:14,922
+It has a reference for each condition.
+
+71
+00:05:17,100 --> 00:05:19,006
+Select Hyperlipidemia.
+
+72
+00:05:21,200 --> 00:05:26,044
+Medications by Line lists the first, second, and third line treatments.
+
+73
+00:05:27,267 --> 00:05:32,353
+For hyperlipidemia, the first line is statins, such as rosuvastatin.
+
+74
+00:05:36,133 --> 00:05:40,125
+The second line is ezetimibe, bempedoic acid, or both.
+
+75
+00:05:40,175 --> 00:05:45,030
+And the third line, for very high risk, is PCSK9 inhibitors.
+
+76
+00:05:45,233 --> 00:05:48,945
+So list every medication on this reference that the patient takes,
+
+77
+00:05:48,985 --> 00:05:53,004
+not only those the directions mark for hyperlipidemia.
+
+78
+00:05:54,833 --> 00:05:59,841
+The first two lines are done: the condition, and the medication that manages it.
+
+79
+00:06:01,233 --> 00:06:06,893
+To recap: find the condition from the task's ICD-10 code, in MED DIAG.
+
+80
+00:06:06,943 --> 00:06:09,389
+Filter the orders to pharmacy only.
+
+81
+00:06:09,439 --> 00:06:12,516
+Copy the medication name exactly as written.
+
+82
+00:06:12,566 --> 00:06:17,612
+Make sure it includes the concentration. If not, add it from the directions.
+
+83
+00:06:17,662 --> 00:06:22,708
+Never list a PRN medication alone: a scheduled one is required.
+
+84
+00:06:22,758 --> 00:06:26,298
+And judge with your medical knowledge and the Reference tab.
+
+85
+00:06:28,433 --> 00:06:29,714
+Next, in Part 2,
+
+86
+00:06:29,754 --> 00:06:34,066
+you check whether the patient takes these medications as prescribed.

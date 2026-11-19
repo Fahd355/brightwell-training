@@ -1,0 +1,323 @@
+1
+00:00:01,500 --> 00:00:05,657
+Lesson 3.3.3: Lifestyle Modifications.
+
+2
+00:00:09,800 --> 00:00:14,875
+The lifestyle modifications section answers three questions about the patient.
+
+3
+00:00:14,925 --> 00:00:17,746
+First, what type of diet the patient follows.
+
+4
+00:00:17,796 --> 00:00:19,663
+Second, whether the patient sticks to it.
+
+5
+00:00:19,703 --> 00:00:23,197
+Three places in PointClickCare tell us that.
+
+6
+00:00:23,247 --> 00:00:26,221
+And third, whether the patient takes part in any therapy.
+
+7
+00:00:26,261 --> 00:00:31,214
+Physical and occupational therapy are checked for every patient.
+
+8
+00:00:31,264 --> 00:00:36,256
+Respiratory therapy only matters when the CCM condition is respiratory,
+
+9
+00:00:36,296 --> 00:00:40,055
+such as COPD, emphysema or asthma.
+
+10
+00:00:40,105 --> 00:00:44,167
+And speech therapy only when the CCM condition is psychiatric.
+
+11
+00:00:44,207 --> 00:00:49,676
+For our patient, with hyperlipidemia, that leaves PT and OT.
+
+12
+00:00:50,933 --> 00:00:54,959
+So far, our problem note covers the condition, its medications,
+
+13
+00:00:54,999 --> 00:00:58,338
+and whether the patient takes them as prescribed.
+
+14
+00:00:58,400 --> 00:01:01,826
+Next comes Lifestyle Modifications: the patient's diet,
+
+15
+00:01:01,866 --> 00:01:06,029
+whether they stick to it, and any therapy they take part in.
+
+16
+00:01:10,433 --> 00:01:13,960
+The diet type is in the patient's profile in PointClickCare,
+
+17
+00:01:14,000 --> 00:01:16,720
+in the outline at the top of the page.
+
+18
+00:01:18,130 --> 00:01:22,618
+Switching the outline to Expanded opens up the patient's full details.
+
+19
+00:01:24,267 --> 00:01:27,636
+And there's the diet: no added salt, regular texture,
+
+20
+00:01:27,676 --> 00:01:30,632
+and standard thin liquids consistency.
+
+21
+00:01:32,800 --> 00:01:35,890
+It goes into the note exactly as it's written here.
+
+22
+00:01:38,767 --> 00:01:42,968
+If the outline doesn't show a diet, the Orders tab always has it.
+
+23
+00:01:46,767 --> 00:01:51,201
+In Display Filters, we untick every order category except Diet.
+
+24
+00:01:52,867 --> 00:01:57,864
+Searching then lists only the diet order, and it says exactly the same thing.
+
+25
+00:02:02,867 --> 00:02:03,880
+Next question:
+
+26
+00:02:03,920 --> 00:02:09,480
+does the patient actually stick to this diet? The Tasks tab is the first place to look.
+
+27
+00:02:12,200 --> 00:02:17,110
+It lists the patient's daily care tasks, like bathing, dressing and eating.
+
+28
+00:02:18,070 --> 00:02:19,507
+Eating is the one we need,
+
+29
+00:02:19,547 --> 00:02:23,542
+and the question mark beside it opens its full history.
+
+30
+00:02:25,200 --> 00:02:29,682
+This report records every meal, with one row for each date and time.
+
+31
+00:02:31,867 --> 00:02:33,806
+Only the last three columns matter here:
+
+32
+00:02:33,846 --> 00:02:38,601
+Resident Not Available, Resident Refused, and Not Applicable.
+
+33
+00:02:38,667 --> 00:02:42,814
+A mark in any of them means the patient missed a meal for that reason.
+
+34
+00:02:46,600 --> 00:02:49,279
+So we check the whole month, row by row.
+
+35
+00:02:52,733 --> 00:02:54,818
+Here, all three columns stay empty:
+
+36
+00:02:54,858 --> 00:02:58,378
+the patient didn't refuse or miss a single meal.
+
+37
+00:03:04,675 --> 00:03:07,723
+The Assessments tab is the second place to check.
+
+38
+00:03:13,100 --> 00:03:15,247
+With the status and type filters on All,
+
+39
+00:03:15,287 --> 00:03:20,238
+View All lists every assessment, up to 1500 of them.
+
+40
+00:03:25,633 --> 00:03:29,013
+Searching for nutrition finds the Nutritional Assessment,
+
+41
+00:03:29,053 --> 00:03:32,881
+completed on November 10, 2026.
+
+42
+00:03:43,067 --> 00:03:47,745
+Inside, only one answer matters to us: the intake observation.
+
+43
+00:03:47,800 --> 00:03:51,971
+Here, the patient's oral intake is 76 to 100 percent,
+
+44
+00:03:52,011 --> 00:03:54,025
+so the patient is adherent.
+
+45
+00:03:55,167 --> 00:04:00,493
+The patient is non-adherent only if this answer says the patient refuses meals.
+
+46
+00:04:05,533 --> 00:04:07,892
+The progress notes are the third place.
+
+47
+00:04:11,133 --> 00:04:14,722
+On the Progress Notes tab, View All with a custom date range:
+
+48
+00:04:14,762 --> 00:04:18,068
+for this scratch patient, the last 30 days.
+
+49
+00:04:26,133 --> 00:04:27,843
+A keyword search then does the work.
+
+50
+00:04:27,883 --> 00:04:32,156
+Diet finds lines like: provide diet as ordered.
+
+51
+00:04:37,533 --> 00:04:42,524
+Meals finds that the resident consumes more than 75 percent of meals.
+
+52
+00:04:44,733 --> 00:04:49,399
+And nutrition finds the goal to maintain or improve nutritional status,
+
+53
+00:04:49,439 --> 00:04:52,227
+with no new signs of malnutrition.
+
+54
+00:04:54,433 --> 00:04:58,189
+What we're looking for is any sign that the patient refuses meals,
+
+55
+00:04:58,229 --> 00:05:03,304
+or refuses the type of diet ordered, like a low sodium diet.
+
+56
+00:05:04,433 --> 00:05:09,351
+Putting it all together: a missed meal in Tasks, a refusal in the progress notes,
+
+57
+00:05:09,391 --> 00:05:13,937
+or poor intake in the assessment makes the patient non-adherent.
+
+58
+00:05:14,900 --> 00:05:16,186
+None of that turned up here,
+
+59
+00:05:16,226 --> 00:05:19,633
+so the note says the patient is adherent to the diet.
+
+60
+00:05:22,367 --> 00:05:26,006
+The last part of lifestyle modifications is therapy.
+
+61
+00:05:31,133 --> 00:05:36,258
+Care Profile, right under the patient's photo, opens the patient's care profile.
+
+62
+00:05:40,033 --> 00:05:41,954
+Its Therapies section lists physical,
+
+63
+00:05:41,994 --> 00:05:45,553
+occupational, respiratory and speech therapy.
+
+64
+00:05:45,603 --> 00:05:49,687
+None of them is checked, so the patient isn't receiving any therapy.
+
+65
+00:05:54,533 --> 00:05:57,572
+With hyperlipidemia as the CCM condition,
+
+66
+00:05:57,612 --> 00:06:01,932
+physical and occupational therapy are the ones that count.
+
+67
+00:06:04,100 --> 00:06:08,154
+So the note says: not participating in PT or OT.
+
+68
+00:06:12,133 --> 00:06:14,154
+The Orders tab confirms it.
+
+69
+00:06:17,933 --> 00:06:20,032
+Therapy orders aren't pharmacy, diet,
+
+70
+00:06:20,072 --> 00:06:24,781
+lab or supplement orders, so in the filters we keep only Other.
+
+71
+00:06:26,433 --> 00:06:30,300
+Searching shows no order for physical or occupational therapy,
+
+72
+00:06:30,340 --> 00:06:32,463
+which matches the care profile.
+
+73
+00:06:38,633 --> 00:06:42,681
+To wrap up: the diet type comes from the expanded profile outline,
+
+74
+00:06:42,721 --> 00:06:44,871
+or from the diet order.
+
+75
+00:06:44,921 --> 00:06:46,453
+Adherence starts in Tasks,
+
+76
+00:06:46,493 --> 00:06:50,505
+where the eating history shows any refused or missed meals.
+
+77
+00:06:50,555 --> 00:06:56,117
+The nutritional assessment's intake observation confirms how much the patient eats.
+
+78
+00:06:56,167 --> 00:07:00,059
+A keyword search of the progress notes catches any refusal of meals
+
+79
+00:07:00,099 --> 00:07:01,868
+or of the diet type.
+
+80
+00:07:01,918 --> 00:07:06,407
+And therapy comes from the Care Profile, confirmed by the Other orders.
+
+81
+00:07:08,567 --> 00:07:11,664
+Next, we trend the patient's labs and vitals.
