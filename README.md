@@ -1,6 +1,6 @@
 # BrightWell Training — setup guide
 
-A login-protected e-learning site: 6 modules, 21 sections. Each section has a video, then a task and/or an assessment. Progress (video watched %, task response, best quiz score, attempts) is saved per trainee in Supabase. The site itself is hosted free on GitHub Pages.
+A login-protected e-learning site: 6 modules. Each section has a video, then an assessment and/or an assignment. Trainees also get a Reference tab, a Q&A board, live sessions (Google Meet links) and notifications for trainer feedback. Progress is saved per trainee in Supabase. The site itself is hosted free on GitHub Pages.
 
 Files in this folder:
 - `index.html`, `app.js`, `styles.css`, `logo.svg` — the website (don't need editing)
@@ -31,35 +31,40 @@ You already have the project `hkazorugtrnqppxyeatj`.
 
 | Section | File name |
 |---|---|
-| 1.1 Intro to Medical Scribe Role | `m1-scribe-role.mp4` |
-| 1.2 Intro to BrightWell | `m1-brightwell.mp4` |
-| 1.3 Intro to SNF | `m1-snf.mp4` |
-| 1.4 CCM as a Concept | `m1-ccm-concept.mp4` |
-| 2.1 Eligibility Criteria | `m2-eligibility.mp4` |
-| 2.2 Monitoring Parameters | `m2-monitoring.mp4` |
-| 2.3 3 Example Conditions | `m2-conditions.mp4` |
-| 3.1 Login and Locating Pt's Profile | `m3-login-profile.mp4` |
-| 3.2 Eligibility Checks | `m3-eligibility-checks.mp4` |
-| 3.3 Formulating the Care Plan's Problem Note | `m3-problem-note.mp4` |
-| 4.1 Creating a Patient Profile | `m4-create-profile.mp4` + `m4-create-profile.en.srt` |
-| 4.2.1 Enrollment and Consent | `m4-enrollment-consent.mp4` + `m4-enrollment-consent.en.srt` |
-| 4.2.2 General Health Questionnaire | `m4-ghq.mp4` + `m4-ghq.en.srt` |
-| 4.2.3 Support | `m4-support.mp4` + `m4-support.en.srt` |
-| 4.2.4 Allergies | `m4-allergies.mp4` + `m4-allergies.en.srt` |
-| 4.2.5 Medications | `m4-medications.mp4` + `m4-medications.en.srt` |
-| 4.2.6 Numbers to Track | `m4-numbers.mp4` + `m4-numbers.en.srt` |
-| 4.3.1 Conditions and Allergies | `m4-conditions-allergies.mp4` + `m4-conditions-allergies.en.srt` |
-| 4.3.2 Lab Results, Medications and Immunizations | `m4-labs-meds-imm.mp4` + `m4-labs-meds-imm.en.srt` |
-| 4.4.1 Allergies, Medications and Numbers to Track | `m4-review-meds-numbers.mp4` + `m4-review-meds-numbers.en.srt` |
-| 4.4.2 Resources and Support, Other Provider and Appointments | `m4-review-resources.mp4` + `m4-review-resources.en.srt` |
-| 4.5 GBIs and Problem Note | `m4-gbis.mp4` + `m4-gbis.en.srt` |
-| 4.6 LogTime and Exporting the File | `m4-logtime.mp4` + `m4-logtime.en.srt` |
-| 4.7 Module Assessment | no video |
-| 5.1 Monthly Encounter | `m5-monthly-encounter.mp4` |
-| 5.2 Billing Requirements | `m5-billing.mp4` |
-| 6.1 FU vs Scratch | `m6-fu-vs-scratch.mp4` |
-| 6.2 Task Portal | `m6-task-portal.mp4` |
-| 6.3 Job Aids | `m6-job-aids.mp4` |
+| 1.1 Introduction | `m1-scribe-role.mp4` |
+| 1.2 CCM in Detail | `m1-ccm-detail.mp4` |
+| 1.3 3 Example Conditions | `m2-conditions.mp4` |
+| 1.4 Reference Material | `m1-reference.mp4` |
+| 1.5 Task Portal | `m6-task-portal.mp4` |
+| 2.1 Login and Locating Pt’s Profile | `m3-login-profile.mp4` |
+| 2.2 Eligibility Checks | `m3-eligibility-checks.mp4` |
+| 2.3.1 Condition and Medications | `m2-pn-condition-meds.mp4` |
+| 2.3.2 Medication Adherence | `m2-pn-adherence.mp4` |
+| 2.3.3 Lifestyle Modifications | `m2-pn-lifestyle.mp4` |
+| 2.3.4 Trending of Labs and Vitals | `m2-pn-labs-vitals.mp4` |
+| 2.3.5 Risk Factors, Complications, Symptoms and Falls | `m2-pn-risks.mp4` |
+| 2.3.6 Provider Visits, Hospitalizations / ER Visits, Referrals | `m2-pn-visits.mp4` |
+| 2.3.7 Medication Changes and Escalations | `m2-pn-changes.mp4` |
+| 2.4 Submit the Complete Problem Note | no video |
+| 3.1 Creating a Patient Profile | `m4-create-profile.mp4` |
+| 3.2.1 Enrollment and Consent | `m4-enrollment-consent.mp4` |
+| 3.2.2 General Health Questionnaire | `m4-ghq.mp4` |
+| 3.2.3 Support | `m4-support.mp4` |
+| 3.2.4 Allergies | `m4-allergies.mp4` |
+| 3.2.5 Medications | `m4-medications.mp4` |
+| 3.2.6 Numbers to Track | `m4-numbers.mp4` |
+| 3.3.1 Conditions and Allergies | `m4-conditions-allergies.mp4` |
+| 3.3.2 Lab Results, Medications and Immunizations | `m4-labs-meds-imm.mp4` |
+| 3.4.1 Allergies, Medications and Numbers to Track | `m4-review-meds-numbers.mp4` |
+| 3.4.2 Resources and Support, Other Provider and Appointments | `m4-review-resources.mp4` |
+| 3.5 GBIs and Problem Note | `m4-gbis.mp4` |
+| 3.6 LogTime and Exporting the File | `m4-logtime.mp4` |
+| 3.7 Module Assessment | no video |
+| 4.1 PracticeFusion and Billing | `m5-pf-billing.mp4` |
+| 5.1 Different Documentation Standards between FU and Scratch Pts | `m6-fu-vs-scratch.mp4` |
+| 6.1 Alternative EHR System | `m7-matrixcare.mp4` |
+
+Module 3 (TC Navigation) keeps its `m4-…` file names, so the videos already in `videos/` play without re-uploading. Sections showing “Video coming soon” are waiting for their file.
 
 **Captions:** upload each `.srt` next to its video, named `<file name>.en.srt` (e.g. `m4-ghq.en.srt`). The site converts it automatically and adds a CC button to the player. Sections without a caption file play normally.
 
@@ -98,15 +103,28 @@ GitHub limits: the **website upload box accepts files up to 25 MB**, **GitHub De
 
 ---
 
+## Updating an existing Supabase project
+Re-run all of `supabase-setup.sql` in the SQL Editor after pulling this version. It adds the `feedback`, `questions` and `meetings` tables, two new progress columns and a private `submissions` bucket. It's safe to run more than once. Until you do, saving progress will fail.
+
+## Trainer features
+- **Team progress** → click a trainee to see every video, assessment answer, assignment response and uploaded file, and send feedback per section. The trainee sees it under the bell icon and on that section's page.
+- **Q&A** → trainees post questions; your answer is shared with every trainee. The tab shows a badge with the number of unanswered questions.
+- **Live sessions** → create the event in Google Calendar with "Add Google Meet", paste the link, publish. Trainees see it on their home page and get a notification.
+
 ## Settings in `config.js`
 - `PASS_MARK` — % needed to pass an assessment (default 80).
 - `VIDEO_DONE_AT` — share of a video that counts as watched (default 0.9). Trainees can't skip ahead until they've watched it through.
 - `SEQUENTIAL` — `true` locks each section until the previous one is complete. Set to `false` while videos are still being uploaded, otherwise trainees will be held at the first missing video.
-- `PROBLEM_NOTE_LIBRARY_URL` — paste the Problem Note Library's link to show it in section 3.3.
+- `TRAINING_PT_SHEET_URL` — Google Sheet with the training pt's information (shown in 2.1 and 2.2).
+- `PF_PT_SHEET_URL` — Google Sheet with the pt information for PracticeFusion (4.1).
+- `PROBLEM_NOTE_LIBRARY_URL` — optional, shown in 2.3.1.
 
 ## Editing content (`content.js`)
 - The **first option** of every quiz question is the correct one; the site shuffles the order for trainees.
-- Remove a `task:` line to make a section assessment-only; remove `quiz:` to make it task-only.
+- Remove a `task:` line to make a section assessment-only; remove `quiz:` to make it assignment-only.
+- `quiz: { pending: 10 }` shows "Assessment coming soon" and doesn't block progress. Replace it with the question list when ready.
+- Assignment types: plain text, `{ kind: 'tick', text }` for Tick completed, `{ kind: 'upload', text }` for a file upload.
+- Reference links live at the bottom of `content.js` (`BW_REFERENCES`).
 - Don't rename a section `id` once trainees have started — progress is stored against it.
 - The questions are a starting draft. Have an SME review them before launch.
 

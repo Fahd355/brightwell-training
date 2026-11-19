@@ -6,9 +6,12 @@ window.BW_CONFIG = {
 
   VIDEO_SOURCE: 'github',              // 'github' = videos in the repo's videos/ folder · 'supabase' = Storage bucket below
   VIDEO_BUCKET: 'training-videos',     // Supabase Storage bucket (only used when VIDEO_SOURCE is 'supabase')
+  SUBMISSIONS_BUCKET: 'submissions',   // private bucket for uploaded files (e.g. exported encounters)
   USERNAME_DOMAIN: 'brightwell.training', // username "sara" signs in as sara@brightwell.training
   PASS_MARK: 80,          // % needed to pass an assessment
   VIDEO_DONE_AT: 0.9,     // share of a video that must be watched to count as complete
   SEQUENTIAL: true,       // true = a section unlocks only when the previous one is complete
-  PROBLEM_NOTE_LIBRARY_URL: '' // optional: link to the Problem Note Library page
+  TRAINING_PT_SHEET_URL: '',     // Google Sheet with the training pt's information (sections 2.1, 2.2)
+  PF_PT_SHEET_URL: '',           // Google Sheet with the pt information for PracticeFusion (4.1)
+  PROBLEM_NOTE_LIBRARY_URL: ''   // optional: link to the Problem Note Library (2.3.1)
 };
