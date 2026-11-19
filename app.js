@@ -37,7 +37,7 @@ const db = {
 };
 const uid = () => Math.random().toString(36).slice(2) + Date.now().toString(36);
 const now = () => new Date().toISOString();
-const chk = ({ data, error }, msg) => { if (error) { toast(msg || 'Something went wrong — check your connection.'); console.error(error); return null; } return data; };
+const chk = ({ data, error }, msg) => { if (error) { if (msg) toast(msg); console.warn('[BW]', error.message || error); return null; } return data; };
 
 const api = {
   async session() {
@@ -148,16 +148,19 @@ const api = {
 const seenMeetKey = () => 'bw-seen-meet-' + user.username;
 async function loadNotifs() {
   const [fb, qs, ms] = await Promise.all([profile.is_admin ? [] : api.feedback(user.id), api.questions(), api.meetings()]);
-  const seen = localStorage.getItem(seenMeetKey()) || '';
+  const seen = new Date(localStorage.getItem(seenMeetKey()) || 0).getTime(), before = notifCount(), first = !loadNotifs.done;
   NOTIF = {
     allFb: fb,
     fb: fb.filter(f => !f.read_at),
     ans: qs.filter(q => q.user_id === user.id && q.answer && !q.answer_seen),
-    meet: ms.filter(m => m.created_at > seen && new Date(m.starts_at) > Date.now() - 3600e3),
+    meet: profile.is_admin ? [] : ms.filter(m => new Date(m.created_at).getTime() > seen && new Date(m.starts_at) > Date.now() - 3600e3),
     unanswered: qs.filter(q => !q.answer).length,
     meetings: ms
   };
+  loadNotifs.done = true;
   const n = notifCount(), b = document.getElementById('bellN');
+  if (!first && n > before) { toast('You have a new notification.'); const h = location.hash.slice(1) || '/'; if (h === '/' ) renderHome(); else if (h === '/live') renderLive(); }
+  const np = document.getElementById('np'); if (np && !np.hidden) np.innerHTML = notifPanel();
   if (b) { b.textContent = n; b.hidden = !n; }
   const qb = document.getElementById('qaN');
   if (qb) { qb.textContent = NOTIF.unanswered; qb.hidden = !(profile.is_admin && NOTIF.unanswered); }
@@ -622,6 +625,12 @@ new ResizeObserver(() => { const t = document.querySelector('.top'); if (t) docu
   if (user) await loadUser();
   route();
   if (sb) sb.auth.onAuthStateChange(ev => { if (ev === 'SIGNED_OUT' && user) { user = null; route(); } });
-  setInterval(() => { if (user) loadNotifs(); }, 60000);
+  setInterval(() => { if (user) loadNotifs(); }, 20000);
+  document.addEventListener('visibilitychange', () => { if (user && !document.hidden) loadNotifs(); });
+  if (sb && user) sb.channel('bw-live')
+    .on('postgres_changes', { event: '*', schema: 'public', table: 'feedback' }, () => loadNotifs())
+    .on('postgres_changes', { event: '*', schema: 'public', table: 'meetings' }, () => loadNotifs())
+    .on('postgres_changes', { event: '*', schema: 'public', table: 'questions' }, () => loadNotifs())
+    .subscribe();
 })();
 })();

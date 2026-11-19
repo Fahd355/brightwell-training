@@ -144,7 +144,14 @@ drop policy if exists "submissions read" on storage.objects;
 create policy "submissions read" on storage.objects for select to authenticated
   using (bucket_id = 'submissions' and ((storage.foldername(name))[1] = auth.uid()::text or public.is_admin()));
 
--- 10. Public video bucket
+-- 10. Instant notifications (Realtime) for feedback, Q&A and live sessions
+do $$ begin
+  begin alter publication supabase_realtime add table public.feedback; exception when duplicate_object then null; end;
+  begin alter publication supabase_realtime add table public.questions; exception when duplicate_object then null; end;
+  begin alter publication supabase_realtime add table public.meetings; exception when duplicate_object then null; end;
+end $$;
+
+-- 11. Public video bucket
 insert into storage.buckets (id, name, public)
 values ('training-videos', 'training-videos', true)
 on conflict (id) do update set public = true;
