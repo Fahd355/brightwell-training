@@ -4,6 +4,7 @@
 //  • task    → text: a trainee writes a response · { text, kind:'tick' } a "Tick completed" box ·
 //              { text, kind:'upload' } a file upload · { text, minChars } a short text answer.
 //  • quiz    → list of questions. The FIRST option is always the correct one; the site shuffles them.
+//              { multi: N } = multiple-answer question: the first N options are correct (checkboxes).
 //              { pending: 10 } = assessment not written yet (shown as "coming soon", doesn't block progress).
 //  • links   → links shown under the video: { label, url }. url 'CFG:NAME' reads BW_CONFIG.NAME (hidden if empty).
 //  • video:false → section has no video (e.g. a module assessment).
@@ -26,11 +27,23 @@ window.BW_MODULES = [
       ] },
     { id: 'm1-ccm-detail', title: 'CCM in Detail',
       summary: 'The Workflow of Brightwell and CCM.',
-      quiz: { pending: 10 } },
+      quiz: [
+        { q: 'Which pt is eligible for the CCM program?', options: ['A pt with 2 or more chronic conditions expected to last at least 12 months, which place the pt at significant risk of decline', 'Any pt admitted to the facility, regardless of diagnosis', 'A pt with 1 acute condition expected to resolve within 30 days', 'Only pts who were hospitalized in the last month'] },
+        { q: 'What is the minimum time that must be logged per pt per month to meet the CCM billing requirement?', options: ['60 minutes', '20 minutes', '30 minutes', '90 minutes'] },
+        { q: 'Which baseline numbers should be tracked for each pt?', options: ['BP, Weight and HbA1c', 'BP, Pulse and Temperature', 'Weight, O2 sat and GFR', 'HbA1c, LDL and TSH'] },
+        { q: 'How many SMART goals should be set for the pt?', options: ['At least 2 SMART goals according to the CCM condition', '1 SMART goal covering all of the pt’s conditions', 'At least 2 SMART goals for every condition in the pt’s medical history', 'SMART goals are only needed for Scratch pts'] },
+        { q: 'What is the difference between a Follow Up pt and a Scratch pt?', options: ['A Scratch pt is documented in TC for the first time (new profile and initial assessment), while a Follow Up pt already has a profile and needs the monthly updates only', 'A Follow Up pt is new to the program, while a Scratch pt has been enrolled for months', 'A Scratch pt has no chronic conditions, while a Follow Up pt has at least 2', 'There is no difference; both follow the same documentation steps'] }
+      ] },
     { id: 'm2-conditions', title: '3 Example Conditions',
       summary: 'The monitoring parameters of HTN, COPD and Depression.',
-      links: [{ label: 'Outline of Care', url: 'https://docs.google.com/spreadsheets/d/1fMM8aA0m-hctRFn0ZLxi33pCnjZh7z-JdDqqRr0ZXRE/edit?usp=sharing' }, { label: 'CCM Tool', url: 'https://ccmclinical.pages.dev/' }],
-      quiz: { pending: 10 } },
+      links: [{ label: 'Outline of Care', url: 'https://docs.google.com/spreadsheets/d/1fMM8aA0m-hctRFn0ZLxi33pCnjZh7z-JdDqqRr0ZXRE/edit?usp=sharing' }, { label: 'CCM Tool', url: 'https://ccmclinical.pages.dev/' }, PT_SHEET],
+      quiz: [
+        { q: 'Which of the following represents a gap in care for a Hypertensive Pt?', multi: 3, options: ['BP was last monitored 3 days ago', 'The pt is following a Consistent Carbohydrates diet', 'In last KFTs, GFR was 28.8', 'KFTs were last monitored 4 months ago'] },
+        { q: 'The reference range for BP for Hypertensive pt is:', options: ['Below 140/90 and above 90/60', 'Below 130/90 and above 110/70', 'Below 120/80 and above 110/70'] },
+        { q: 'PHQ score should be monitored every ….. for depression Pts:', options: ['1 month', '2 month', '3 month', 'Twice a month'] },
+        { q: 'Which of the following represents a gap in care for a COPD Pt?', multi: 3, options: ['O2 sat reading of 84%', 'Pt didn’t receive pneumococcal vaccination', 'No spirometry testing found for the pt', 'Pt’s O2 sat is only monitored on weekly basis'] },
+        { q: 'Which of the following Scenarios requires escalation:', options: ['Pt showing signs and symptoms of hypertensive emergency', 'Pt’s BP reading of 128/78 at the monthly review', 'Pt’s PHQ score is unchanged from last month', 'Pt’s O2 sat reading of 96% on room air'] }
+      ] },
     { id: 'm1-reference', title: 'Reference Material',
       summary: 'The reference materials you will use on shift. All links are in the Reference tab.' }
   ]},
@@ -154,11 +167,34 @@ window.BW_MODULES = [
   ]},
   { title: 'Add-ons', sections: [
     { id: 'm7-matrixcare', title: 'Alternative EHR System',
-      summary: 'MatrixCare as an alternative EHR system, with the final assessment on the whole training.',
-      quiz: { pending: 25 } },
+      summary: 'MatrixCare as an alternative EHR system.' },
     { id: 'm6-task-portal', title: 'Task Portal',
       summary: 'The possible scenarios of submitting a case on the portal.',
-      quiz: { pending: 5 } }
+      quiz: { pending: 5 } },
+    { id: 'm8-final', title: 'Final Assessment', video: false,
+      summary: 'BW Technical Assessment on the whole training: PCC, Practice Fusion and ThoroughCare.',
+      quiz: [
+        { q: 'When opening a patient in Practice Fusion, which search criteria should be used?', options: ['Date of birth, Name, or last SSN', 'Room number or resident ID', 'Medicare Beneficiary ID only', 'First name and facility name'] },
+        { q: 'How do you verify a patient’s eligibility status in PCC before proceeding?', options: ['Check that the status is "Current" in the Bio section, or ensure the recent MDS description is NOT "Discharge return anticipated/not anticipated"', 'Verify that they have an upcoming appointment scheduled in ThoroughCare', 'Check the Practice Fusion ledger for a positive balance', 'Ensure the patient has at least three active medications on their MAR'] },
+        { q: 'When navigating to the Clinical Data Tab to add Conditions, which conditions should be added?', options: ['We Add Only The CCM condition', 'All conditions listed in the patient’s past medical history', 'Only the conditions for which the patient is currently taking medications', 'Any condition that has an ICD-10 code assigned'] },
+        { q: 'If there is a newly refused vaccine, what exact template must be added in the notes?', options: ['"patient has not received (name of vaccine) vaccine and declined administration at this time"', '"Patient refused vaccine today"', '"Patient declined [vaccine name] due to personal preference"', '"Vaccination contraindicated at this time"'] },
+        { q: 'If a patient has no known allergies, how must this be documented in ThoroughCare?', options: ['Add a note stating: "No Known allergies have been added. Due to system limitations, we can only add this update as a note"', 'Select "Allergies Reviewed with patient, no Changes" from the dropdown', 'Leave the Allergies section blank', 'Select "Custom Update" and type "N/A"'] },
+        { q: 'When reviewing medications in PCC, which display filter must you make sure to tick before searching?', options: ['Pharmacy', 'Diagnostic', 'Diet', 'Supplement'] },
+        { q: 'After reviewing and updating medications in ThoroughCare, which option must you select from the update dropdown menu?', options: ['Medication list reviewed and updated', 'Custom Update', 'Continue same dose (no changes)', 'Medication Reconciliation Completed with patient'] },
+        { q: 'When adding "Numbers to track", what should you do if no HbA1c is found?', options: ['You should mention that "HbA1c is not found"', 'Leave the field blank', 'Enter 0.0 to satisfy the system requirement', 'Schedule a lab order for an HbA1c test'] },
+        { q: 'Which of the following is NOT considered a Durable Medical Equipment (DME) for the Resources & Support notes?', options: ['Over the counter reading glasses', 'Cane/crutch', 'Manual wheelchair', 'Walker'] },
+        { q: 'When assessing falls, if both the MDS and Progress Notes have a fall assessment on the exact same date, which source should you use?', options: ['The MDS results', 'The Progress Note results', 'Combine the results from both', 'Neither, mark as "Unable to determine"'] },
+        { q: 'When adding Other Provider and Appointment Notes from "Orders", which laboratory orders should be added?', options: ['Laboratory orders that are scheduled, sent, and collected', 'Only the Active laboratory orders', 'Only laboratory orders that have abnormal results', 'All laboratory orders placed within the last year'] },
+        { q: 'How is Medication Adherence determined when reviewing the Medication Administration Record (MAR) report?', options: ['If an "refusal code 2" is found, the Patient is not Adherent', 'If an "x" is found, the Patient is Adherent', 'The MAR does not track adherence; only progress notes', 'If the MAR is blank, the Patient is Not Adherent'] },
+        { q: 'When checking Diet Adherence in the progress notes, what indicates that a patient is not Adherent?', options: ['A decrease in a specific diet component (e.g., "decrease carbs in diet") rather than a decrease in diet amount', 'A decrease in the overall food amount taken', 'Missing a scheduled meal', 'A task note stating "Resident Refused" for meal percentage'] },
+        { q: 'When reviewing dietary tasks, what specific entry under "Meal Percentage" or "Eating" means the patient is Not Adherent?', options: ['"Resident Refused"', '"Dependent"', '"Independent"', 'A blank entry'] },
+        { q: 'When setting Goals in the Care Management tab, what action is required for Long Term Goals?', options: ['Close Long Term Goals (Status: Closed: Not Met) and Set Smart Goals according to the CCM', 'Leave all Long Term Goals open for the duration of the patient’s care', 'Change Long Term Goals into Care Manager Actions', 'Duplicate the Long Term Goals into the Barriers section'] },
+        { q: 'How many SMART Goals and Care Management Actions must be chosen related to the condition?', options: ['At least 2 SMART Goals and at least 2 Care Management Actions', 'At least 1 SMART Goal and 1 Care Management Action', 'Exactly 3 SMART Goals and 3 Care Management Actions', 'As many as there are active ICD-10 codes'] },
+        { q: 'After generating the monthly clinical review PDF in ThoroughCare, how do you successfully download it?', options: ['Click on the first green pop up to download the pdf (It will NOT be downloaded unless you press on it)', 'It downloads automatically once generated', 'Navigate to the Document Manager tab and download it from there', 'Click the blue "View Logs" button'] },
+        { q: 'In Practice Fusion, what specific type of encounter must be created for the follow-up?', options: ['PCM Monthly Care Plan', 'SOAP Note', 'PCM Visit', 'Visit for Weight Loss'] },
+        { q: 'When adding a Superbill in Practice Fusion, which billing codes should be used along with the ICD code of the CCM condition?', options: ['99490 & 99439', '99487 & 99489', '99427 & 99426', '99424 & 99425'] },
+        { q: 'When updating the Resources and support section in ThoroughCare, you find that the patient is independent in walking 10 feet, but needs assistance with walking 50ft and 150ft. and has no history of falls, which template would be most appropriate:', options: ['Mobility Deficit: The patient has some difficulty with ambulation and moving around. They are not able to walk without assistance and do not experience falls or balance issues.', 'Mobility Deficit: The patient has no mobility issues with ambulation and moving around. They are able to walk without assistance and do experience any falls or balance issues.', 'Mobility Deficit: The patient has significant difficulty with ambulation and moving around. They are not able to walk without assistance and do not experience falls or balance issues.', 'Mobility Deficit: Patient demonstrates independent ambulation at assessed distances, but falls risk is identified based on (history of falls, medication use, balance concerns, etc.).'] }
+      ] }
   ]}
 ];
 

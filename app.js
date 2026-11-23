@@ -231,6 +231,10 @@ function addCaptions(s, v) {
 }
 const ICON = { locked: 'ph-lock-simple', done: 'ph-check-circle', progress: 'ph-circle-half', todo: 'ph-circle' };
 
+// Multi-answer questions: { multi: N } → the first N options are correct; trainee must tick exactly those.
+const qRight = (q, v) => q.multi ? Array.isArray(v) && v.length === q.multi && v.every(x => x < q.multi) : v === 0;
+const qShow = (q, v) => Array.isArray(v) ? v.map(x => q.options[x]).join(' · ') : (q.options[v] ?? '—');
+const qKey = q => q.multi ? q.options.slice(0, q.multi).join(' · ') : q.options[0];
 function seededOrder(seed, n) {
   let h = 2166136261; for (const c of seed) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
   const rnd = () => { h = Math.imul(h ^ (h >>> 15), 2246822507); h = Math.imul(h ^ (h >>> 13), 3266489909); return ((h ^= h >>> 16) >>> 0) / 4294967296; };
@@ -442,8 +446,9 @@ function quizHTML(s, n) {
   if (p.quiz_passed && !qs) return head + `<p class="pass"><i class="ph-duotone ph-seal-check"></i>Passed · best score ${p.quiz_score}% · ${p.quiz_attempts} attempt${p.quiz_attempts === 1 ? '' : 's'}</p><button class="btn ghost" data-act="retake">Retake for practice</button>`;
   const locked = qs && qs.submitted && qs.passed;
   const body = s.quiz.map((q, qi) => { const order = seededOrder(s.id + qi, q.options.length), fb = qs?.submitted ? qs.fb[qi] : null;
-    return `<fieldset class="q ${fb === true ? 'right' : fb === false ? 'wrong' : ''}"><legend><span>${qi + 1}.</span>${esc(q.q)}</legend>
-      ${order.map(oi => `<label class="opt"><input type="radio" name="q${qi}" value="${oi}" ${qs?.sel?.[qi] === oi ? 'checked' : ''} ${locked ? 'disabled' : ''}><span>${esc(q.options[oi])}</span></label>`).join('')}
+    const cur = qs?.sel?.[qi], on = oi => q.multi ? (Array.isArray(cur) && cur.includes(oi)) : cur === oi;
+    return `<fieldset class="q ${fb === true ? 'right' : fb === false ? 'wrong' : ''}"><legend><span>${qi + 1}.</span>${esc(q.q)}${q.multi ? ' <small>(Select all that apply)</small>' : ''}</legend>
+      ${order.map(oi => `<label class="opt"><input type="${q.multi ? 'checkbox' : 'radio'}" name="q${qi}" value="${oi}" ${on(oi) ? 'checked' : ''} ${locked ? 'disabled' : ''}><span>${esc(q.options[oi])}</span></label>`).join('')}
       ${fb === true ? '<p class="fb ok"><i class="ph-bold ph-check"></i>Correct</p>' : fb === false ? '<p class="fb no"><i class="ph-bold ph-x"></i>Not quite — review this point in the video and try again.</p>' : ''}</fieldset>`; }).join('');
   const result = qs?.submitted ? `<p class="${qs.passed ? 'pass' : 'fail'}"><i class="ph-duotone ${qs.passed ? 'ph-seal-check' : 'ph-arrow-counter-clockwise'}"></i>You scored ${qs.score}%. ${qs.passed ? 'Assessment passed.' : `You need ${C.PASS_MARK}% to pass.`}</p>` : '';
   return head + `<form id="quizF" class="quiz">${body}</form>${result}
@@ -505,7 +510,7 @@ async function renderTrainee(id) {
     if (hasVid(s)) parts.push(`<p class="sub-line"><i class="ph-duotone ph-play-circle"></i>Video: ${r.video_done ? 'watched' : (r.video_pct || 0) + '%'}</p>`);
     if (s.quiz) { const a = r.quiz_answers;
       parts.push(`<div class="sub-block"><p class="sub-line"><i class="ph-duotone ph-list-checks"></i>Assessment: ${r.quiz_attempts ? `best ${r.quiz_score}% · ${r.quiz_passed ? 'passed' : 'not passed'} · ${r.quiz_attempts} attempt${r.quiz_attempts === 1 ? '' : 's'}` : 'not attempted'}</p>
-        ${a ? `<details><summary>Last attempt · ${a.score}% · ${fmtDate(a.at)}</summary><ol class="ans">${s.quiz.map((q, i) => `<li class="${a.sel[i] === 0 ? 'right' : 'wrong'}"><b>${esc(q.q)}</b><span><i class="ph-bold ${a.sel[i] === 0 ? 'ph-check' : 'ph-x'}"></i>${esc(q.options[a.sel[i]] ?? '—')}</span>${a.sel[i] === 0 ? '' : `<small>Correct: ${esc(q.options[0])}</small>`}</li>`).join('')}</ol></details>` : ''}</div>`); }
+        ${a ? `<details><summary>Last attempt · ${a.score}% · ${fmtDate(a.at)}</summary><ol class="ans">${s.quiz.map((q, i) => { const ok = qRight(q, a.sel[i]); return `<li class="${ok ? 'right' : 'wrong'}"><b>${esc(q.q)}</b><span><i class="ph-bold ${ok ? 'ph-check' : 'ph-x'}"></i>${esc(qShow(q, a.sel[i]))}</span>${ok ? '' : `<small>Correct: ${esc(qKey(q))}</small>`}</li>`; }).join('')}</ol></details>` : ''}</div>`); }
     if (s.task) { const t = s.task;
       parts.push(`<div class="sub-block"><p class="sub-line"><i class="ph-duotone ph-clipboard-text"></i>Assignment: ${r.task_done ? (t.kind === 'text' ? 'submitted' : 'ticked completed') : 'not done'}${r.task_done ? ' · ' + fmtDate(r.updated_at) : ''}</p>
         ${t.kind === 'text' && r.task_response ? `<p class="resp pre">${esc(r.task_response)}</p>` : ''}
@@ -577,9 +582,9 @@ $app.addEventListener('click', async e => {
     case 'file': { const u = await api.fileUrl(b.dataset.path); u ? window.open(u, '_blank', 'noopener') : toast(DEMO ? 'Files are not stored in demo mode.' : 'Could not open the file.'); break; }
     case 'delmeet': if (confirm('Remove this session?')) { await api.delMeeting(b.dataset.id); renderLive(); } break;
     case 'quiz': {
-      const sel = s.quiz.map((q, i) => { const el = document.querySelector(`input[name="q${i}"]:checked`); return el ? +el.value : null; });
+      const sel = s.quiz.map((q, i) => { const els = [...document.querySelectorAll(`input[name="q${i}"]:checked`)].map(e => +e.value); return q.multi ? (els.length ? els.sort((a, b) => a - b) : null) : (els.length ? els[0] : null); });
       if (sel.includes(null)) return toast('Answer every question first.');
-      const fb = sel.map(x => x === 0), score = Math.round(fb.filter(Boolean).length / fb.length * 100), passed = score >= C.PASS_MARK, p = P[s.id] || {};
+      const fb = sel.map((x, i) => qRight(s.quiz[i], x)), score = Math.round(fb.filter(Boolean).length / fb.length * 100), passed = score >= C.PASS_MARK, p = P[s.id] || {};
       quizState[s.id] = { sel, fb, score, passed, submitted: true };
       b.disabled = true;
       await api.save(s.id, { quiz_score: Math.max(score, p.quiz_score || 0), quiz_passed: !!p.quiz_passed || passed, quiz_attempts: (p.quiz_attempts || 0) + 1, quiz_answers: { sel, score, at: now() } });
