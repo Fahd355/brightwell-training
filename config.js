@@ -11,7 +11,7 @@ window.BW_CONFIG = {
   PASS_MARK: 80,          // % needed to pass an assessment
   VIDEO_DONE_AT: 0.9,     // share of a video that must be watched to count as complete
   SEQUENTIAL: true,       // true = a section unlocks only when the previous one is complete
-  TRAINING_PT_SHEET_URL: '',     // Google Sheet with the training pt's information (sections 2.1, 2.2)
+  TRAINING_PT_SHEET_URL: 'https://docs.google.com/spreadsheets/d/11Y09-gBFS_zVeb-iUsgdxbVmTotNJzVWoDmR0FCsLVs/edit?usp=sharing',     // Google Sheet with the training pt's information (sections 2.1, 2.2)
   PF_PT_SHEET_URL: '',           // Google Sheet with the pt information for PracticeFusion (4.1)
   PROBLEM_NOTE_LIBRARY_URL: ''   // optional: link to the Problem Note Library (2.3.1)
 };
