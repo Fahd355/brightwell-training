@@ -1,0 +1,403 @@
+1
+00:00:01,500 --> 00:00:07,144
+Lesson 3.3.7: Hospitalizations, Referrals and Escalation.
+
+2
+00:00:09,800 --> 00:00:13,768
+This lesson covers the last four sections of the problem note.
+
+3
+00:00:13,818 --> 00:00:17,536
+Hospitalizations and ER visits, found in the census,
+
+4
+00:00:17,576 --> 00:00:20,813
+the transfer forms, and the progress notes.
+
+5
+00:00:20,863 --> 00:00:25,365
+New referrals related to the condition, found in the patient's orders.
+
+6
+00:00:25,415 --> 00:00:29,743
+Medication changes, which only apply to follow-up patients.
+
+7
+00:00:29,793 --> 00:00:35,109
+And escalation: drug-drug interactions, and the red flags in the care policy.
+
+8
+00:00:37,233 --> 00:00:41,139
+Four sections remain: hospitalizations or ER visits,
+
+9
+00:00:41,179 --> 00:00:45,224
+new referrals, medication changes, and escalation.
+
+10
+00:00:49,600 --> 00:00:53,549
+Hospitalizations follow the same window as provider visits:
+
+11
+00:00:53,589 --> 00:00:56,701
+for a scratch patient, the past three months.
+
+12
+00:00:57,667 --> 00:01:00,822
+And every hospitalization or ER visit counts,
+
+13
+00:01:00,862 --> 00:01:04,207
+whether it's related to the condition or not.
+
+14
+00:01:05,167 --> 00:01:10,213
+Three places can show one: the census, the assessments, and the progress notes.
+
+15
+00:01:12,867 --> 00:01:16,413
+The Census tab lists the patient's status over time.
+
+16
+00:01:19,133 --> 00:01:23,142
+The current status shows the patient active since July 1.
+
+17
+00:01:24,100 --> 00:01:26,746
+An earlier status like this one, on June 10,
+
+18
+00:01:26,786 --> 00:01:31,120
+records a hospital stay of less than 24 hours.
+
+19
+00:01:32,067 --> 00:01:35,996
+Inside our window, it would count as a hospitalization.
+
+20
+00:01:37,167 --> 00:01:40,009
+But three months back only reaches August 25,
+
+21
+00:01:40,049 --> 00:01:44,742
+and there's no hospital or ER status after July 1.
+
+22
+00:01:46,100 --> 00:01:48,906
+To confirm, we check the assessments next.
+
+23
+00:01:50,567 --> 00:01:53,242
+With View All and the status on All, as before,
+
+24
+00:01:53,282 --> 00:01:57,731
+a search for transfer finds any transfer outside the facility.
+
+25
+00:02:01,967 --> 00:02:05,440
+A lift transfer evaluation isn't what we're after.
+
+26
+00:02:08,333 --> 00:02:12,208
+What we want is a form like this one: the eINTERACT transfer form,
+
+27
+00:02:12,248 --> 00:02:16,384
+the record of a transfer to a hospital or ER.
+
+28
+00:02:16,434 --> 00:02:21,764
+This one is dated June 10, the same day as the hospital stay in the census.
+
+29
+00:02:23,600 --> 00:02:27,173
+Printing it shows where the patient was sent, when, and why.
+
+30
+00:02:28,833 --> 00:02:35,075
+Its transfer details show the patient sent to Frisbie Memorial Hospital on February 26,
+
+31
+00:02:35,115 --> 00:02:36,479
+because of a fall.
+
+32
+00:02:36,533 --> 00:02:39,213
+Had it been inside our window, we'd document it.
+
+33
+00:02:39,253 --> 00:02:41,988
+It's well outside, so it's left out.
+
+34
+00:02:43,300 --> 00:02:45,114
+The progress notes are the last place,
+
+35
+00:02:45,154 --> 00:02:47,965
+already filtered to the past three months.
+
+36
+00:02:48,015 --> 00:02:51,847
+A search for hospitalization finds only a screening answer:
+
+37
+00:02:51,887 --> 00:02:56,102
+recent hospitalization in the last 30 days, no.
+
+38
+00:02:56,200 --> 00:03:00,213
+And a search for emergency shows no emergency department visit
+
+39
+00:03:00,253 --> 00:03:02,146
+or transfer either.
+
+40
+00:03:04,433 --> 00:03:09,416
+So the note says: no hospitalizations or ER visits this cycle.
+
+41
+00:03:09,467 --> 00:03:10,422
+Had there been one,
+
+42
+00:03:10,462 --> 00:03:14,547
+the note would say when the patient was hospitalized, and why.
+
+43
+00:03:16,900 --> 00:03:19,555
+Next, new referrals related to the condition:
+
+44
+00:03:19,595 --> 00:03:24,354
+the patient referred to an outside provider for hyperlipidemia.
+
+45
+00:03:25,300 --> 00:03:29,567
+That means a referral or an upcoming appointment with a cardiologist,
+
+46
+00:03:29,607 --> 00:03:34,085
+an internal medicine specialist, or a family medicine doctor.
+
+47
+00:03:35,233 --> 00:03:38,675
+For a scratch patient, we look for upcoming appointments.
+
+48
+00:03:40,700 --> 00:03:44,967
+In the Orders tab, the Other category lists the patient's appointments.
+
+49
+00:03:46,733 --> 00:03:50,542
+Sorting by start date brings the upcoming ones to the top.
+
+50
+00:03:51,733 --> 00:03:55,981
+Here, the only upcoming order is a lab order, not an appointment.
+
+51
+00:03:57,633 --> 00:04:02,008
+An appointment looks like this one: follow up as needed with dermatology,
+
+52
+00:04:02,047 --> 00:04:06,142
+optometry, audiology, dental, and podiatry.
+
+53
+00:04:07,800 --> 00:04:13,785
+An upcoming appointment with a specialty relevant to the condition is documented as a new referral.
+
+54
+00:04:13,825 --> 00:04:15,731
+Here, there's none.
+
+55
+00:04:18,600 --> 00:04:22,727
+Medication changes compare today's medications for the condition
+
+56
+00:04:22,767 --> 00:04:25,756
+with those on the last date of service.
+
+57
+00:04:27,933 --> 00:04:30,885
+A scratch patient has no last date of service yet,
+
+58
+00:04:30,925 --> 00:04:34,711
+so the note simply says: no medication changes.
+
+59
+00:04:36,433 --> 00:04:40,078
+For a follow-up patient, the Orders tab, filtered to pharmacy,
+
+60
+00:04:40,118 --> 00:04:46,768
+shows today's medication: rosuvastatin calcium 20 mg, once daily.
+
+61
+00:04:50,167 --> 00:04:52,649
+And the Order Summary report, under Reports,
+
+62
+00:04:52,689 --> 00:04:56,124
+shows the medications on the last date of service.
+
+63
+00:04:59,900 --> 00:05:04,270
+Filtered to the pharmacy category, with active orders as of that date,
+
+64
+00:05:07,067 --> 00:05:09,245
+for example, October 20.
+
+65
+00:05:10,900 --> 00:05:14,868
+Running the report lists every medication active on that day.
+
+66
+00:05:17,600 --> 00:05:22,947
+Any change in the medications for the condition goes into the medication changes section:
+
+67
+00:05:22,987 --> 00:05:28,400
+a dose increased or decreased, a medication switched, stopped, or added.
+
+68
+00:05:32,367 --> 00:05:36,758
+The last section is escalation, and only two things are escalated.
+
+69
+00:05:37,900 --> 00:05:42,883
+First, drug-drug interactions involving the medications for our condition.
+
+70
+00:05:43,933 --> 00:05:44,526
+Second,
+
+71
+00:05:44,566 --> 00:05:50,165
+the grounds for escalation listed in the Escalation Guide tab of the care policy.
+
+72
+00:05:51,800 --> 00:05:57,099
+For hyperlipidemia: worsening chest pain, shortness of breath, changes in vision,
+
+73
+00:05:57,139 --> 00:06:03,970
+severe abdominal pain, a recent heart attack or stroke, or severe pancreatitis.
+
+74
+00:06:05,200 --> 00:06:10,562
+Drug-drug interactions show up in the orders, as a flag next to the medication.
+
+75
+00:06:14,333 --> 00:06:16,703
+Here, flags mark a dose warning for senna,
+
+76
+00:06:16,743 --> 00:06:21,117
+and an allergy warning and a black box warning for lamotrigine.
+
+77
+00:06:26,533 --> 00:06:30,904
+Our CCM medication, rosuvastatin, has no flags at all,
+
+78
+00:06:30,944 --> 00:06:33,905
+so there's no interaction to escalate.
+
+79
+00:06:35,033 --> 00:06:39,388
+The other grounds are searched in the progress notes, just like the symptoms.
+
+80
+00:06:41,567 --> 00:06:45,722
+With nothing found, the note says: no escalations this cycle.
+
+81
+00:06:47,533 --> 00:06:50,177
+And with that, the problem note is complete.
+
+82
+00:06:52,900 --> 00:07:00,341
+The CCM Clinical Tool adds the patient education for the condition at the end of the note automatically.
+
+83
+00:07:05,733 --> 00:07:09,215
+Two documentation standards must always close the note:
+
+84
+00:07:09,255 --> 00:07:13,153
+the patient education section, and the care plan template.
+
+85
+00:07:15,300 --> 00:07:19,876
+Before saving, we read the whole note for missing information or inaccuracies,
+
+86
+00:07:19,916 --> 00:07:22,337
+especially in the gaps in care.
+
+87
+00:07:26,133 --> 00:07:31,049
+This line, for example, carries a time frame and a reference range we don't need.
+
+88
+00:07:31,089 --> 00:07:36,078
+Blood pressure is uncontrolled says it all, so the rest is erased.
+
+89
+00:07:37,200 --> 00:07:40,779
+Then we copy the note and keep it, in a sticky note for example,
+
+90
+00:07:40,819 --> 00:07:44,450
+until we add it to the problem note in ThoroughCare.
+
+91
+00:07:48,500 --> 00:07:52,928
+To wrap up: hospitalizations and ER visits come from the census,
+
+92
+00:07:52,968 --> 00:07:56,240
+the transfer forms, and the progress notes.
+
+93
+00:07:56,290 --> 00:08:00,136
+New referrals are the upcoming appointments related to the condition,
+
+94
+00:08:00,176 --> 00:08:01,841
+in the Other orders.
+
+95
+00:08:01,891 --> 00:08:06,911
+Medication changes compare today's medications with the last date of service,
+
+96
+00:08:06,951 --> 00:08:09,874
+so they only apply to follow-up patients.
+
+97
+00:08:09,924 --> 00:08:12,361
+Escalation covers drug-drug interactions
+
+98
+00:08:12,401 --> 00:08:15,750
+and the red flags in the Escalation Guide.
+
+99
+00:08:15,800 --> 00:08:20,116
+And every note ends with the patient education and the care plan template,
+
+100
+00:08:20,156 --> 00:08:22,147
+checked before it's saved.
+
+101
+00:08:24,300 --> 00:08:27,635
+The problem note is now ready to add to ThoroughCare.
